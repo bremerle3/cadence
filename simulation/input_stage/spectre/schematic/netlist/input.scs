@@ -1,0 +1,68 @@
+// Generated for: spectre
+// Generated on: Dec 10 18:25:20 2015
+// Design library name: cse562
+// Design cell name: input_stage
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters pW=900n pL=600n nW=900n nL=600n I_0=100n
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse562
+// Cell name: input_stage
+// View name: schematic
+N8 (net012 net05 net026 net026) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N7 (net016 net05 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N2 (net11 net2 net10 net10) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+N0 (net2 net2 net1 net1) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+N3 (net10 net1 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+N1 (net1 net1 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+I16 (net013 0) isource type=dc dc=I_0 m=1
+I0 (vdd! net2) isource type=dc dc=1m m=1
+R1 (net026 0) resistor r=1K m=1
+R0 (vdd! net11) resistor r=1K m=1
+V5 (net05 0) vsource type=dc dc=3
+V0 (vdd! 0) vsource type=dc dc=3
+P9 (net026 net016 net012 net012) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P8 (net016 net05 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P7 (net012 net013 net09 net09) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P6 (net09 net03 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P5 (net013 net013 net03 net03) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P4 (net03 net03 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc dev=V5 param=dc start=0 stop=3 oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save I16:sink P7:s R1:1 
+saveOptions options save=allpub

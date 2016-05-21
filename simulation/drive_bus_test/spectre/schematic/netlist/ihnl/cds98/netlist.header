@@ -1,0 +1,8 @@
+
+// Library name: cse463_project
+// Cell name: IR_reg
+// View name: extracted
+subckt IR_reg Control_Out0 Control_Out1 Control_Out5 Control_Out6 \
+        Control_Out7 F1 F2 In\<0\> In\<1\> In\<2\> In\<3\> In\<4\> In\<5\> \
+        In\<6\> In\<7\> N0 N0B N1 N1B Out\<0\> Out\<1\> Out\<2\> Out\<3\> \
+        Out\<4\> Out\<5\> Out\<6\> Out\<7\> S0 S0B S1 S1B

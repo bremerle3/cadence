@@ -1,0 +1,230 @@
+\o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 03/04/2015 15:04 (sjfqos807) $
+\o Sub version:		sub-version  s016 
+\o Arguments:		-mpssession virtuoso17354 -mpshost linuxlab007.seas.wustl.edu 
+\o Working Directory:	linuxlab007.seas.wustl.edu:/home/warehouse/lbremer/cadence
+\o Qt version: 		4.7.2
+\o Log file is "/home/warehouse/lbremer/cadence/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 31 1918 928))
+\o changeWorkingDir("/home/warehouse/lbremer/cadence") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\o Library Manager customization server connected.
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "ALU_test"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "bus_test"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB post_cse562 from File /home/warehouse/lbremer/cadence/cds.lib Line 21 redefines
+\w LIB post_cse562 from the same file (defined earlier.)
+\a cdsLibManager->libListBox->value = "cse463_project"
+\a cdsLibManager->libLineEdit->value = "cse463_project"
+\a cdsLibManager->cellListBox->value = "bus_top"
+\a cdsLibManager->cellLineEdit->value = "bus_top"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 31 1902 912))
+\a nrResizeWindow(cdsLibManager list(0 31 1348 600))
+\a nrResizeWindow(cdsLibManager list(0 31 1918 928))

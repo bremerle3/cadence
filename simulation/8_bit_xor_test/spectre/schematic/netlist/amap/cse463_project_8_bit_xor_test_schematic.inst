@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"C12n C13n C14n C15n C7n C5n C3n C1n" "NCSU_Analog_Parts_cap_spectre"
+"V6n V7n" "NCSU_Analog_Parts_vpulse_spectre"
+"V1n" "NCSU_Analog_Parts_vdc_spectre"
+"I0n" "cse463_project_8_bit_xor_schematic"

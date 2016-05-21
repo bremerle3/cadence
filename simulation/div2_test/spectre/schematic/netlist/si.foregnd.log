@@ -1,0 +1,20 @@
+Begin Incremental Netlisting Nov  2 08:57:26 2015
+WARNING (OSSHNL-225): The design variable 'na', used in the last netlisting
+session in the current
+run directory is not used in this netlisting session. The
+netlist(s) generated
+in the last netlisting session cannot be reused for
+incremental netlisting.
+Therefore re-netlisting the design.
+
+End netlisting Nov  2 08:57:27 2015
+Begin Incremental Netlisting Nov  2 08:58:29 2015
+End netlisting Nov  2 08:58:29 2015
+Begin Incremental Netlisting Nov  2 09:04:34 2015
+End netlisting Nov  2 09:04:34 2015
+Begin Incremental Netlisting Nov  2 09:14:07 2015
+End netlisting Nov  2 09:14:08 2015
+Begin Incremental Netlisting Nov  2 09:15:43 2015
+End netlisting Nov  2 09:15:43 2015
+Begin Incremental Netlisting Nov  2 09:19:17 2015
+End netlisting Nov  2 09:19:17 2015

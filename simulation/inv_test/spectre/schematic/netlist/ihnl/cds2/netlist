@@ -1,0 +1,6 @@
+    N0 (Vout Vin 0 0) ami06N w=900n l=900n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (Vout Vin vdd! vdd!) ami06P w=3.3u l=900n as=4.95e-12 ad=4.95e-12 \
+        ps=9.6u pd=9.6u m=1 region=sat
+ends inv_schematic
+// End of subcircuit definition.

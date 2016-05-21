@@ -1,0 +1,15 @@
+CADENCE IHNL01070
+$model
+cse562/input_stage/schematic input_stage
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+I_0 I_0
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

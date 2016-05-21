@@ -1,0 +1,6 @@
+
+// Library name: cse463_project
+// Cell name: IR_reg
+// View name: schematic
+subckt IR_reg F1 F2 In0 In1 In2 In3 In4 In5 In6 In7 N0 N0B N1 N1B Out0 \
+        Out1 Out2 Out3 Out4 Out5 Out6 Out7 S0 S0B S1 S1B inh_inh_bn

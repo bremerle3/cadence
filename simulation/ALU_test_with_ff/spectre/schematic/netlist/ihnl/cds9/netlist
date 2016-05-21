@@ -1,0 +1,10 @@
+    I0 (IN0 OUT0) min_inv
+    I1 (IN1 OUT1) min_inv
+    I2 (IN2 OUT2) min_inv
+    I3 (IN3 OUT3) min_inv
+    I4 (IN4 OUT4) min_inv
+    I5 (IN5 OUT5) min_inv
+    I6 (IN6 OUT6) min_inv
+    I7 (IN7 OUT7) min_inv
+ends cse463_project_8_bit_com_schematic
+// End of subcircuit definition.

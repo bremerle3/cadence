@@ -1,0 +1,298 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab005.seas.wustl.edu   HostID: 10AC6903   PID: 5200
+Memory  available: 86.1741 GB  physical: 134.9321 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     2600.0    14.2
+              1         0        1     2600.0    13.5
+              2         0        2     2600.0     9.2
+              3         0        3     2600.0     9.3
+              4         0        4     2600.0     6.5
+              5         0        5     2600.0     5.4
+              6         0        6     2600.0     4.8
+              7         0        7     2600.0     4.5
+              8         1        0     2600.0     4.4
+              9         1        1     2600.0    15.8
+             10         1        2     2600.0     6.8
+             11         1        3     2600.0    13.7
+             12         1        4     2600.0     8.2
+             13         1        5     2600.0     7.0
+             14         1        6     2600.0     5.9
+             15         1        7     2600.0     5.0
+
+
+Simulating `input.scs' on linuxlab005.seas.wustl.edu at 9:52:12 AM, Mon Nov 2, 2015 (process id: 5200).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/cube_test/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre4_28293_12 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 5200
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/cube_test/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 67.552 ms, elapsed = 457.606 ms.
+Time accumulated: CPU = 89.139 ms, elapsed = 457.618 ms.
+Peak resident memory used = 29.6 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 21.402 ms, elapsed = 36.2101 ms.
+Time accumulated: CPU = 110.683 ms, elapsed = 493.968 ms.
+Peak resident memory used = 32.4 Mbytes.
+
+Time for EDB Visiting: CPU = 428 us, elapsed = 357.151 us.
+Time accumulated: CPU = 111.111 ms, elapsed = 494.541 ms.
+Peak resident memory used = 32.8 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 2 nodes:
+        net5
+        I0.net12
+Warning from spectre during heuristic topology check - set topcheck=fixall to fix all floating nodes.
+    WARNING (SPECTRE-7): No DC path from node `I0.net12' to ground.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 8
+             iprobe 2     
+            bsim3v3 6     
+            isource 2     
+            vsource 1     
+
+Analysis and control statement inventory:
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 2.351 ms, elapsed = 6.96707 ms.
+Time accumulated: CPU = 113.462 ms, elapsed = 501.71 ms.
+Peak resident memory used = 33.7 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre4_28293_12, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.net9) = -22.3229 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Convergence achieved in 17 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.742 ms, elapsed = 9.61494 ms.
+Time accumulated: CPU = 116.752 ms, elapsed = 773.767 ms.
+Peak resident memory used = 34.6 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+*******************************************
+DC Analysis `dc': I5:dc = (-50 mA -> 50 mA)
+*******************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Trying `homotopy = gmin'.
+
+Notice from spectre at dc = -50 mA during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Warning from spectre at dc = -50 mA during DC analysis `dc'.
+    WARNING (CMI-2375): I0.N0: Vgs has exceeded the oxide breakdown voltage of `vbox' = 42.3 V.
+    WARNING (CMI-2375): I0.N1: Vgs has exceeded the oxide breakdown voltage of `vbox' = 42.3 V.
+    WARNING (CMI-2375): I0.N2: Vgs has exceeded the oxide breakdown voltage of `vbox' = 42.3 V.
+    WARNING (CMI-2375): I0.N4: Vgs has exceeded the oxide breakdown voltage of `vbox' = 42.3 V.
+    WARNING (CMI-2377): I0.N4: Vgd has exceeded the oxide breakdown voltage of `vbox' = 42.3 V.
+Notice from spectre at dc = -48 mA during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = -46 mA during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+    dc: dc = -46 mA         (4 %), step = 2 mA            (2 %)
+
+Notice from spectre at dc = -44 mA during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+    dc: dc = -44 mA         (6 %), step = 2 mA            (2 %)
+
+Notice from spectre at dc = -42 mA during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = -42 mA         (8 %), step = 2 mA            (2 %)
+    dc: dc = -40 mA        (10 %), step = 2 mA            (2 %)
+    dc: dc = -38 mA        (12 %), step = 2 mA            (2 %)
+    dc: dc = -36 mA        (14 %), step = 2 mA            (2 %)
+    dc: dc = -34 mA        (16 %), step = 2 mA            (2 %)
+    dc: dc = -32 mA        (18 %), step = 2 mA            (2 %)
+    dc: dc = -30 mA        (20 %), step = 2 mA            (2 %)
+    dc: dc = -28 mA        (22 %), step = 2 mA            (2 %)
+    dc: dc = -26 mA        (24 %), step = 2 mA            (2 %)
+    dc: dc = -24 mA        (26 %), step = 2 mA            (2 %)
+    dc: dc = -22 mA        (28 %), step = 2 mA            (2 %)
+    dc: dc = -20 mA        (30 %), step = 2 mA            (2 %)
+    dc: dc = -18 mA        (32 %), step = 2 mA            (2 %)
+    dc: dc = -16 mA        (34 %), step = 2 mA            (2 %)
+    dc: dc = -14 mA        (36 %), step = 2 mA            (2 %)
+    dc: dc = -12 mA        (38 %), step = 2 mA            (2 %)
+    dc: dc = -10 mA        (40 %), step = 2 mA            (2 %)
+    dc: dc = -8 mA         (42 %), step = 2 mA            (2 %)
+    dc: dc = -6 mA         (44 %), step = 2 mA            (2 %)
+
+Notice from spectre at dc = -4 mA during DC analysis `dc'.
+    I0.N2: Device leaves the gate-source oxide breakdown region.
+
+    dc: dc = -4 mA         (46 %), step = 2 mA            (2 %)
+    dc: dc = -2 mA         (48 %), step = 2 mA            (2 %)
+Trying `homotopy = gmin'.
+
+Notice from spectre at dc = 0 A during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.net3) = -3.76353 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    I0.N0: Device leaves the gate-source oxide breakdown region.
+    I0.N1: Device leaves the gate-source oxide breakdown region.
+    I0.N4: Device leaves the gate-source oxide breakdown region.
+    I0.N4: Device leaves the gate-drain oxide breakdown region.
+
+    dc: dc = 0 A           (50 %), step = 2 mA            (2 %)
+Trying `homotopy = gmin'.
+
+Notice from spectre at dc = 2 mA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.net9) = -22.4343 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 2 mA          (52 %), step = 2 mA            (2 %)
+
+Notice from spectre at dc = 4 mA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.net9) = -22.3716 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 4 mA          (54 %), step = 2 mA            (2 %)
+
+Notice from spectre at dc = 6 mA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.net9) = -22.3253 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 6 mA          (56 %), step = 2 mA            (2 %)
+
+Notice from spectre at dc = 8 mA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I0.net9) = -22.2877 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 8 mA          (58 %), step = 2 mA            (2 %)
+    dc: dc = 10 mA         (60 %), step = 2 mA            (2 %)
+    dc: dc = 12 mA         (62 %), step = 2 mA            (2 %)
+    dc: dc = 14 mA         (64 %), step = 2 mA            (2 %)
+    dc: dc = 16 mA         (66 %), step = 2 mA            (2 %)
+    dc: dc = 18 mA         (68 %), step = 2 mA            (2 %)
+    dc: dc = 20 mA         (70 %), step = 2 mA            (2 %)
+    dc: dc = 22 mA         (72 %), step = 2 mA            (2 %)
+    dc: dc = 24 mA         (74 %), step = 2 mA            (2 %)
+    dc: dc = 26 mA         (76 %), step = 2 mA            (2 %)
+    dc: dc = 28 mA         (78 %), step = 2 mA            (2 %)
+    dc: dc = 30 mA         (80 %), step = 2 mA            (2 %)
+    dc: dc = 32 mA         (82 %), step = 2 mA            (2 %)
+    dc: dc = 34 mA         (84 %), step = 2 mA            (2 %)
+    dc: dc = 36 mA         (86 %), step = 2 mA            (2 %)
+    dc: dc = 38 mA         (88 %), step = 2 mA            (2 %)
+    dc: dc = 40 mA         (90 %), step = 2 mA            (2 %)
+    dc: dc = 42 mA         (92 %), step = 2 mA            (2 %)
+    dc: dc = 44 mA         (94 %), step = 2 mA            (2 %)
+    dc: dc = 46 mA         (96 %), step = 2 mA            (2 %)
+    dc: dc = 48 mA         (98 %), step = 2 mA            (2 %)
+    dc: dc = 50 mA        (100 %), step = 2 mA            (2 %)
+Total time required for dc analysis `dc': CPU = 17.672 ms, elapsed = 26.4189 ms.
+Time accumulated: CPU = 136.292 ms, elapsed = 814.974 ms.
+Peak resident memory used = 35.1 Mbytes.
+
+
+Notice from spectre.
+    67 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (10:49:17 AM, Mon Nov 2, 2015):
+Time used: CPU = 259 ms, elapsed = 3.43 ks (57m  5.1s), util. = 7.57e-03%.
+Time spent in licensing: elapsed = 258 ms.
+Peak memory used = 35.4 Mbytes.
+Simulation started at: 9:52:12 AM, Mon Nov 2, 2015, ended at: 10:49:17 AM, Mon Nov 2, 2015, with elapsed time (wall clock): 3.43 ks (57m  5.1s).
+spectre completes with 0 errors, 7 warnings, and 18 notices.

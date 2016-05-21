@@ -1,0 +1,63 @@
+
+// Library name: cse562
+// Cell name: latch_no_sym
+// View name: schematic
+N3 (net6 net5 net8 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N9 (net15 net12 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N6 (net12 net8 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N10 (net15 net4 net18 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N8 (net15 net4 net8 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N5 (net5 net4 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N13 (net24 net22 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N11 (net22 net18 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N12 (net24 net5 net18 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+P4 (net8 net4 net6 vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P9 (net15 net12 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P6 (net12 net8 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P5 (net5 net4 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P10 (net18 net5 net15 vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P7 (net8 net5 net15 vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P13 (net24 net22 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P11 (net22 net18 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P12 (net18 net5 net24 vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+V2 (net6 0) vsource type=pulse val0=3 val1=0 period=4u rise=2.0p fall=2.0p \
+        width=2u
+V1 (net4 0) vsource type=pulse val0=0 val1=3 period=8u rise=200.0p \
+        fall=200.0p width=4u
+V0 (vdd! 0) vsource type=dc dc=3v

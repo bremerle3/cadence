@@ -1,0 +1,3 @@
+"cse463_project.min_tgate.schematic.termorder" (("IN" "OUT" "S" "SB" "[@inh_bn:%:gnd!]") ("IN" "OUT" "S" "SB" "[@inh_bn:%:gnd!]"))
+"cse463_project.min_inv.schematic.termorder" (("In" "out") ("In" "out"))
+"cse463_project.7_1_mux_tgate.schematic.termorder" nil

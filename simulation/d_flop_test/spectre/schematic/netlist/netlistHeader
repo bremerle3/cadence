@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 29 13:40:04 2016
+// Design library name: 563_final
+// Design cell name: d_flop_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

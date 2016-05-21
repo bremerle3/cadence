@@ -1,0 +1,65 @@
+
+// Library name: cse463_project
+// Cell name: min_tgate
+// View name: schematic
+subckt min_tgate IN OUT S SB inh_inh_bn
+    M0 (IN S OUT gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (OUT SB IN vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_tgate
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_tgate
+// View name: schematic
+subckt cse463_project_7_1_mux_tgate_schematic Adder DM_AC_AND DM_AC_OR \
+        DR_AC_XOR DR_COM DR_direct INPR_direct Out S0 S0B S1 S1B S2 S2B \
+        inh_inh_bn
+    I25 (INPR_direct net32 S0B S0 inh_inh_bn) min_tgate
+    I24 (DR_direct net18 S0 S0B inh_inh_bn) min_tgate
+    I23 (DR_COM net18 S0B S0 inh_inh_bn) min_tgate
+    I28 (net18 net26 S1B S1 inh_inh_bn) min_tgate
+    I29 (net19 net27 S1 S1B inh_inh_bn) min_tgate
+    I19 (Adder net20 S0B S0 inh_inh_bn) min_tgate
+    I20 (DM_AC_AND net20 S0 S0B inh_inh_bn) min_tgate
+    I21 (DM_AC_OR net19 S0B S0 inh_inh_bn) min_tgate
+    I22 (DR_AC_XOR net19 S0 S0B inh_inh_bn) min_tgate
+    I27 (net32 net26 S1 S1B inh_inh_bn) min_tgate
+    I31 (net27 Out S2B S2 inh_inh_bn) min_tgate
+    I30 (net20 net27 S1B S1 inh_inh_bn) min_tgate
+    I32 (net26 Out S2 S2B inh_inh_bn) min_tgate
+ends cse463_project_7_1_mux_tgate_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: min_inv
+// View name: schematic
+subckt min_inv In out
+    N0 (out In 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (out In vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_inv
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_tgate_test
+// View name: schematic
+V14 (IN0 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V15 (IN1 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V16 (IN2 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V4 (S0 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V2 (S1 0) vsource type=pulse val0=5 val1=0 period=400n width=200n
+V1 (S2 0) vsource type=pulse val0=5 val1=0 period=800n width=400n
+V17 (IN3 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V18 (IN4 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V20 (IN6 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V19 (IN5 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+C0 (OUT 0) capacitor c=1f m=1
+V3 (vdd! 0) vsource type=dc dc=5
+I0 (IN0 IN1 IN2 IN3 IN4 IN5 IN6 OUT S0 net14 S1 net022 S2 net027 0) \
+        cse463_project_7_1_mux_tgate_schematic
+I7 (S1 net022) min_inv
+I6 (S0 net14) min_inv
+I8 (S2 net027) min_inv

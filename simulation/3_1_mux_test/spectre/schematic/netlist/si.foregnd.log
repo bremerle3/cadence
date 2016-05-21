@@ -1,0 +1,12 @@
+Begin Incremental Netlisting Apr 14 14:00:07 2016
+End netlisting Apr 14 14:00:07 2016
+Begin Incremental Netlisting Apr 14 14:00:24 2016
+End netlisting Apr 14 14:00:24 2016
+Begin Incremental Netlisting Apr 14 14:02:15 2016
+WARNING (OSSHNL-160): The primitive, 'NCSU_Analog_Parts/vdc/spectre', was not
+used in the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Apr 14 14:02:15 2016

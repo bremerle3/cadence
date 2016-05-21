@@ -1,0 +1,13 @@
+
+// Library name: cse562
+// Cell name: mirror3
+// View name: schematic
+N0 (net1 net1 0 0) ami06N w=tW l=tL as=tW * 2.5 * (600n) ad=tW * 2.5 * (600n) \
+         ps=(2 * tW) + (5 * (600n)) pd=(2 * tW) + (5 * (600n)) m=1 \
+        region=sat
+N1 (net7 net1 0 0) ami06N w=tW l=tL as=tW * 2.5 * (600n) ad=tW * 2.5 * (600n) \
+         ps=(2 * tW) + (5 * (600n)) pd=(2 * tW) + (5 * (600n)) m=1 \
+        region=sat
+V1 (net7 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=3
+R0 (vdd! net1) resistor r=50K m=1

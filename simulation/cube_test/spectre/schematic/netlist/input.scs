@@ -1,0 +1,52 @@
+// Generated for: spectre
+// Generated on: Nov  2 09:33:31 2015
+// Design library name: cse562
+// Design cell name: cube_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse562
+// Cell name: cube
+// View name: schematic
+subckt cube In Out
+    I1 (net1 0) isource type=dc dc=50n m=1
+    N5 (Out net1 0 net12) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N4 (vdd! In net3 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N3 (net3 net3 net1 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N2 (net17 net17 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N1 (net9 net9 net17 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N0 (In In net9 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+ends cube
+// End of subcircuit definition.
+
+// Library name: cse562
+// Cell name: cube_test
+// View name: schematic
+I0 (net1 net5) cube
+I5 (net1 0) isource type=dc dc=5m m=1
+V0 (vdd! 0) vsource type=dc
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc dev=I5 param=dc start=-50m stop=50m oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save I0:1 I0:2 
+saveOptions options save=allpub

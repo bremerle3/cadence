@@ -1,0 +1,14 @@
+    M5 (Out S0 net1 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (net1 S1B 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M3 (Out S0B net2 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net2 S1 Load gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out S0 net3 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net3 S1 Hold gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends cse463_project_3_1_mux_alt_schematic
+// End of subcircuit definition.

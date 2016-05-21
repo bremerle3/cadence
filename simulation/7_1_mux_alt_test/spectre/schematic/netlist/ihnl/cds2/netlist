@@ -1,0 +1,21 @@
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_alt_test
+// View name: schematic
+V23 (net5 0) vsource type=dc dc=0
+V22 (net3 0) vsource type=dc dc=0
+V21 (net4 0) vsource type=dc dc=0
+V3 (vdd! 0) vsource type=dc dc=5
+I0 (net012 net06 net07 net08 net09 net010 net011 net11 net5 net7 net3 \
+        net10 net4 net9 0) cse463_project_7_1_mux_alt_schematic
+V20 (net011 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V19 (net010 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V18 (net09 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V17 (net08 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V16 (net07 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V15 (net06 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V14 (net012 0) vsource type=pulse val0=5 val1=0 period=400n width=200n
+I8 (net4 net9) min_inv
+I7 (net3 net10) min_inv
+I6 (net5 net7) min_inv
+C0 (net11 0) capacitor c=1f m=1

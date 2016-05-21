@@ -1,0 +1,37 @@
+
+// Library name: cse562
+// Cell name: true_ff
+// View name: schematic
+N6 (Q net7 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+        ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N5 (net19 net5 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N4 (net7 CLK net19 net19) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N3 (net5 net3 net15 net15) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N2 (net15 CLK 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N1 (net3 D 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+        ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+P9 (Q net7 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P7 (net7 net5 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P5 (net5 CLK vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P4 (net3 CLK net10 net10) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P1 (net10 D vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat

@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "cmos_nand_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/cmos_nand_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "563_final/cmos_nand/schematic" "cmos_nand" )
+( "563_final/cmos_nand_test/schematic" "cmos_nand_test" )
+ )
+( term
+ )
+( param
+ )
+( "cmos_nand_test" "ihnl/cds1/map" )
+( "cmos_nand" "ihnl/cds0/map" )
+ )

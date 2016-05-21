@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "last_ditch"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/last_ditch/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/squarer/schematic" "squarer" )
+( "cse562/last_ditch/schematic" "last_ditch" )
+ )
+( term
+ )
+( param
+ )
+( "last_ditch" "ihnl/cds1/map" )
+( "squarer" "ihnl/cds0/map" )
+ )

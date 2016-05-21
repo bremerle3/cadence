@@ -1,0 +1,10 @@
+
+// Library name: 563_final
+// Cell name: test_543
+// View name: schematic
+M0 (Out In 0 gnd!) ami06N w=1.35u l=600n as=2.025e-12 ad=2.025e-12 ps=5.7u \
+        pd=5.7u m=1 region=sat
+M1 (Out In vdd! vdd!) ami06P w=1.35u l=600n as=2.025e-12 ad=2.025e-12 \
+        ps=5.7u pd=5.7u m=1 region=sat
+V0 (In 0) vsource type=pulse val0=0 val1=5 period=100n
+V1 (vdd! 0) vsource type=dc dc=5

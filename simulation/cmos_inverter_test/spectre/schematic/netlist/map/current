@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "cmos_inverter_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/cmos_inverter_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse563/cmos_inverter_test/schematic" "cmos_inverter_test" )
+( "cse563/cmos_inverter/schematic" "cmos_inverter" )
+ )
+( term
+ )
+( param
+ )
+( "cmos_inverter_test" "ihnl/cds1/map" )
+( "cmos_inverter" "ihnl/cds0/map" )
+ )

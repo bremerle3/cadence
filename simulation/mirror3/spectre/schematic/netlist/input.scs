@@ -1,0 +1,39 @@
+// Generated for: spectre
+// Generated on: Nov  6 07:21:36 2015
+// Design library name: cse562
+// Design cell name: mirror3
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters tW=15u tL=.5u
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse562
+// Cell name: mirror3
+// View name: schematic
+N0 (net1 net1 0 0) ami06N w=tW l=tL as=tW * 2.5 * (600n) ad=tW * 2.5 * (600n) \
+         ps=(2 * tW) + (5 * (600n)) pd=(2 * tW) + (5 * (600n)) m=1 \
+        region=sat
+N1 (net7 net1 0 0) ami06N w=tW l=tL as=tW * 2.5 * (600n) ad=tW * 2.5 * (600n) \
+         ps=(2 * tW) + (5 * (600n)) pd=(2 * tW) + (5 * (600n)) m=1 \
+        region=sat
+V1 (net7 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=3
+R0 (vdd! net1) resistor r=50K m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc dev=V1 param=dc start=0 stop=3 oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save N0:d N1:d 
+saveOptions options save=allpub

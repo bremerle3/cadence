@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: PC_1_bit
+// View name: schematic
+subckt PC_1_bit CarryIn CarryOut F1 F2 In Out S0 S0B S1 S1B inh_inh_bn

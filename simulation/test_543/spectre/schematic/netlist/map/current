@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "test_543"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/test_543/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "563_final/test_543/schematic" "test_543" )
+ )
+( term
+ )
+( param
+ )
+( "test_543" "ihnl/cds0/map" )
+ )

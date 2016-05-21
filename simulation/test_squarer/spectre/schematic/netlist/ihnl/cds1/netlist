@@ -1,0 +1,23 @@
+
+// Library name: cse562
+// Cell name: test_squarer
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=3
+I13 (net10 net7 net9 0) squarer
+Bias (0 net9) isource type=dc dc=60n m=1
+Input (0 net1) isource type=dc m=1
+N2 (net7 net1 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N1 (net4 net1 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N0 (net1 net1 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+P1 (net10 net4 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P0 (net4 net4 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat

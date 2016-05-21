@@ -1,0 +1,9 @@
+
+// Library name: cse563
+// Cell name: nmos_threshold
+// View name: schematic
+N0 (net2 net3 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+V_ds (net2 0) vsource type=dc dc=5
+V_gs (net3 0) vsource type=dc dc=2

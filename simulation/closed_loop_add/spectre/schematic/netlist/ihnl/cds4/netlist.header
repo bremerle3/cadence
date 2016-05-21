@@ -1,0 +1,6 @@
+
+// Library name: cse463_project
+// Cell name: 8_bit_reg_v1
+// View name: schematic
+subckt cse463_project_8_bit_reg_v1_schematic F1 F2 In0 In1 In2 In3 In4 In5 \
+        In6 In7 Out0 Out1 Out2 Out3 Out4 Out5 Out6 Out7 S0 S1 inh_inh_bn

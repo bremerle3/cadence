@@ -1,0 +1,30 @@
+    \+21 (0 S1) capacitor c=7.8678e-16 m=1
+    \+20 (0 S0) capacitor c=4.5198e-16 m=1
+    \+19 (S1B 0) capacitor c=2.1762e-16 m=1
+    \+18 (S0B 0) capacitor c=3.8502e-16 m=1
+    \+17 (Load 0) capacitor c=2.1072e-16 m=1
+    \+16 (Out 0) capacitor c=3.81948e-15 m=1
+    \+15 (Hold 0) capacitor c=2.1072e-16 m=1
+    \+14 (0 S1) capacitor c=1.48944e-15 m=1
+    \+13 (0 S0) capacitor c=1.10175e-15 m=1
+    \+12 (Load S1) capacitor c=3.1776e-16 m=1
+    \+11 (S1B S1) capacitor c=9.168e-16 m=1
+    \+10 (S1B 0) capacitor c=9.3321e-16 m=1
+    \+9 (S0B S0) capacitor c=4.4232e-16 m=1
+    \+8 (S0B 0) capacitor c=1.38558e-15 m=1
+    \+7 (S0B Out) capacitor c=9.5022e-16 m=1
+    \+6 (Hold S1) capacitor c=3.1776e-16 m=1
+    \+5 (Out S0 9 0) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+4 (Out S0B 10 0) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+3 (Out S0 11 0) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+2 (9 S1 Hold 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+1 (10 S1 Load 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+0 (11 S1B 0 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+ends cse463_project_3_1_mux_alt_extracted
+// End of subcircuit definition.

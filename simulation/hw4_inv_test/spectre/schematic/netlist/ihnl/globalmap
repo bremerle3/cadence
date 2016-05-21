@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+563_final/hw4_inv_test/schematic hw4_inv_test
+563_final/hw4_inv/schematic hw4_inv
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

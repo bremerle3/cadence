@@ -1,0 +1,9 @@
+
+// Library name: 563_final
+// Cell name: cmos_nor_test
+// View name: schematic
+I8 (net03 net02 net2) cmos_nor
+V3 (net02 0) vsource type=dc dc=Vin2
+V1 (net03 0) vsource type=dc dc=Vin1
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (net2 0) capacitor c=1f m=1

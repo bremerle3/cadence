@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+cse562/mirror4/schematic mirror4
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+tW tW
+tL tL
+$endparam

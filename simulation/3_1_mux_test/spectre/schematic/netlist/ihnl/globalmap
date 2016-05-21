@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+cse463_project/3_1_mux/schematic cse463_project_3_1_mux_schematic
+cse463_project/3_1_mux_test/schematic cse463_project_3_1_mux_test_schematic
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

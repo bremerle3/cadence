@@ -1,0 +1,2 @@
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"

@@ -1,0 +1,23 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Mar  8 14:58:38 2016"
+"simulator" "spectre"
+"date" "Mar  8 14:58:38 2016"
+"netlistDir" "../netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Run1" "runObject" (
+(
+"logFile"
+"artistLogFile"
+)
+""
+()
+)
+END

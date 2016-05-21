@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 26 03:33:31 2016
+// Design library name: cse463_project
+// Design cell name: 7_1_mux_alt_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

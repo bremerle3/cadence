@@ -1,0 +1,14 @@
+    N3 (net2 F2 net5 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N2 (net1 F1 D 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N1 (net2 F1 net6 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N0 (net1 F2 net4 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    I10 (Q net6) min_inv
+    I9 (net5 net4) min_inv
+    I8 (net2 Q) min_inv
+    I7 (net1 net5) min_inv
+ends d_flip_flop
+// End of subcircuit definition.

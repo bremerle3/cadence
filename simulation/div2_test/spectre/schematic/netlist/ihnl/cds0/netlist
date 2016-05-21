@@ -1,0 +1,8 @@
+    N2 (Out net4 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N1 (In net4 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N0 (In net4 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+ends div2
+// End of subcircuit definition.

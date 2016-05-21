@@ -1,0 +1,6 @@
+    \+1 (out In vdd! vdd!) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+0 (out In 0 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends min_inv
+// End of subcircuit definition.

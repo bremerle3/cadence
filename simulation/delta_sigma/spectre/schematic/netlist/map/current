@@ -1,0 +1,32 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "delta_sigma"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/delta_sigma/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/new_op_amp/schematic" "new_op_amp" )
+( "cse562/true_ff/schematic" "true_ff" )
+( "cse562/comparator/schematic" "comparator" )
+( "cse562/delta_sigma/schematic" "delta_sigma" )
+ )
+( term
+ )
+( param
+ )
+( "new_op_amp" "ihnl/cds5/map" )
+( "true_ff" "ihnl/cds4/map" )
+( "comparator" "ihnl/cds3/map" )
+( "delta_sigma" "ihnl/cds0/map" )
+ )

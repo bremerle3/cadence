@@ -1,0 +1,49 @@
+// Generated for: spectre
+// Generated on: Mar  8 15:12:29 2016
+// Design library name: 563_final
+// Design cell name: cmos_nand_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters Vin2=0 Vin1=0
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: 563_final
+// Cell name: cmos_nand
+// View name: schematic
+subckt cmos_nand Vin1 Vin2 Vout
+    N3 (Vout Vin2 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N2 (Vout Vin1 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    P3 (Vout Vin2 net14 vdd!) ami06P w=14.4u l=600n as=2.16e-11 \
+        ad=2.16e-11 ps=31.8u pd=31.8u m=1 region=sat
+    P2q (net14 Vin1 vdd! vdd!) ami06P w=14.4u l=600n as=2.16e-11 \
+        ad=2.16e-11 ps=31.8u pd=31.8u m=1 region=sat
+ends cmos_nand
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: cmos_nand_test
+// View name: schematic
+I6 (net1 net3 net2) cmos_nand
+C0 (net2 0) capacitor c=1f m=1
+V2 (net3 0) vsource type=dc dc=Vin2
+V0 (vdd! 0) vsource type=dc dc=5
+V1 (net1 0) vsource type=dc dc=Vin1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc dev=V1 param=dc start=0 stop=5 oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

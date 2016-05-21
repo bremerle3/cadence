@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  6 16:14:02 2015
+// Design library name: cse562
+// Design cell name: new_squarer
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

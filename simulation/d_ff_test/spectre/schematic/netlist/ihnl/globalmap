@@ -1,0 +1,15 @@
+CADENCE IHNL01070
+$model
+cse562/d_ff_test/schematic d_ff_test
+cse562/simple_latch/schematic simple_latch
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

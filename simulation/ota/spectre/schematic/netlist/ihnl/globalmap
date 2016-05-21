@@ -1,0 +1,17 @@
+CADENCE IHNL01070
+$model
+cse562/ota/schematic ota
+cse562/comparator/schematic comparator
+cse562/true_ff/schematic true_ff
+cse562/simple_latch/schematic simple_latch
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

@@ -1,0 +1,7 @@
+
+// Library name: cse562
+// Cell name: inv_test
+// View name: schematic
+I0 (net3 out_test) inv
+V0 (net3 0) vsource type=pulse val0=0 val1=5 period=1n
+V1 (vdd! 0) vsource type=dc

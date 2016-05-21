@@ -1,0 +1,5 @@
+
+// Library name: 563_final
+// Cell name: cmos_nor
+// View name: schematic
+subckt cmos_nor Vin1 Vin2 Vout

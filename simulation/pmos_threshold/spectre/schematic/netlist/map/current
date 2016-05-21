@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "pmos_threshold"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/pmos_threshold/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse563/pmos_threshold/schematic" "pmos_threshold" )
+ )
+( term
+ )
+( param
+ )
+( "pmos_threshold" "ihnl/cds0/map" )
+ )

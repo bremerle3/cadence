@@ -1,0 +1,7 @@
+
+// Library name: cse562
+// Cell name: cube_test
+// View name: schematic
+I0 (net1 net5) cube
+I5 (net1 0) isource type=dc dc=5m m=1
+V0 (vdd! 0) vsource type=dc

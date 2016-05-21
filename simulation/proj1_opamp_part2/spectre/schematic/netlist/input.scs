@@ -1,0 +1,56 @@
+// Generated for: spectre
+// Generated on: Oct  7 23:53:41 2015
+// Design library name: cse562
+// Design cell name: proj1_opamp_part2
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse562
+// Cell name: proj1_opamp
+// View name: schematic
+subckt proj1_opamp Vin\+ Vin\- Vout
+    P4 (net9 Vin\+ net12 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P3 (net8 Vin\- net9 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P2 (net9 net7 vdd! vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P1 (Vout net7 vdd! vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P0 (vdd! net7 net14 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N2 (Vout net12 0 0) ami06N w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N1 (net12 net8 0 0) ami06N w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N0 (0 net8 net8 0) ami06N w=100.05u l=3u as=1.50075e-10 ad=1.50075e-10 \
+        ps=203.1u pd=203.1u m=1 region=sat
+    I17 (net14 0) isource type=dc dc=1nA  m=1
+    C0 (Vout net12) capacitor c=10p m=1
+ends proj1_opamp
+// End of subcircuit definition.
+
+// Library name: cse562
+// Cell name: proj1_opamp_part2
+// View name: schematic
+I0 (net03 net2 net2) proj1_opamp
+V0 (vdd! 0) vsource type=dc dc=3
+V2 (net03 0) vsource type=pulse val0=1.45 val1=1.55 period=2.5u
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=5u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save V0:p V0:p 
+saveOptions options save=allpub

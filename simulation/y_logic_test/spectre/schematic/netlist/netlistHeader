@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 25 21:36:07 2016
+// Design library name: 563_final
+// Design cell name: y_logic_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,15 @@
+CADENCE IHNL01070
+$model
+cse562/proj1_opamp/schematic proj1_opamp
+cse562/integrator/schematic integrator
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

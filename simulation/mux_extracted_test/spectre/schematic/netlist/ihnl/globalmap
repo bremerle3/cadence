@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+cse463_project/3_1_mux_alt/extracted cse463_project_3_1_mux_alt_extracted
+cse463_project/mux_extracted_test/schematic mux_extracted_test
+cse463_project/3_1_mux_alt/schematic cse463_project_3_1_mux_alt_schematic
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

@@ -1,0 +1,20 @@
+    P4 (net9 Vin\+ net12 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P3 (net8 Vin\- net9 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P2 (net9 net7 vdd! vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P1 (Vout net7 vdd! vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P0 (vdd! net7 net14 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N2 (Vout net12 0 0) ami06N w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N1 (net12 net8 0 0) ami06N w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N0 (0 net8 net8 0) ami06N w=100.05u l=3u as=1.50075e-10 ad=1.50075e-10 \
+        ps=203.1u pd=203.1u m=1 region=sat
+    I17 (net14 0) isource type=dc dc=10nA  m=1
+    C0 (Vout net12) capacitor c=0 m=1
+ends proj1_opamp
+// End of subcircuit definition.

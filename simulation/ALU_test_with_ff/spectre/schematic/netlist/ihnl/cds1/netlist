@@ -1,0 +1,36 @@
+    M16 (net019 net06 net17 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M10 (net17 C 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M9 (net17 B 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M8 (net17 A 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M7 (0 C net25 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M6 (net25 B net26 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net26 A net019 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (0 B net27 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M3 (net27 A net06 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net8 B 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (net8 A 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net06 C net8 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M31 (net019 0 net020 vdd!) ami06P w=900n l=1.05u as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M32 (net020 0 vdd! vdd!) ami06P w=900n l=1.05u as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M30 (net019 net06 net020 vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M25 (net06 0 vdd! vdd!) ami06P w=900n l=1.95u as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    I18 (net06 CarryOut) min_inv
+    I19 (net019 Set) min_inv
+ends Adder_2
+// End of subcircuit definition.

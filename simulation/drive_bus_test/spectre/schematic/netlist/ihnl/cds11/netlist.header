@@ -1,0 +1,6 @@
+
+// Library name: cse463_project
+// Cell name: 1_bit_ALU
+// View name: schematic
+subckt cse463_project_1_bit_ALU_schematic AC_In CarryOut Carry_In DR_In \
+        Input_In Out S0 S0B S1 S1B S2 S2B inh_inh_bn

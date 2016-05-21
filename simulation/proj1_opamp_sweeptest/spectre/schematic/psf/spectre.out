@@ -1,0 +1,210 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab011.seas.wustl.edu   HostID: 10AC6F03   PID: 18768
+Memory  available: 123.7499 GB  physical: 134.9321 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1500.2     2.4
+              1         0        1     1282.5     9.1
+              2         0        2     2297.6    10.8
+              3         0        3     1500.0     8.3
+              4         0        4     2907.4     4.6
+              5         0        5     1299.9     3.4
+              6         0        6     1499.2     2.9
+              7         0        7     2392.4     2.7
+              8         1        0     1394.0     2.5
+              9         1        1     2400.2    11.0
+             10         1        2     1241.6     4.6
+             11         1        3     1699.8     9.6
+             12         1        4     1206.3     5.3
+             13         1        5     1299.8     4.7
+             14         1        6     1299.8     3.8
+             15         1        7     1393.1     2.9
+
+
+Simulating `input.scs' on linuxlab011.seas.wustl.edu at 11:30:59 PM, Wed Oct 7, 2015 (process id: 18768).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/proj1_opamp_sweeptest/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre5_23732_49 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 18768
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/proj1_opamp_sweeptest/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 84.4 ms, elapsed = 150.296 ms.
+Time accumulated: CPU = 108.656 ms, elapsed = 150.318 ms.
+Peak resident memory used = 29.6 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 23.194 ms, elapsed = 23.9151 ms.
+Time accumulated: CPU = 132.001 ms, elapsed = 174.383 ms.
+Peak resident memory used = 32.4 Mbytes.
+
+Time for EDB Visiting: CPU = 500 us, elapsed = 428.915 us.
+Time accumulated: CPU = 132.501 ms, elapsed = 174.966 ms.
+Peak resident memory used = 32.8 Mbytes.
+
+
+Notice from spectre during topology check.
+    No DC path from node `I0.net7' to ground, Gmin installed to provide path.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 8
+            bsim3v3 8     
+          capacitor 1     
+            isource 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+               info 6     
+                 pz 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 1.255 ms, elapsed = 4.9901 ms.
+Time accumulated: CPU = 134.544 ms, elapsed = 180.104 ms.
+Peak resident memory used = 33.6 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre5_23732_49, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*****************************************
+PZ Analysis `pz': freq = (0 Hz -> 100 Hz)
+*****************************************
+
+Warning from spectre during PZ analysis `pz'.
+    WARNING: BSIM3v3 MOS Transistor - frequency dependent components are present in the circuit, approximated as AC equivalents at sweeping frequency for pz analysis.
+Notice from spectre during DC analysis, during PZ analysis `pz'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 878 us, elapsed = 853.777 us.
+
+0 Hz           0.00% 
+DC simulation time: CPU = 143 us, elapsed = 143.051 us.
+  No pole is found
+
+  No zero is found
+
+
+100 mHz       50.00% 
+DC simulation time: CPU = 149 us, elapsed = 169.992 us.
+                      Poles (Hz)
+
+           Real                       Imaginary                 Qfactor
+
+   1   -6.88259e-02                  0.00000e+00              5.00000e-01 
+   2   -2.09998e+08                  0.00000e+00              5.00000e-01 
+   3   -3.21108e+08                  0.00000e+00              5.00000e-01 
+   4   -4.42273e+08                  0.00000e+00              5.00000e-01 
+   5   -5.70044e+08                  0.00000e+00              5.00000e-01 
+   6   -7.11497e+08                  0.00000e+00              5.00000e-01 
+
+                      Zeros (Hz)
+                      at V(net1,0)/V1
+
+           Real                       Imaginary                 Qfactor
+
+   1    9.27088e-08                  0.00000e+00              -5.00000e-01
+   2    3.74226e-01                  0.00000e+00              -5.00000e-01
+   3   -2.20939e+08                  0.00000e+00              5.00000e-01 
+   4   -4.27894e+08              +/- 9.70995e+07              5.12712e-01 
+   5   -6.86553e+08                  0.00000e+00              5.00000e-01 
+
+Constant factor =  3.42283e-02
+
+DC gain =  4.16557e-17
+
+......9......8......7......6......5
+100 Hz       100.00% 
+DC simulation time: CPU = 98 us, elapsed = 111.103 us.
+                      Poles (Hz)
+
+           Real                       Imaginary                 Qfactor
+
+   1   -6.88259e-02                  0.00000e+00              5.00000e-01 
+   2   -2.09998e+08                  0.00000e+00              5.00000e-01 
+   3   -3.21108e+08                  0.00000e+00              5.00000e-01 
+   4   -4.42273e+08                  0.00000e+00              5.00000e-01 
+   5   -5.70044e+08                  0.00000e+00              5.00000e-01 
+   6   -7.11497e+08                  0.00000e+00              5.00000e-01 
+
+                      Zeros (Hz)
+                      at V(net1,0)/V1
+
+           Real                       Imaginary                 Qfactor
+
+   1    1.00610e-07                  0.00000e+00              -5.00000e-01
+   2    3.74226e-01                  0.00000e+00              -5.00000e-01
+   3   -2.20939e+08                  0.00000e+00              5.00000e-01 
+   4   -4.27894e+08              +/- 9.70995e+07              5.12712e-01 
+   5   -6.86553e+08                  0.00000e+00              5.00000e-01 
+
+Constant factor =  3.42283e-02
+
+DC gain =  4.52059e-17
+
+......9......8......7......6......5......4......3......2......1......0
+Accumulated DC solution time = 783.608 ms.
+Intrinsic pz analysis time =              -957.944 ms.
+Total time required for pz analysis `pz': CPU = 19.304 ms, elapsed = 23.278 ms.
+Time accumulated: CPU = 155.535 ms, elapsed = 328.913 ms.
+Peak resident memory used = 35.9 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.

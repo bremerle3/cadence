@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: 3_1_mux_alt
+// View name: extracted
+subckt cse463_project_3_1_mux_alt_extracted Hold Load Out S0 S0B S1 S1B

@@ -1,0 +1,33 @@
+    I27 (vdd! net2) isource type=dc dc=200n m=1
+    N2 (Vout net15 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    N1 (net15 V\+ net5 net5) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    N17 (net3 V\- net5 net5) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    N15 (net5 net2 net9 net9) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    N14 (net2 net2 net1 net1) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    N13 (net9 net1 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    N12 (net1 net1 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    P4 (net15 net3 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+    P5 (Vout net15 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+    P2 (net3 net3 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+ends comparator
+// End of subcircuit definition.

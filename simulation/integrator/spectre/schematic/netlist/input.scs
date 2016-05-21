@@ -1,0 +1,85 @@
+// Generated for: spectre
+// Generated on: Dec 11 05:06:02 2015
+// Design library name: cse562
+// Design cell name: integrator
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters pW=900n pL=600n nW=900n nL=600n
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse562
+// Cell name: proj1_opamp
+// View name: schematic
+subckt proj1_opamp Vin\+ Vin\- Vout
+    P4 (net9 Vin\+ net12 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P3 (net8 Vin\- net9 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P2 (net9 net7 vdd! vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P1 (Vout net7 vdd! vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    P0 (vdd! net7 net14 vdd!) ami06P w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N2 (Vout net12 0 0) ami06N w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N1 (net12 net8 0 0) ami06N w=100.05u l=3u as=1.50075e-10 \
+        ad=1.50075e-10 ps=203.1u pd=203.1u m=1 region=sat
+    N0 (0 net8 net8 0) ami06N w=100.05u l=3u as=1.50075e-10 ad=1.50075e-10 \
+        ps=203.1u pd=203.1u m=1 region=sat
+    I17 (net14 0) isource type=dc dc=200n m=1
+    C0 (Vout net12) capacitor c=10p m=1
+ends proj1_opamp
+// End of subcircuit definition.
+
+// Library name: cse562
+// Cell name: integrator
+// View name: schematic
+I0 (0 net02 net016) proj1_opamp
+C2 (net016 0) capacitor c=1p m=1
+C0 (net023 net016) capacitor c=1n m=1
+V3 (net08 0) vsource type=pulse val0=0 val1=3 period=4u delay=300n rise=2p \
+        fall=2p width=200n
+V1 (vdd! 0) vsource type=dc dc=3
+P10 (net024 net024 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P4 (net015 net024 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P3 (net01 net01 net024 net024) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P2 (net02 net01 net015 net015) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P1 (net06 net08 vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+P0 (net016 net06 net023 net023) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+N0 (net06 net08 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+N4 (net023 net08 net016 net016) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+I12 (net01 0) isource type=pwl m=1 wave=[ 300n 0 4u 100n ]
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=4u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save 
+saveOptions options save=allpub

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      lbremer
+HostName                       linuxlab007.seas.wustl.edu
+ProcessIdentifier              6958
+ProcessCreationTime_UTC        1462926453
+ProcessCreationTime_Readable   Tue May 10 19:27:33 2016 CDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/warehouse/lbremer/cadence/cse463_project/bus_top_broken/layout/layout.oa.cdslck
+TimeEditLocked                 Wed May 11 08:24:43 2016 CDT

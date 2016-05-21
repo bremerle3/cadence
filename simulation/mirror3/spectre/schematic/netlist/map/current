@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "mirror3"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/mirror3/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/mirror3/schematic" "mirror3" )
+ )
+( term
+ )
+( param
+ )
+( "mirror3" "ihnl/cds0/map" )
+ )

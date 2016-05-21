@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+563_final/ff_inv/schematic ff_inv
+563_final/bb_inv_test/schematic bb_inv_test
+563_final/inv/schematic inv
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

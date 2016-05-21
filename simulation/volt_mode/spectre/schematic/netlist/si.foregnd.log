@@ -1,0 +1,80 @@
+Begin Incremental Netlisting Dec 11 13:04:28 2015
+ERROR (OSSHNL-109): The cellview 'cse562/comparator/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:04:29 2015
+Begin Incremental Netlisting Dec 11 13:05:01 2015
+ERROR (OSSHNL-109): The cellview 'cse562/comparator/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:05:01 2015
+Begin Incremental Netlisting Dec 11 13:05:02 2015
+ERROR (OSSHNL-109): The cellview 'cse562/comparator/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:05:02 2015
+Begin Incremental Netlisting Dec 11 13:05:22 2015
+ERROR (OSSHNL-109): The cellview 'cse562/comparator/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:05:22 2015
+Begin Incremental Netlisting Dec 11 13:05:23 2015
+ERROR (OSSHNL-109): The cellview 'cse562/comparator/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:05:23 2015
+Begin Incremental Netlisting Dec 11 13:06:13 2015
+ERROR (OSSHNL-109): The cellview 'cse562/comparator/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:06:13 2015
+Begin Incremental Netlisting Dec 11 13:06:16 2015
+ERROR (OSSHNL-109): The cellview 'cse562/comparator/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:06:16 2015
+Begin Incremental Netlisting Dec 11 13:06:40 2015
+End netlisting Dec 11 13:06:40 2015
+Begin Incremental Netlisting Dec 11 13:28:11 2015
+End netlisting Dec 11 13:28:11 2015
+Begin Incremental Netlisting Dec 11 13:32:33 2015
+End netlisting Dec 11 13:32:33 2015
+Begin Incremental Netlisting Dec 11 13:32:56 2015
+End netlisting Dec 11 13:32:56 2015
+Begin Incremental Netlisting Dec 11 13:36:27 2015
+End netlisting Dec 11 13:36:27 2015
+Begin Incremental Netlisting Dec 11 13:38:16 2015
+ERROR (OSSHNL-109): The cellview 'cse562/volt_mode/schematic' has been modified
+since the last extraction. Validate
+that the schematic is correct and run Check
+and Save to correct this error.
+
+End netlisting Dec 11 13:38:16 2015
+Begin Incremental Netlisting Dec 11 13:38:52 2015
+End netlisting Dec 11 13:38:52 2015
+Begin Incremental Netlisting Dec 11 13:43:04 2015
+WARNING (OSSHNL-225): The design variable 'ms', used in the last netlisting
+session in the current
+run directory is not used in this netlisting session. The
+netlist(s) generated
+in the last netlisting session cannot be reused for
+incremental netlisting.
+Therefore re-netlisting the design.
+
+End netlisting Dec 11 13:43:05 2015
+Begin Incremental Netlisting Dec 11 13:43:56 2015
+End netlisting Dec 11 13:43:57 2015

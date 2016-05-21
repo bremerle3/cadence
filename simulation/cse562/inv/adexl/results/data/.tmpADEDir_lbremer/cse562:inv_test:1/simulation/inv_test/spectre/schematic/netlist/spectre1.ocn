@@ -1,0 +1,16 @@
+simulator( 'spectre )
+design(	 "/home/warehouse/lbremer/cadence/simulation/cse562/inv/adexl/results/data/.tmpADEDir_lbremer/cse562:inv_test:1/cse562_inv_test_schematic_spectre/netlist/netlist")
+resultsDir( "/home/warehouse/lbremer/cadence/simulation/cse562/inv/adexl/results/data/Interactive.0/psf/cse562:inv_test:1" )
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('tran ?stop "20n"  )
+envOption(
+	'firstRun  t 
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()
+selectResult( 'tran )
+plot(getData("/out_test") getData("/net4") )

@@ -1,0 +1,5 @@
+
+// Library name: 563_final
+// Cell name: inv
+// View name: schematic
+subckt inv_schematic Vin Vout

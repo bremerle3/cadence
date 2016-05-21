@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: half_adder
+// View name: schematic
+subckt half_adder Carry Inc Other Reg inh_inh_bn

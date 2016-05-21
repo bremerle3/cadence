@@ -1,0 +1,20 @@
+
+// Library name: cse562
+// Cell name: div2
+// View name: schematic
+subckt div2 In Out
+    N2 (Out net4 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N1 (In net4 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N0 (In net4 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+ends div2
+// End of subcircuit definition.
+
+// Library name: cse562
+// Cell name: div2_test
+// View name: schematic
+I6 (net1 net05) div2
+V0 (vdd! 0) vsource type=dc dc=3
+I4 (net1 0) isource type=dc dc=500.0u m=1

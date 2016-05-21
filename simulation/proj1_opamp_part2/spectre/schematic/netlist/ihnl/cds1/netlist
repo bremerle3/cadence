@@ -1,0 +1,7 @@
+
+// Library name: cse562
+// Cell name: proj1_opamp_part2
+// View name: schematic
+I0 (net03 net2 net2) proj1_opamp
+V0 (vdd! 0) vsource type=dc dc=3
+V2 (net03 0) vsource type=pulse val0=1.45 val1=1.55 period=2.5u

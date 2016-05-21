@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "new_op_amp_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/new_op_amp_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/new_op_amp_test/schematic" "new_op_amp_test" )
+( "cse562/new_op_amp/schematic" "new_op_amp" )
+ )
+( term
+ )
+( param
+ )
+( "new_op_amp" "ihnl/cds0/map" )
+( "new_op_amp_test" "ihnl/cds1/map" )
+ )

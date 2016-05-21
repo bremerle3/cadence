@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "comparator_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/comparator_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/comparator_test/schematic" "comparator_test" )
+( "cse562/comparator/schematic" "comparator" )
+ )
+( term
+ )
+( param
+ )
+( "comparator_test" "ihnl/cds1/map" )
+( "comparator" "ihnl/cds0/map" )
+ )

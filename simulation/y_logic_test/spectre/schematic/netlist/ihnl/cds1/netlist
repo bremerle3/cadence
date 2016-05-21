@@ -1,0 +1,16 @@
+
+// Library name: 563_final
+// Cell name: y_logic_test
+// View name: schematic
+V13 (net02 0) vsource type=dc dc=2.0958
+V0 (vdd! 0) vsource type=dc dc=5
+V6 (net5 0) vsource type=pulse val0=0 val1=5 period=12.5u
+V5 (net6 0) vsource type=pulse val0=0 val1=5 period=6.25u
+V4 (net4 0) vsource type=pulse val0=0 val1=5 period=25u
+V3 (net3 0) vsource type=pulse val0=0 val1=5 period=50u
+V2 (net2 0) vsource type=pulse val0=0 val1=5 period=100u
+V1 (net1 0) vsource type=pulse val0=0 val1=5 period=200u
+I9 (net02 net02 net02 net02 net02 net02 net08) y_logic
+I0 (net1 net2 net3 net4 net5 net6 net13) y_logic
+C1 (net08 0) capacitor c=1p m=1
+C0 (net13 0) capacitor c=1p m=1

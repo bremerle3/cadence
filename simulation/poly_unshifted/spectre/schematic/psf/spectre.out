@@ -1,0 +1,260 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab002.seas.wustl.edu   HostID: 10AC6603   PID: 26940
+Memory  available: 13.7072 GB  physical: 134.9321 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     2600.0    13.5
+              1         0        1     2600.0    17.2
+              2         0        2     2600.0    10.7
+              3         0        3     2600.0     9.5
+              4         0        4     2600.0     6.9
+              5         0        5     2600.0     9.1
+              6         0        6     2600.0     6.5
+              7         0        7     2600.0     5.9
+              8         1        0     2600.0     4.6
+              9         1        1     2600.0    17.0
+             10         1        2     2600.0     7.7
+             11         1        3     2600.0    10.3
+             12         1        4     2600.0     7.0
+             13         1        5     2600.0     6.9
+             14         1        6     2600.0     6.1
+             15         1        7     2600.0     5.1
+
+
+Simulating `input.scs' on linuxlab002.seas.wustl.edu at 9:32:26 PM, Fri Nov 6, 2015 (process id: 26940).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/poly_unshifted/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre10_4162_272 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 26940
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/poly_unshifted/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 71.906 ms, elapsed = 198.869 ms.
+Time accumulated: CPU = 98.007 ms, elapsed = 198.877 ms.
+Peak resident memory used = 29.6 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 23.739 ms, elapsed = 48.681 ms.
+Time accumulated: CPU = 121.908 ms, elapsed = 247.718 ms.
+Peak resident memory used = 32.6 Mbytes.
+
+Time for EDB Visiting: CPU = 551 us, elapsed = 550.032 us.
+Time accumulated: CPU = 122.631 ms, elapsed = 248.438 ms.
+Peak resident memory used = 33 Mbytes.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 14
+             iprobe 1     
+            bsim3v3 29    
+            isource 2     
+            vsource 1     
+
+Analysis and control statement inventory:
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 1.327 ms, elapsed = 5.03922 ms.
+Time accumulated: CPU = 124.852 ms, elapsed = 253.605 ms.
+Peak resident memory used = 33.9 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre10_4162_272, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(net28) = 133.951 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Convergence achieved in 32 iterations.
+Total time required for dc analysis `dcOp': CPU = 3.535 ms, elapsed = 10.808 ms.
+Time accumulated: CPU = 130.279 ms, elapsed = 415.89 ms.
+Peak resident memory used = 34.9 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+*******************************************
+DC Analysis `dc': Input:dc = (0 A -> 60 nA)
+*******************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 0 A during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(net28) = 133.951 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Trying `homotopy = gmin'.
+
+Notice from spectre at dc = 1.2 nA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(net19) = 4.60727 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = 2.4 nA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(net19) = 1.40355 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+    dc: dc = 2.4 nA         (4 %), step = 1.2 nA          (2 %)
+
+Notice from spectre at dc = 3.6 nA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(net19) = 677.131 uV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+    dc: dc = 3.6 nA         (6 %), step = 1.2 nA          (2 %)
+
+Notice from spectre at dc = 4.8 nA during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+    dc: dc = 4.8 nA         (8 %), step = 1.2 nA          (2 %)
+
+Notice from spectre at dc = 6 nA during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 6 nA          (10 %), step = 1.2 nA          (2 %)
+    dc: dc = 7.2 nA        (12 %), step = 1.2 nA          (2 %)
+    dc: dc = 8.4 nA        (14 %), step = 1.2 nA          (2 %)
+    dc: dc = 9.6 nA        (16 %), step = 1.2 nA          (2 %)
+    dc: dc = 10.8 nA       (18 %), step = 1.2 nA          (2 %)
+    dc: dc = 12 nA         (20 %), step = 1.2 nA          (2 %)
+    dc: dc = 13.2 nA       (22 %), step = 1.2 nA          (2 %)
+    dc: dc = 14.4 nA       (24 %), step = 1.2 nA          (2 %)
+    dc: dc = 15.6 nA       (26 %), step = 1.2 nA          (2 %)
+    dc: dc = 16.8 nA       (28 %), step = 1.2 nA          (2 %)
+    dc: dc = 18 nA         (30 %), step = 1.2 nA          (2 %)
+    dc: dc = 19.2 nA       (32 %), step = 1.2 nA          (2 %)
+    dc: dc = 20.4 nA       (34 %), step = 1.2 nA          (2 %)
+    dc: dc = 21.6 nA       (36 %), step = 1.2 nA          (2 %)
+    dc: dc = 22.8 nA       (38 %), step = 1.2 nA          (2 %)
+    dc: dc = 24 nA         (40 %), step = 1.2 nA          (2 %)
+    dc: dc = 25.2 nA       (42 %), step = 1.2 nA          (2 %)
+    dc: dc = 26.4 nA       (44 %), step = 1.2 nA          (2 %)
+    dc: dc = 27.6 nA       (46 %), step = 1.2 nA          (2 %)
+    dc: dc = 28.8 nA       (48 %), step = 1.2 nA          (2 %)
+    dc: dc = 30 nA         (50 %), step = 1.2 nA          (2 %)
+
+Notice from spectre at dc = 31.2 nA during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(net26) = -588.962 uV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 31.2 nA       (52 %), step = 1.2 nA          (2 %)
+    dc: dc = 32.4 nA       (54 %), step = 1.2 nA          (2 %)
+    dc: dc = 33.6 nA       (56 %), step = 1.2 nA          (2 %)
+    dc: dc = 34.8 nA       (58 %), step = 1.2 nA          (2 %)
+    dc: dc = 36 nA         (60 %), step = 1.2 nA          (2 %)
+    dc: dc = 37.2 nA       (62 %), step = 1.2 nA          (2 %)
+    dc: dc = 38.4 nA       (64 %), step = 1.2 nA          (2 %)
+    dc: dc = 39.6 nA       (66 %), step = 1.2 nA          (2 %)
+    dc: dc = 40.8 nA       (68 %), step = 1.2 nA          (2 %)
+    dc: dc = 42 nA         (70 %), step = 1.2 nA          (2 %)
+    dc: dc = 43.2 nA       (72 %), step = 1.2 nA          (2 %)
+    dc: dc = 44.4 nA       (74 %), step = 1.2 nA          (2 %)
+    dc: dc = 45.6 nA       (76 %), step = 1.2 nA          (2 %)
+    dc: dc = 46.8 nA       (78 %), step = 1.2 nA          (2 %)
+    dc: dc = 48 nA         (80 %), step = 1.2 nA          (2 %)
+    dc: dc = 49.2 nA       (82 %), step = 1.2 nA          (2 %)
+    dc: dc = 50.4 nA       (84 %), step = 1.2 nA          (2 %)
+    dc: dc = 51.6 nA       (86 %), step = 1.2 nA          (2 %)
+    dc: dc = 52.8 nA       (88 %), step = 1.2 nA          (2 %)
+    dc: dc = 54 nA         (90 %), step = 1.2 nA          (2 %)
+    dc: dc = 55.2 nA       (92 %), step = 1.2 nA          (2 %)
+    dc: dc = 56.4 nA       (94 %), step = 1.2 nA          (2 %)
+    dc: dc = 57.6 nA       (96 %), step = 1.2 nA          (2 %)
+    dc: dc = 58.8 nA       (98 %), step = 1.2 nA          (2 %)
+    dc: dc = 60 nA        (100 %), step = 1.2 nA          (2 %)
+Total time required for dc analysis `dc': CPU = 20.5 ms, elapsed = 37.1978 ms.
+Time accumulated: CPU = 153.556 ms, elapsed = 462.285 ms.
+Peak resident memory used = 35.3 Mbytes.
+
+
+Notice from spectre.
+    52 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.

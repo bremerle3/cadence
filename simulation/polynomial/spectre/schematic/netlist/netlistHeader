@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  9 15:33:43 2015
+// Design library name: cse562
+// Design cell name: polynomial
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

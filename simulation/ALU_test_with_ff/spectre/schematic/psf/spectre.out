@@ -1,0 +1,253 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab009.seas.wustl.edu   HostID: 10AC6D03   PID: 10042
+Memory  available: 109.9498 GB  physical: 134.9316 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1597.1    11.9
+              1         0        1     1333.4     8.1
+              2         0        2     1395.3     3.3
+              3         0        3     1599.4     6.2
+              4         0        4     1200.0     4.6
+              5         0        5     1228.1     3.6
+              6         0        6     1232.0     3.2
+              7         0        7     1250.3     4.9
+              8         1        0     1200.4     3.7
+              9         1        1     1395.4     5.0
+             10         1        2     1753.4     3.3
+             11         1        3     1201.2     3.9
+             12         1        4     1288.1     3.7
+             13         1        5     1285.9     5.1
+             14         1        6     1200.0     6.6
+             15         1        7     1209.6     5.6
+
+
+Simulating `input.scs' on linuxlab009.seas.wustl.edu at 5:24:04 AM, Tue Apr 26, 2016 (process id: 10042).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/ALU_test_with_ff/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre2_9154_20 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 10042
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/ALU_test_with_ff/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 107.637 ms, elapsed = 186.877 ms.
+Time accumulated: CPU = 147.206 ms, elapsed = 186.887 ms.
+Peak resident memory used = 29.6 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 49.124 ms, elapsed = 52.7549 ms.
+Time accumulated: CPU = 196.592 ms, elapsed = 239.903 ms.
+Peak resident memory used = 33.2 Mbytes.
+
+Time for EDB Visiting: CPU = 15.867 ms, elapsed = 15.856 ms.
+Time accumulated: CPU = 212.728 ms, elapsed = 256.027 ms.
+Peak resident memory used = 35.2 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 104 nodes:
+        I2.I31.I25.gnd!
+        I2.I31.I24.gnd!
+        I2.I31.I23.gnd!
+        I2.I31.I28.gnd!
+        I2.I31.I29.gnd!
+        Further occurrences of this notice will be suppressed.
+Warning from spectre during heuristic topology check - set topcheck=fixall to fix all floating nodes.
+    WARNING (SPECTRE-7): No DC path from node `I2.I0.I9.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I2.I0.I10.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I2.I0.I11.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I2.I0.I22.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I2.I0.I20.gnd!' to ground.
+        Further occurrences of this warning will be suppressed.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 506
+            bsim3v3 726   
+          capacitor 8     
+            vsource 32    
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    1 notice suppressed.
+    139 warnings suppressed.
+
+Time for parsing: CPU = 8.458 ms, elapsed = 11.236 ms.
+Time accumulated: CPU = 221.412 ms, elapsed = 267.488 ms.
+Peak resident memory used = 36.4 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre2_9154_20, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 1.8 us)
+*************************************************
+Finding DC approximate solution failed. Try again with try_fast_op set to no.
+Matrix is singular (detected at `I2.I28.I19.gnd!').
+Trying `homotopy = gmin' for initial conditions.
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I2.I2.I6.net10) = 30.3427 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 357.031 ms, elapsed = 356.765 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 1.8 us
+    step = 1.8 ns
+    maxstep = 36 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   32      (current)
+                 save   506     (voltage)
+
+    tran: time = 50.5 ns     (2.81 %), step = 8.157 ns     (453 m%)
+    tran: time = 137.8 ns    (7.65 %), step = 18.18 ns     (1.01 %)
+    tran: time = 233.8 ns      (13 %), step = 16.39 ns     (911 m%)
+    tran: time = 316.8 ns    (17.6 %), step = 4.388 ns     (244 m%)
+    tran: time = 406.5 ns    (22.6 %), step = 2.758 ns     (153 m%)
+    tran: time = 495.6 ns    (27.5 %), step = 3.652 ns     (203 m%)
+    tran: time = 587.8 ns    (32.7 %), step = 7.06 ns      (392 m%)
+
+Notice from spectre at time = 610.571 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I2.I24.net32.
+Notice from spectre at time = 615.808 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I2.I24.net32.
+Notice from spectre at time = 626.281 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I2.I24.net32.
+Notice from spectre at time = 638.391 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I2.I24.net32.
+Notice from spectre at time = 650.5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I2.I24.net32.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 677.8 ns    (37.7 %), step = 7.159 ns     (398 m%)
+    tran: time = 766.2 ns    (42.6 %), step = 1.351 ns      (75 m%)
+    tran: time = 856.1 ns    (47.6 %), step = 2.462 ns     (137 m%)
+    tran: time = 950.5 ns    (52.8 %), step = 7.255 ns     (403 m%)
+    tran: time = 1.038 us    (57.7 %), step = 12.12 ns     (673 m%)
+    tran: time = 1.131 us    (62.8 %), step = 12.91 ns     (717 m%)
+    tran: time = 1.215 us    (67.5 %), step = 4.933 ns     (274 m%)
+    tran: time = 1.305 us    (72.5 %), step = 2.146 ns     (119 m%)
+    tran: time = 1.395 us    (77.5 %), step = 2.625 ns     (146 m%)
+    tran: time = 1.488 us    (82.7 %), step = 5.629 ns     (313 m%)
+    tran: time = 1.578 us    (87.7 %), step = 5.462 ns     (303 m%)
+    tran: time = 1.666 us    (92.6 %), step = 1.392 ns    (77.3 m%)
+    tran: time = 1.756 us    (97.5 %), step = 2.07 ns      (115 m%)
+Number of accepted tran steps =             1728
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+          add +cktpreset=sampled on command line for ADC/DAC simulation
+          add +cktpreset=pll on command line for PLL simulation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial condition solution time: CPU = 357.076 ms, elapsed = 356.811 ms.
+Intrinsic tran analysis time:    CPU = 5.49733 s, elapsed = 5.51193 s.
+Total time required for tran analysis `tran': CPU = 5.86378 s, elapsed = 5.88368 s.
+Time accumulated: CPU = 6.21138 s, elapsed = 6.67026 s.
+Peak resident memory used = 58 Mbytes.
+
+
+Notice from spectre.
+    14 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (5:47:18 AM, Tue Apr 26, 2016):
+Time used: CPU = 6.36 s, elapsed = 1.39 ks (23m  14.5s), util. = 456e-03%.
+Time spent in licensing: elapsed = 75.4 ms.
+Peak memory used = 58 Mbytes.
+Simulation started at: 5:24:04 AM, Tue Apr 26, 2016, ended at: 5:47:18 AM, Tue Apr 26, 2016, with elapsed time (wall clock): 1.39 ks (23m  14.5s).
+spectre completes with 0 errors, 6 warnings, and 11 notices.

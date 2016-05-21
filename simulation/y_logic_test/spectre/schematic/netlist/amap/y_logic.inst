@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"N8n N12n N11n N9n N13n N10n" "NCSU_Analog_Parts_nmos4_spectre"
+"P13n P18n P17n P15n P19n P14n" "NCSU_Analog_Parts_pmos4_spectre"
+"A_barv" ":1v"
+"Bv" ":2v"
+"C_barv" ":3v"
+"E_barv" ":4v"
+"Fv" ":5v"
+"Gv" ":6v"
+"Yv" ":7v"

@@ -1,0 +1,10 @@
+
+// Library name: cse463_project
+// Cell name: ALU_to_AC
+// View name: schematic
+subckt ALU_to_AC ACS0 ACS0B ACS1 ACS1B ACS2 ACS2B DR_In\<0\> DR_In\<1\> \
+        DR_In\<2\> DR_In\<3\> DR_In\<4\> DR_In\<5\> DR_In\<6\> DR_In\<7\> \
+        F1 F2 Input_In\<0\> Input_In\<1\> Input_In\<2\> Input_In\<3\> \
+        Input_In\<4\> Input_In\<5\> Input_In\<6\> Input_In\<7\> N0 N0B N1 \
+        N1B Out\<0\> Out\<1\> Out\<2\> Out\<3\> Out\<4\> Out\<5\> Out\<6\> \
+        Out\<7\> S0 S0B S1 S1B S2 S2B inh_inh_bn

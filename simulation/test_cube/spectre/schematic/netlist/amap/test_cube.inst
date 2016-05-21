@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"P22n P21n P15n P14n P11n P10n P5n P3n P2n P0n P1n" "NCSU_Analog_Parts_pmos4_spectre"
+"Inputn Biasn" "NCSU_Analog_Parts_idc_spectre"
+"N15n N12n N6n N5n N3n N1n N2n N0n" "NCSU_Analog_Parts_nmos4_spectre"
+"V0n" "NCSU_Analog_Parts_vdc_spectre"
+"I8n I13n" "squarer"

@@ -1,0 +1,7 @@
+
+// Library name: cse562
+// Cell name: new_op_amp_test
+// View name: schematic
+I0 (net2 net1 net1) new_op_amp
+V0 (net2 0) vsource type=pulse val0=1.45 val1=1.55 period=4u width=2u
+V1 (vdd! 0) vsource type=dc dc=3

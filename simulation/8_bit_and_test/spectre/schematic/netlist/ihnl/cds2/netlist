@@ -1,0 +1,17 @@
+
+// Library name: cse463_project
+// Cell name: 8_bit_and_test
+// View name: schematic
+V7 (MEM 0) vsource type=pulse val0=5 val1=0 period=100n width=50n
+V6 (AC 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V1 (vdd! 0) vsource type=dc dc=5
+C15 (Out0 0) capacitor c=100f m=1
+C14 (Out1 0) capacitor c=100f m=1
+C13 (Out2 0) capacitor c=100f m=1
+C12 (Out3 0) capacitor c=100f m=1
+C7 (Out4 0) capacitor c=100f m=1
+C5 (Out5 0) capacitor c=100f m=1
+C3 (Out6 0) capacitor c=100f m=1
+C1 (Out7 0) capacitor c=100f m=1
+I1 (AC AC AC AC AC AC AC AC MEM MEM MEM MEM MEM MEM MEM MEM Out0 Out1 Out2 \
+        Out3 Out4 Out5 Out6 Out7 0) cse463_project_8_bit_and_schematic

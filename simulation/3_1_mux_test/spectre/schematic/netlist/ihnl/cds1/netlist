@@ -1,0 +1,10 @@
+
+// Library name: cse463_project
+// Cell name: 3_1_mux_test
+// View name: schematic
+I0 (net2 Load net2 S0 S1 0) cse463_project_3_1_mux_schematic
+V2 (Load 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V1 (S0 0) vsource type=pulse val0=0 val1=5 period=600n delay=100n \
+        width=300n
+V0 (S1 0) vsource type=pulse val0=0 val1=5 period=400n width=200n
+V3 (vdd! 0) vsource type=dc dc=5

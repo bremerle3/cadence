@@ -1,0 +1,219 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab007.seas.wustl.edu   HostID: 10AC6B03   PID: 20849
+Memory  available: 41.8898 GB  physical: 134.9316 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1328.5     8.8
+              1         0        1     2085.8     8.4
+              2         0        2     1201.8     9.3
+              3         0        3     1200.0     6.2
+              4         0        4     1254.8     6.5
+              5         0        5     1200.1     5.3
+              6         0        6     1271.2     7.3
+              7         0        7     1203.2     7.4
+              8         1        0     2719.9     9.5
+              9         1        1     2400.0    16.2
+             10         1        2     2725.9    16.3
+             11         1        3     2725.3    11.7
+             12         1        4     2725.4    14.2
+             13         1        5     1200.6    11.6
+             14         1        6     2719.8    12.4
+             15         1        7     1250.8     9.0
+
+
+Simulating `input.scs' on linuxlab007.seas.wustl.edu at 12:21:54 AM, Tue May 10, 2016 (process id: 20849).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/bus_test/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_5319_26 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 20849
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/bus_test/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 119.16 ms, elapsed = 697.666 ms.
+Time accumulated: CPU = 159.093 ms, elapsed = 697.68 ms.
+Peak resident memory used = 29.6 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 39.334 ms, elapsed = 43.133 ms.
+Time accumulated: CPU = 198.71 ms, elapsed = 741.096 ms.
+Peak resident memory used = 32.6 Mbytes.
+
+Time for EDB Visiting: CPU = 4.564 ms, elapsed = 4.43697 ms.
+Time accumulated: CPU = 203.497 ms, elapsed = 745.757 ms.
+Peak resident memory used = 33.5 Mbytes.
+
+
+Warning from spectre during heuristic topology check - set topcheck=fixall to fix all floating nodes.
+    WARNING (SPECTRE-7): No DC path from node `I14.I94.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I14.I93.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I14.I92.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I14.I91.gnd!' to ground.
+    WARNING (SPECTRE-7): No DC path from node `I14.I90.gnd!' to ground.
+        Further occurrences of this warning will be suppressed.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 145
+            bsim3v3 212   
+          capacitor 8     
+            vsource 15    
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    11 warnings suppressed.
+
+Time for parsing: CPU = 3.791 ms, elapsed = 6.84309 ms.
+Time accumulated: CPU = 207.459 ms, elapsed = 752.812 ms.
+Peak resident memory used = 34.4 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_5319_26, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 800 ns)
+*************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(Bus<6>) = 255.27 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 22.933 ms, elapsed = 22.7809 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 800 ns
+    step = 800 ps
+    maxstep = 16 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   15      (current)
+                 save   145     (voltage)
+
+    tran: time = 24.61 ns    (3.08 %), step = 6.643 ns     (830 m%)
+    tran: time = 62.5 ns     (7.81 %), step = 3.084 ns     (386 m%)
+    tran: time = 100 ns      (12.5 %), step = 3.544 ns     (443 m%)
+    tran: time = 150.5 ns    (18.8 %), step = 11.8 ns      (1.47 %)
+    tran: time = 180.1 ns    (22.5 %), step = 2.499 ns     (312 m%)
+    tran: time = 224.4 ns      (28 %), step = 7.702 ns     (963 m%)
+    tran: time = 262.5 ns    (32.8 %), step = 3.187 ns     (398 m%)
+    tran: time = 300 ns      (37.5 %), step = 2.994 ns     (374 m%)
+    tran: time = 342.6 ns    (42.8 %), step = 7.861 ns     (983 m%)
+    tran: time = 380.4 ns    (47.5 %), step = 2.519 ns     (315 m%)
+    tran: time = 424.4 ns    (53.1 %), step = 7.723 ns     (965 m%)
+    tran: time = 462.5 ns    (57.8 %), step = 3.19 ns      (399 m%)
+    tran: time = 500 ns      (62.5 %), step = 3.736 ns     (467 m%)
+    tran: time = 540.8 ns    (67.6 %), step = 11.5 ns      (1.44 %)
+    tran: time = 580.4 ns    (72.6 %), step = 2.536 ns     (317 m%)
+    tran: time = 624.1 ns      (78 %), step = 7.585 ns     (948 m%)
+    tran: time = 662.5 ns    (82.8 %), step = 3.215 ns     (402 m%)
+    tran: time = 700 ns      (87.5 %), step = 3.728 ns     (466 m%)
+    tran: time = 750.5 ns    (93.8 %), step = 12.51 ns     (1.56 %)
+    tran: time = 780.4 ns    (97.6 %), step = 2.537 ns     (317 m%)
+Number of accepted tran steps =             1092
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+          add +cktpreset=sampled on command line for ADC/DAC simulation
+          add +cktpreset=pll on command line for PLL simulation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial condition solution time: CPU = 22.94 ms, elapsed = 22.8231 ms.
+Intrinsic tran analysis time:    CPU = 1.18373 s, elapsed = 1.19717 s.
+Total time required for tran analysis `tran': CPU = 1.2095 s, elapsed = 1.22835 s.
+Time accumulated: CPU = 1.43779 s, elapsed = 2.64246 s.
+Peak resident memory used = 41.5 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (2:46:42 PM, Tue May 10, 2016):
+Time used: CPU = 2.73 s, elapsed = 51.9 ks (14h 24m 48s), util. = 5.26e-03%.
+Time spent in licensing: elapsed = 569 ms.
+Peak memory used = 41.5 Mbytes.
+Simulation started at: 12:21:54 AM, Tue May 10, 2016, ended at: 2:46:42 PM, Tue May 10, 2016, with elapsed time (wall clock): 51.9 ks (14h 24m 48s).
+spectre completes with 0 errors, 6 warnings, and 3 notices.

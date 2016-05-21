@@ -1,0 +1,15 @@
+    I25 (INPR_direct net32 S0B S0 inh_inh_bn) min_tgate
+    I24 (DR_direct net18 S0 S0B inh_inh_bn) min_tgate
+    I23 (DR_COM net18 S0B S0 inh_inh_bn) min_tgate
+    I28 (net18 net26 S1B S1 inh_inh_bn) min_tgate
+    I29 (net19 net27 S1 S1B inh_inh_bn) min_tgate
+    I19 (Adder net20 S0B S0 inh_inh_bn) min_tgate
+    I20 (DM_AC_AND net20 S0 S0B inh_inh_bn) min_tgate
+    I21 (DM_AC_OR net19 S0B S0 inh_inh_bn) min_tgate
+    I22 (DR_AC_XOR net19 S0 S0B inh_inh_bn) min_tgate
+    I27 (net32 net26 S1 S1B inh_inh_bn) min_tgate
+    I31 (net27 Out S2B S2 inh_inh_bn) min_tgate
+    I30 (net20 net27 S1B S1 inh_inh_bn) min_tgate
+    I32 (net26 Out S2 S2B inh_inh_bn) min_tgate
+ends cse463_project_7_1_mux_tgate_schematic
+// End of subcircuit definition.

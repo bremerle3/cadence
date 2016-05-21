@@ -1,0 +1,232 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab001.seas.wustl.edu   HostID: 10AC6503   PID: 10220
+Memory  available: 111.6316 GB  physical: 134.9316 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1990.2     6.2
+              1         0        1     1397.2     4.6
+              2         0        2     1298.2     6.6
+              3         0        3     1200.1     3.8
+              4         0        4     1200.0     3.4
+              5         0        5     1600.1     3.8
+              6         0        6     1286.1     3.1
+              7         0        7     1794.9     3.5
+              8         1        0     1200.1     2.4
+              9         1        1     1270.0     7.0
+             10         1        2     1200.0     6.6
+             11         1        3     1260.3     2.6
+             12         1        4     1200.1     2.5
+             13         1        5     1219.2     2.9
+             14         1        6     1200.0     2.9
+             15         1        7     1600.1     5.8
+
+
+Simulating `input.scs' on linuxlab001.seas.wustl.edu at 4:37:23 AM, Thur Apr 14, 2016 (process id: 10220).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/xor_operation/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre2_28279_14 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 10220
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/xor_operation/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 80.818 ms, elapsed = 166.094 ms.
+Time accumulated: CPU = 110.354 ms, elapsed = 166.1 ms.
+Peak resident memory used = 30.1 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 29.771 ms, elapsed = 30.869 ms.
+Time accumulated: CPU = 140.344 ms, elapsed = 197.187 ms.
+Peak resident memory used = 32.8 Mbytes.
+
+Time for EDB Visiting: CPU = 767 us, elapsed = 539.064 us.
+Time accumulated: CPU = 141.111 ms, elapsed = 197.912 ms.
+Peak resident memory used = 33.2 Mbytes.
+
+
+Warning from spectre during heuristic topology check - set topcheck=fixall to fix all floating nodes.
+    WARNING (SPECTRE-7): No DC path from node `gnd!' to ground.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 11
+            bsim3v3 12    
+            vsource 3     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.485 ms, elapsed = 11.2839 ms.
+Time accumulated: CPU = 143.596 ms, elapsed = 209.365 ms.
+Peak resident memory used = 34.1 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre2_28279_14, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+***********************************************
+Transient Analysis `tran': time = (0 s -> 2 us)
+***********************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(net9) = -26.1392 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 2.569 ms, elapsed = 2.64406 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 us
+    step = 2 ns
+    maxstep = 40 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   11      (voltage)
+
+    tran: time = 58.79 ns    (2.94 %), step = 19.19 ns     (960 m%)
+
+Notice from spectre at time = 114.289 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 125.002 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 146.427 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 173.213 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 173.2 ns    (8.66 %), step = 26.79 ns     (1.34 %)
+
+Notice from spectre at time = 200 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 271.8 ns    (13.6 %), step = 23.9 ns      (1.19 %)
+    tran: time = 373.2 ns    (18.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 471.8 ns    (23.6 %), step = 23.93 ns      (1.2 %)
+    tran: time = 573.2 ns    (28.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 671.9 ns    (33.6 %), step = 23.93 ns      (1.2 %)
+    tran: time = 773.2 ns    (38.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 871.9 ns    (43.6 %), step = 23.93 ns      (1.2 %)
+    tran: time = 973.2 ns    (48.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 1.072 us    (53.6 %), step = 23.93 ns      (1.2 %)
+    tran: time = 1.173 us    (58.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 1.272 us    (63.6 %), step = 23.93 ns      (1.2 %)
+    tran: time = 1.373 us    (68.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 1.472 us    (73.6 %), step = 23.94 ns      (1.2 %)
+    tran: time = 1.573 us    (78.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 1.672 us    (83.6 %), step = 23.94 ns      (1.2 %)
+    tran: time = 1.773 us    (88.7 %), step = 26.79 ns     (1.34 %)
+    tran: time = 1.872 us    (93.6 %), step = 23.94 ns      (1.2 %)
+    tran: time = 1.973 us    (98.7 %), step = 26.79 ns     (1.34 %)
+Number of accepted tran steps =             716
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+          add +cktpreset=sampled on command line for ADC/DAC simulation
+          add +cktpreset=pll on command line for PLL simulation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial condition solution time: CPU = 2.623 ms, elapsed = 2.71606 ms.
+Intrinsic tran analysis time:    CPU = 86.406 ms, elapsed = 128.46 ms.
+Total time required for tran analysis `tran': CPU = 93.243 ms, elapsed = 158.012 ms.
+Time accumulated: CPU = 240.809 ms, elapsed = 550.22 ms.
+Peak resident memory used = 36 Mbytes.
+
+
+Notice from spectre.
+    45 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (2:03:17 PM, Thur Apr 14, 2016):
+Time used: CPU = 1.13 s, elapsed = 34 ks (9h 25m 54s), util. = 3.34e-03%.
+Time spent in licensing: elapsed = 75.6 ms.
+Peak memory used = 39.5 Mbytes.
+Simulation started at: 4:37:23 AM, Thur Apr 14, 2016, ended at: 2:03:17 PM, Thur Apr 14, 2016, with elapsed time (wall clock): 34 ks (9h 25m 54s).
+spectre completes with 0 errors, 2 warnings, and 8 notices.

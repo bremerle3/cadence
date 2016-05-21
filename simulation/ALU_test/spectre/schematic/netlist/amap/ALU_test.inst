@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"I59n" "ALU_top"
+"V24n V23n V22n V21n V20n V19n V18n V17n V16n V15n V14n V13n V12n V11n V10n V8n V7n V5n V4n V3n V2n V1n V9n V6n" "NCSU_Analog_Parts_vpulse_spectre"
+"C10n C9n C8n C7n C6n C5n C4n C3n" "NCSU_Analog_Parts_cap_spectre"
+"I55n I54n I56n" "min_inv"
+"V28n V25n V26n V0n" "NCSU_Analog_Parts_vdc_spectre"

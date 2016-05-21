@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+563_final/test_543/schematic test_543
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

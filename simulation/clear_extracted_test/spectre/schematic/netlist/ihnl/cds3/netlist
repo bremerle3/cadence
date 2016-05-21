@@ -1,0 +1,15 @@
+
+// Library name: cse463_project
+// Cell name: clear_extracted_test
+// View name: schematic
+V5 (Input 0) vsource type=pulse val0=0 val1=5 period=300n delay=112n \
+        width=100n
+V30 (F1 0) vsource type=pulse val0=0 val1=5 period=100n width=50n
+V31 (F2 0) vsource type=pulse val0=0 val1=5 period=100n delay=62.5n \
+        width=25n
+V7 (S0 0) vsource type=pulse val0=5 val1=0 period=2u delay=70n width=1u
+C1 (FF_Out 0) capacitor c=100f m=1
+I0 (FF_Out Input FF_in S0 S0B S0B S0) cse463_project_3_1_mux_alt_extracted
+V0 (vdd! 0) vsource type=dc dc=5
+I5 (FF_in F1 F2 FF_Out) d_flip_flop
+I4 (S0 S0B) min_inv

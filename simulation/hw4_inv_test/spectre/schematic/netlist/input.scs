@@ -1,0 +1,42 @@
+// Generated for: spectre
+// Generated on: Feb 18 16:13:17 2016
+// Design library name: 563_final
+// Design cell name: hw4_inv_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: 563_final
+// Cell name: hw4_inv
+// View name: schematic
+subckt hw4_inv Vin Vout
+    N0 (Vout Vin 0 0) ami06N w=1.95u l=900n as=2.925e-12 ad=2.925e-12 \
+        ps=6.9u pd=6.9u m=1 region=sat
+    P0 (Vout Vin vdd! vdd!) ami06P w=1.95u l=900n as=2.925e-12 \
+        ad=2.925e-12 ps=6.9u pd=6.9u m=1 region=sat
+ends hw4_inv
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: hw4_inv_test
+// View name: schematic
+I0 (net2 net1) hw4_inv
+V1 (net2 0) vsource type=pulse val0=0 val1=0
+V0 (vdd! 0) vsource type=pulse val0=0 val1=5 delay=100.0p
+C0 (net1 0) capacitor c=100f m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=100n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

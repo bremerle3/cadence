@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: min_tgate
+// View name: schematic
+subckt min_tgate IN OUT S SB inh_inh_bn

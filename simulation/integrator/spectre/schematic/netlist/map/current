@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "integrator"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/integrator/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/integrator/schematic" "integrator" )
+( "cse562/proj1_opamp/schematic" "proj1_opamp" )
+ )
+( term
+ )
+( param
+ )
+( "proj1_opamp" "ihnl/cds0/map" )
+( "integrator" "ihnl/cds1/map" )
+ )

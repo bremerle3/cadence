@@ -1,0 +1,32 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "8_bit_xor_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/8_bit_xor_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse463_project/min_inv/schematic" "min_inv" )
+( "cse463_project/8_bit_xor_test/schematic" "cse463_project_8_bit_xor_test_schematic" )
+( "cse463_project/min_xor/schematic" "min_xor" )
+( "cse463_project/8_bit_xor/schematic" "cse463_project_8_bit_xor_schematic" )
+ )
+( term
+ )
+( param
+ )
+( "cse463_project_8_bit_xor_test_schematic" "ihnl/cds3/map" )
+( "min_xor" "ihnl/cds1/map" )
+( "min_inv" "ihnl/cds0/map" )
+( "cse463_project_8_bit_xor_schematic" "ihnl/cds2/map" )
+ )

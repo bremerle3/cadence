@@ -1,0 +1,22 @@
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Simulating `input.scs' on linuxlab010.seas.wustl.edu at 2:36:46 AM, Fri Dec 11, 2015 (process id: 14954).
+H = mpsImport( "spectre" "ipi" "v0.0" ?session "spectre7_1869_101" )
+H->sclSetResultDir( "../psf" )
+H->sclRun( "all" )
+sclCkt0xfe13008 = H->sclGetCircuit(  "" )
+sclParam0xfe13008 = H->sclGetParameter( sclCkt0xfe13008 "nW" )
+H->sclSetAttribute( sclParam0xfe13008 "value" "900n" )
+sclCkt0xfe13008 = H->sclGetCircuit(  "" )
+sclParam0xfe13009 = H->sclGetParameter( sclCkt0xfe13008 "nL" )
+H->sclSetAttribute( sclParam0xfe13009 "value" "600n" )
+sclCkt0xfe13008 = H->sclGetCircuit(  "" )
+sclParam0xfe1300a = H->sclGetParameter( sclCkt0xfe13008 "pW" )
+H->sclSetAttribute( sclParam0xfe1300a "value" "900n" )
+sclCkt0xfe13008 = H->sclGetCircuit(  "" )
+sclParam0xfe1300b = H->sclGetParameter( sclCkt0xfe13008 "pL" )
+H->sclSetAttribute( sclParam0xfe1300b "value" "600n" )
+H->sclSetResultDir( "../psf" )
+H->sclRun( "all" )
+sclCkt0xfe13008 = H->sclGetCircuit(  "" )
+H->sclQuit(  )

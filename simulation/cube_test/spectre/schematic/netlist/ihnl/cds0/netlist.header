@@ -1,0 +1,5 @@
+
+// Library name: cse562
+// Cell name: cube
+// View name: schematic
+subckt cube In Out

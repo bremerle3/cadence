@@ -1,0 +1,14 @@
+CADENCE IHNL01070
+$model
+cse562/latch_no_sym/schematic latch_no_sym
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

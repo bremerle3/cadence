@@ -1,0 +1,6 @@
+    N0 (OUT IN 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (OUT IN vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends inv
+// End of subcircuit definition.

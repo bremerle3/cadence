@@ -1,0 +1,418 @@
+    \+207 (Out\<1\> N0 102 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+206 (Out\<2\> N0 103 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+205 (Out\<3\> N0 104 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+204 (Out\<4\> N0 105 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+203 (Out\<5\> N0 106 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+202 (Out\<6\> N0 107 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+201 (Out\<7\> N0 108 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+200 (Out\<0\> N0 101 32) ami06P w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+199 (101 N1 86 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+198 (102 N1 88 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+197 (103 N1 90 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+196 (104 N1 92 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+195 (105 N1 94 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+194 (106 N1 96 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+193 (107 N1 98 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+192 (108 N1 100 32) ami06P w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+143 (Out\<0\> N0B 101 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+142 (Out\<1\> N0B 102 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+141 (Out\<2\> N0B 103 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+140 (Out\<3\> N0B 104 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+139 (Out\<4\> N0B 105 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+138 (Out\<5\> N0B 106 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+137 (Out\<6\> N0B 107 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+136 (Out\<7\> N0B 108 33) ami06N w=1.8e-06 l=6e-07 as=1.62e-12 \
+        ad=2.7e-12 ps=1.8e-06 pd=4.8e-06 m=1 region=sat
+    \+135 (101 N1B 86 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+134 (102 N1B 88 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+133 (103 N1B 90 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+132 (104 N1B 92 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+131 (105 N1B 94 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+130 (106 N1B 96 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+129 (107 N1B 98 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+128 (108 N1B 100 33) ami06N w=1.8e-06 l=6e-07 as=2.7e-12 ad=1.62e-12 \
+        ps=4.8e-06 pd=1.8e-06 m=1 region=sat
+    \+127 (87 Control_Out1 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+126 (98 97 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+125 (88 87 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+124 (99 Control_Out7 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+123 (89 34 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+122 (100 99 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+121 (90 89 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+120 (91 35 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+119 (92 91 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+118 (93 36 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+117 (94 93 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+116 (95 Control_Out5 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+115 (85 Control_Out0 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+114 (96 95 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+113 (86 85 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+112 (97 Control_Out6 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+111 (Control_Out0 69 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+110 (Control_Out1 70 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+109 (34 71 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+108 (35 72 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+107 (36 73 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+106 (Control_Out5 74 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+105 (Control_Out6 75 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+104 (Control_Out7 76 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+103 (33 Control_Out7 84 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+102 (33 Control_Out0 77 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+101 (33 Control_Out1 78 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+100 (33 34 79 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+99 (33 35 80 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+98 (33 36 81 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+97 (33 Control_Out5 82 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+96 (33 Control_Out6 83 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+95 (81 F1 73 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+94 (82 F1 74 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+93 (83 F1 75 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+92 (84 F1 76 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+91 (77 F1 69 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+90 (78 F1 70 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+89 (79 F1 71 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+88 (80 F1 72 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+87 (70 F2 62 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+86 (71 F2 63 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+85 (72 F2 64 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+84 (73 F2 65 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+83 (74 F2 66 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+82 (75 F2 67 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+81 (76 F2 68 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+80 (69 F2 61 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+79 (61 46 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+78 (62 48 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+77 (63 50 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+76 (64 52 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+75 (65 54 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+74 (66 56 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+73 (67 58 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+72 (68 60 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+71 (33 67 57 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+70 (33 68 59 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+69 (33 61 45 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+68 (33 62 47 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+67 (33 63 49 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+66 (33 64 51 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+65 (33 65 53 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+64 (33 66 55 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+47 (37 S0 111 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+46 (41 S0B 122 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+45 (38 S0 112 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+44 (41 S0 123 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+43 (38 S0B 113 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+42 (42 S0 124 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+41 (38 S0 114 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+40 (42 S0B 125 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+39 (39 S0 115 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+38 (42 S0 126 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+37 (39 S0B 116 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+36 (43 S0 127 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+35 (39 S0 117 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+34 (43 S0B 128 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+33 (40 S0 118 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+32 (43 S0 129 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+31 (40 S0B 119 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+30 (44 S0 130 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+29 (37 S0 109 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+28 (40 S0 120 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+27 (44 S0B 131 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+26 (37 S0B 110 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+25 (41 S0 121 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+24 (44 S0 132 33) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+23 (113 S1 In\<1\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+22 (124 S1 Control_Out5 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=9.9e-13 ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+21 (114 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+20 (125 S1 In\<5\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+19 (115 S1 34 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+18 (126 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+17 (116 S1 In\<2\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+16 (127 S1 Control_Out6 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=9.9e-13 ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+15 (117 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+14 (128 S1 In\<6\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+13 (118 S1 35 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+12 (129 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+11 (119 S1 In\<3\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+10 (130 S1 Control_Out7 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=9.9e-13 ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+9 (109 S1 Control_Out0 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=9.9e-13 ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+8 (120 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+7 (131 S1 In\<7\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+6 (110 S1 In\<0\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+5 (121 S1 36 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+4 (132 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+3 (111 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+2 (122 S1 In\<4\> 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+1 (112 S1 Control_Out1 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=9.9e-13 ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+0 (123 S1B 33 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+63 (46 F2 45 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+62 (42 F1 56 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+61 (37 F1 46 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+60 (58 F2 57 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+59 (48 F2 47 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+58 (43 F1 58 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+57 (38 F1 48 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+56 (60 F2 59 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+55 (50 F2 49 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+54 (44 F1 60 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+53 (39 F1 50 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+52 (52 F2 51 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+51 (40 F1 52 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+50 (54 F2 53 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+49 (41 F1 54 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+48 (56 F2 55 33) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+191 (88 87 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+190 (99 Control_Out7 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+189 (89 34 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+188 (100 99 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+187 (90 89 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+186 (91 35 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+185 (92 91 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+184 (93 36 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+183 (94 93 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+182 (95 Control_Out5 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+181 (85 Control_Out0 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+180 (96 95 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+179 (86 85 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+178 (97 Control_Out6 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+177 (87 Control_Out1 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+176 (98 97 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+175 (Control_Out0 69 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+174 (Control_Out1 70 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+173 (34 71 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+172 (35 72 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+171 (36 73 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+170 (Control_Out5 74 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+169 (Control_Out6 75 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+168 (Control_Out7 76 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+167 (32 Control_Out0 77 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+166 (32 Control_Out1 78 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+165 (32 34 79 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+164 (32 35 80 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+163 (32 36 81 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+162 (32 Control_Out5 82 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+161 (32 Control_Out6 83 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+160 (32 Control_Out7 84 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 \
+        ad=1.71e-12 ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+159 (66 56 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+158 (67 58 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+157 (68 60 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+156 (61 46 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+155 (62 48 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+154 (63 50 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+153 (64 52 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+152 (65 54 32 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+151 (32 63 49 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+150 (32 64 51 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+149 (32 65 53 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+148 (32 66 55 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+147 (32 67 57 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+146 (32 68 59 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+145 (32 61 45 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+144 (32 62 47 32) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends IR_reg
+// End of subcircuit definition.

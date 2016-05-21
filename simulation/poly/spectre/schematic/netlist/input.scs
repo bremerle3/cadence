@@ -1,0 +1,60 @@
+// Generated for: spectre
+// Generated on: Nov  2 14:13:27 2015
+// Design library name: cse562
+// Design cell name: poly
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse562
+// Cell name: i_squared
+// View name: schematic
+subckt i_squared I_In I_Out Ib_In
+    N1 (I_Out I_Out 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N0 (net15 Ib_In 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N4 (net7 net7 net10 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N5 (net10 net10 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N6 (vdd! net7 net15 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N7 (vdd! net15 I_Out 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    P0 (net7 I_In vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends i_squared
+// End of subcircuit definition.
+
+// Library name: cse562
+// Cell name: poly
+// View name: schematic
+I0 (vdd! net06 net1) i_squared
+P1 (0 net06 vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+P0 (net3 net3 vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+N0 (net1 net1 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+V2 (vdd! 0) vsource type=dc dc=3
+I5 (net3 0) isource type=dc m=1
+I4 (vdd! net1) isource type=dc dc=1n m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc dev=I5 param=dc start=0 stop=5n oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save I5:sink N0:d P1:d 
+saveOptions options save=allpub

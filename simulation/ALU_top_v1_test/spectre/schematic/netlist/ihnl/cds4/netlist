@@ -1,0 +1,10 @@
+    I51 (F1 F2 In3 Out3 S0 S1 inh_inh_bn) single_muxed_ff
+    I52 (F1 F2 In2 Out2 S0 S1 inh_inh_bn) single_muxed_ff
+    I54 (F1 F2 In6 Out6 S0 S1 inh_inh_bn) single_muxed_ff
+    I53 (F1 F2 In7 Out7 S0 S1 inh_inh_bn) single_muxed_ff
+    I44 (F1 F2 In1 Out1 S0 S1 inh_inh_bn) single_muxed_ff
+    I43 (F1 F2 In0 Out0 S0 S1 inh_inh_bn) single_muxed_ff
+    I56 (F1 F2 In4 Out4 S0 S1 inh_inh_bn) single_muxed_ff
+    I55 (F1 F2 In5 Out5 S0 S1 inh_inh_bn) single_muxed_ff
+ends cse463_project_8_bit_reg_v1_schematic
+// End of subcircuit definition.

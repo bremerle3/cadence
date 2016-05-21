@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"cse562\" \"simple_latch_test\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Dec 10 22:56:59 2015"
+"title" ""
+"analysisList" "()"
+END

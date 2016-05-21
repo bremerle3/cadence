@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: d_flip_flop
+// View name: schematic
+subckt d_flip_flop D F1 F2 Q

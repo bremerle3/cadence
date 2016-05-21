@@ -1,0 +1,2 @@
+"563_final.ff_inv.schematic.termorder" (("in" "in_bar") ("in" "in_bar"))
+"563_final.d_flop.schematic.termorder" (("D" "Q" "Q_bar" "clk" "clk_bar") ("D" "Q" "Q_bar" "clk" "clk_bar"))

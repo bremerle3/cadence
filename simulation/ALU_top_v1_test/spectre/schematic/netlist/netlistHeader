@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 26 07:31:33 2016
+// Design library name: cse463_project
+// Design cell name: ALU_top_v1_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

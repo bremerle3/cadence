@@ -1,0 +1,5 @@
+
+// Library name: cse562
+// Cell name: comparator
+// View name: schematic
+subckt comparator V\+ V\- Vout

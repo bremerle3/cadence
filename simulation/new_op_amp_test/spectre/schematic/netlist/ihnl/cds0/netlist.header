@@ -1,0 +1,5 @@
+
+// Library name: cse562
+// Cell name: new_op_amp
+// View name: schematic
+subckt new_op_amp Vin\+ Vin\- Vout

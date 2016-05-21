@@ -1,0 +1,20 @@
+    M3 (Out RegBar net11 vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net11 Other vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out Reg net10 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net10 OtherBar vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    I6 (Other OtherBar) min_inv
+    I5 (Reg RegBar) min_inv
+    M7 (net19 RegBar 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M6 (Out OtherBar net19 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net24 Reg 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (Out Other net24 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_xor
+// End of subcircuit definition.

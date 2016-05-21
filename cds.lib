@@ -1,0 +1,30 @@
+# File Created by Leo Bremer at Wed Apr 13 15:40:28 2016
+# assisted by CdsLibEditor
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+UNDEFINE basic
+DEFINE basic $CDK_DIR/lib/basic
+DEFINE NCSU_Analog_Parts $CDK_DIR/lib/NCSU_Analog_Parts
+DEFINE NCSU_Digital_Parts $CDK_DIR/lib/NCSU_Digital_Parts
+#DEFINE      MOSIS_Layout_Test       $CDK_DIR/lib/MOSIS_Layout_Test
+DEFINE NCSU_TechLib_ami06 $CDK_DIR/lib/NCSU_TechLib_ami06
+DEFINE NCSU_TechLib_ami16 $CDK_DIR/lib/NCSU_TechLib_ami16
+DEFINE NCSU_TechLib_hp06 $CDK_DIR/lib/NCSU_TechLib_hp06
+DEFINE NCSU_TechLib_tsmc02 $CDK_DIR/lib/NCSU_TechLib_tsmc02
+DEFINE NCSU_TechLib_tsmc02d $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+DEFINE NCSU_TechLib_tsmc03 $CDK_DIR/lib/NCSU_TechLib_tsmc03
+DEFINE NCSU_TechLib_tsmc03d $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+DEFINE NCSU_TechLib_tsmc04_4M2P $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+#DEFINE basic_cds $IC/tools/dfII/etc/cdslib/basic
+
+DEFINE cse562 /home/warehouse/lbremer/cadence/cse562
+#Removed by ddDeleteObj: DEFINE post_cse562 /home/warehouse/lbremer/cadence/post_cse562
+DEFINE post_cse562 /home/warehouse/lbremer/cadence/post_cse562
+DEFINE post_cse562 /home/warehouse/lbremer/cadence/post_cse562
+#Removed by ddDeleteObj: DEFINE CSE563 /home/warehouse/lbremer/cadence/CSE563
+DEFINE cse563 /home/warehouse/lbremer/cadence/cse563
+#Removed by ddDeleteObj: DEFINE 563_layout_lib /home/warehouse/lbremer/cadence/563_layout_lib
+DEFINE 563_layouts /home/warehouse/lbremer/cadence/563_layouts
+#Removed by ddDeleteObj: DEFINE cse563_06 /home/warehouse/lbremer/cadence/cse563_06
+DEFINE cse563_06 /home/warehouse/lbremer/cadence/cse563_06
+DEFINE 563_final /home/warehouse/lbremer/cadence/563_final
+DEFINE cse463_project /home/warehouse/lbremer/cadence/cse463_project

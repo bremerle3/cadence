@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"I14n" "IR_reg"
+"V31n V30n V7n V6n V5n V4n V3n V2n V1n V0n" "NCSU_Analog_Parts_vpulse_spectre"
+"V11n V9n V25n V26n V8n" "NCSU_Analog_Parts_vdc_spectre"
+"I55n I54n" "min_inv"
+"C10n C9n C8n C7n C6n C5n C4n C3n" "NCSU_Analog_Parts_cap_spectre"

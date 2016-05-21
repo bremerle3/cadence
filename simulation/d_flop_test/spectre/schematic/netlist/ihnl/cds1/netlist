@@ -1,0 +1,26 @@
+    N10 (net15 clk_bar net16 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N4 (D clk net7 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N11 (Q clk net16 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N5 (net15 clk_bar net7 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N9 (Q Q_bar 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N8 (Q_bar net16 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N1 (net15 net10 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N0 (net10 net7 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    P5 (Q Q_bar vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    P4 (Q_bar net16 vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    P1 (net15 net10 vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    P0 (net10 net7 vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+ends d_flop
+// End of subcircuit definition.

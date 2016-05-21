@@ -1,0 +1,5 @@
+
+// Library name: cse562
+// Cell name: simple_latch
+// View name: schematic
+subckt simple_latch CLK D Q

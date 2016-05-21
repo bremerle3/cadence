@@ -1,0 +1,9 @@
+
+// Library name: 563_final
+// Cell name: cmos_nand_test
+// View name: schematic
+I6 (net1 net3 net2) cmos_nand
+C0 (net2 0) capacitor c=1f m=1
+V2 (net3 0) vsource type=dc dc=Vin2
+V0 (vdd! 0) vsource type=dc dc=5
+V1 (net1 0) vsource type=dc dc=Vin1

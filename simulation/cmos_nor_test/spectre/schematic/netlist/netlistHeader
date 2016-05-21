@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar  8 14:58:11 2016
+// Design library name: 563_final
+// Design cell name: cmos_nor_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

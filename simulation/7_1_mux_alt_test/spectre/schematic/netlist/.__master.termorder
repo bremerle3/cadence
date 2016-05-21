@@ -1,0 +1,2 @@
+"cse463_project.min_inv.schematic.termorder" (("In" "out") ("In" "out"))
+"cse463_project.7_1_mux_alt.schematic.termorder" (("Adder" "DM_AC_AND" "DM_AC_OR" "DR_AC_XOR" "DR_COM" "DR_direct" "INPR_direct" "Out" "S0" "S0B" "S1" "S1B" "S2" "S2B" "[@inh_bn:%:gnd!]") ("Adder" "DM_AC_AND" "DM_AC_OR" "DR_AC_XOR" "DR_COM" "DR_direct" "INPR_direct" "Out" "S0" "S0B" "S1" "S1B" "S2" "S2B" "[@inh_bn:%:gnd!]"))

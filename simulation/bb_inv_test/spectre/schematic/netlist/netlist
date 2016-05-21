@@ -1,0 +1,19 @@
+
+// Library name: 563_final
+// Cell name: ff_inv
+// View name: schematic
+subckt ff_inv in in_bar
+    N0 (in_bar in 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    P0 (in_bar in vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+ends ff_inv
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: bb_inv_test
+// View name: schematic
+I12 (net2 net03) ff_inv
+V1 (net2 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (net03 0) capacitor c=100f m=1

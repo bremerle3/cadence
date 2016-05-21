@@ -1,0 +1,97 @@
+;;;;;;;;;;;;;;;;
+;
+; .cdslocal local definitions
+;
+;;;;;;;;;;;;;;;;
+
+models = '("ami06N.m" "ami06P.m")
+model_path = strcat( getShellEnvVar("CDK_DIR") "/models/spectre/nom/")
+
+envSetVal( "spectre.envOpts" "modelFiles" 'string apply('strcat mapcar( 'lambda( (x) strcat(model_path x " ")) models)))
+
+;editor = "xterm -geometry 80x40+100+100 -e gedit"
+;editor = "xterm -e emacs"
+editor = "gedit"
+
+; Lets user overwrite skill function names
+sstatus(writeProtect nil)
+
+; Make shift-rightclick mirror a sch instance while moving or copying
+; MAC 6-25-2002
+;loadContext(prependInstallPath("etc/context/schematic.cxt"))
+
+;schSetCmdOption(schCreateInstForm 'rotate list("t") 1 "Rotate 90")
+;schSetCmdOption(schStretchForm 'rotate list("t") 1 "Rotate 90")
+;schSetCmdOption(schCopyForm 'rotate list("t") 1 "Rotate 90")
+;schSetCmdOption(schMoveForm 'rotate list("t") 1 "Rotate 90")
+;schSetCmdOption(schCreatePinForm 'rotate list("t") 1 "Rotate 90")
+
+;schSetCmdOption(schCreateInstForm 'sideways list("t") 2 "Flip Horizontal")
+;schSetCmdOption(schStretchForm 'sideways list("t") 2 "Flip Horizontal")
+;schSetCmdOption(schCopyForm 'sideways list("t") 2 "Flip Horizontal")
+;schSetCmdOption(schMoveForm 'sideways list("t") 2 "Flip Horizontal")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;  Setup good bindkeys
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Define bind keys for Schematic, Layout, and Symbol editors
+; The 'samples' directory is in /cadence/Cadence/tools/dfII/
+;load( prependInstallPath( "samples/local/schBindKeys.il" ) )
+;load( prependInstallPath( "samples/local/leBindKeys.il" ) )
+
+; Not sure what R1,R2,R3 are, but they might be keypad 1,2,3
+; Sets R1 key to display selected set fixed menu
+hiSetBindKey("Layout" "<Key>R1" "leOpenFixedSelSet()")
+; Sets R2 key to display item fixed menu
+hiSetBindKey("Layout" "<Key>R2" "leOpenFixedItem()")
+; Sets R3 key to display symbolic fixed menu
+hiSetBindKey("Layout" "<Key>R3" "hiDisplayForm(SymUIForm)")
+
+; double-click the 1st mouse button to deselect everything
+; (JVV 12-18-01)
+hiSetBindKey("Layout" "None<Btn1Down>(2)" "geDeselectAllFig()");
+; I like the Esc key as deselect all
+; (MAC 6-16-03)
+hiSetBindKey("Layout" "<Key>Escape"	"geDeselectAllFig()");
+
+; Setup the same zoom-in/zoom-out keys in layout as for schematic
+; MAC 9-16-99
+hiSetBindKey("Layout" "<Key>[" "hiZoomRelativeScale(hiGetCurrentWindow() 0.8)")
+hiSetBindKey("Layout" "<Key>]" "hiZoomRelativeScale(hiGetCurrentWindow() 1.25)")
+
+; Setup the same move,stretch keys in symbol as for schematic
+; MAC 1-10-02
+hiSetBindKey("Symbol" "<Key>s" "schHiSymStretch()")
+hiSetBindKey("Symbol" "<Key>m" "schHiMove()")
+
+; Setup the same push-in/pop-out keys in layout as for schematic
+; MAC 3-27-2000
+hiSetBindKey("Layout" "Shift<Key>e" "leHiDescend()")
+hiSetBindKey("Layout" "Ctrl<Key>e" "geReturn()")
+
+; One key-stroke DRC! MAC 9-16-99
+hiSetBindKey("Layout" "<Key>h" "ivDRCRun()")
+
+; Map Layout layers to number keys (JVV 12-18-01)
+hiSetBindKey("Layout" "<Key>1" "leiMouseSetEntryLayer(9)"); Metal1
+hiSetBindKey("Layout" "Ctrl<Key>1" "leiMouseSetEntryLayer(13)"); Via
+hiSetBindKey("Layout" "<Key>2" "leiMouseSetEntryLayer(10)"); Metal2
+hiSetBindKey("Layout" "Ctrl<Key>2" "leiMouseSetEntryLayer(14)"); Via2
+hiSetBindKey("Layout" "<Key>3" "leiMouseSetEntryLayer(11)"); Metal3
+
+hiSetBindKey("Layout" "<Key>4" "leiMouseSetEntryLayer(2)") ; Active
+hiSetBindKey("Layout" "Ctrl<Key>4" "leiMouseSetEntryLayer(12)") ;ActiveContact
+hiSetBindKey("Layout"  "<Key>5" "leiMouseSetEntryLayer(5)") ; Nselect
+hiSetBindKey("Layout" "<Key>6" "leiMouseSetEntryLayer(6)") ; Pselect
+hiSetBindKey("Layout" "<Key>7" "leiMouseSetEntryLayer(7)") ; Poly1
+hiSetBindKey("Layout" "<Key>8" "leiMouseSetEntryLayer(1)") ; Nwell
+;hiSetBindKey("Layout" "<Key>9" "leiMouseSetEntryLayer(12)"); Poly2
+;hiSetBindKey("Layout" "Ctrl<Key>9" "leiMouseSetEntryLayer(13)"); Poly2Contact
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+

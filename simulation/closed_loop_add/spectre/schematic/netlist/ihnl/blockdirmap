@@ -1,0 +1,20 @@
+CADENCE IHNL010718
+
+cse463_project min_inv schematic cds0
+cse463_project d_flip_flop schematic cds1
+cse463_project 3_1_mux schematic cds2
+cse463_project single_muxed_ff schematic cds3
+cse463_project 8_bit_reg_v1 schematic cds4
+cse463_project Adder_2 schematic cds5
+cse463_project Adder_2_8bits schematic cds6
+cse463_project min_and schematic cds7
+cse463_project 8_bit_and schematic cds8
+cse463_project min_xor schematic cds9
+cse463_project 8_bit_xor schematic cds10
+cse463_project min_or schematic cds11
+cse463_project 8_bit_or schematic cds12
+cse463_project 8_bit_com schematic cds13
+cse463_project min_tgate schematic cds14
+cse463_project 7_1_mux_tgate schematic cds15
+cse463_project ALU_top schematic cds16
+cse463_project closed_loop_add schematic cds17

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Feb  4 15:26:52 2016
+// Design library name: cse563
+// Design cell name: pmos_threshold
+// Design view name: schematic
+simulator lang=spectre
+global 0

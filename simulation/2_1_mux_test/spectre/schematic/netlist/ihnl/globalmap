@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+563_final/2_1_mux/schematic _sub0
+563_final/2_1_mux_test/schematic _sub1
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

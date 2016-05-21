@@ -1,0 +1,43 @@
+// Generated for: spectre
+// Generated on: Feb 13 16:32:48 2016
+// Design library name: 563_final
+// Design cell name: inv_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: 563_final
+// Cell name: inv
+// View name: schematic
+subckt inv_schematic Vin Vout
+    N0 (Vout Vin 0 0) ami06N w=900n l=900n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (Vout Vin vdd! vdd!) ami06P w=3.3u l=900n as=4.95e-12 ad=4.95e-12 \
+        ps=9.6u pd=9.6u m=1 region=sat
+ends inv_schematic
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: inv_test
+// View name: schematic
+I0 (net1 net2) inv_schematic
+V1 (net1 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (net2 0) capacitor c=1p m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc dev=V1 param=dc start=0 stop=5 oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

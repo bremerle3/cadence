@@ -1,0 +1,8 @@
+
+// Library name: cse562
+// Cell name: d_ff_test
+// View name: schematic
+I0 (net2 net3 net4) simple_latch
+V0 (vdd! 0) vsource type=dc dc=3
+V2 (net3 0) vsource type=pulse val0=0 val1=3 period=24u width=12u
+V1 (net2 0) vsource type=pulse val0=0 val1=3 period=4u width=2u

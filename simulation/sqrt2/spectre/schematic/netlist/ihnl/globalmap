@@ -1,0 +1,15 @@
+CADENCE IHNL01070
+$model
+cse562/sqrt2/schematic sqrt2
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+I_o I_o
+pL pL
+pW pW
+nL nL
+$endparam

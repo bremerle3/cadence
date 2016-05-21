@@ -1,0 +1,385 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Mar  8 14:58:10 2016"
+"date" "Mar  8 14:58:10 2016"
+"simulator" "spectre"
+"netlistDir" "../netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("Vin1")
+)
+"Vin1=0" "runObject" (
+("")
+"Root"
+("Vin2")
+) PROP(
+ "Vin1" 0.000000e+00
+)
+
+"Vin1=0,Vin2=0/psf" "runObject" (
+(
+"../Vin1=0,Vin2=0/psf/logFile"
+"../Vin1=0,Vin2=0/psf/artistLogFile"
+)
+"Vin1=0"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=0,Vin2=0"
+ "Vin2" 0.000000e+00
+)
+
+"Vin1=0,Vin2=1.25/psf" "runObject" (
+(
+"../Vin1=0,Vin2=1.25/psf/logFile"
+"../Vin1=0,Vin2=1.25/psf/artistLogFile"
+)
+"Vin1=0"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=0,Vin2=1.25"
+ "Vin2" 1.250000e+00
+)
+
+"Vin1=0,Vin2=2.5/psf" "runObject" (
+(
+"../Vin1=0,Vin2=2.5/psf/logFile"
+"../Vin1=0,Vin2=2.5/psf/artistLogFile"
+)
+"Vin1=0"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=0,Vin2=2.5"
+ "Vin2" 2.500000e+00
+)
+
+"Vin1=0,Vin2=3.75/psf" "runObject" (
+(
+"../Vin1=0,Vin2=3.75/psf/logFile"
+"../Vin1=0,Vin2=3.75/psf/artistLogFile"
+)
+"Vin1=0"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=0,Vin2=3.75"
+ "Vin2" 3.750000e+00
+)
+
+"Vin1=0,Vin2=5/psf" "runObject" (
+(
+"../Vin1=0,Vin2=5/psf/logFile"
+"../Vin1=0,Vin2=5/psf/artistLogFile"
+)
+"Vin1=0"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=0,Vin2=5"
+ "Vin2" 5.000000e+00
+)
+
+"Vin1=1.25" "runObject" (
+("")
+"Root"
+("Vin2")
+) PROP(
+ "Vin1" 1.250000e+00
+)
+
+"Vin1=1.25,Vin2=0/psf" "runObject" (
+(
+"../Vin1=1.25,Vin2=0/psf/logFile"
+"../Vin1=1.25,Vin2=0/psf/artistLogFile"
+)
+"Vin1=1.25"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=1.25,Vin2=0"
+ "Vin2" 0.000000e+00
+)
+
+"Vin1=1.25,Vin2=1.25/psf" "runObject" (
+(
+"../Vin1=1.25,Vin2=1.25/psf/logFile"
+"../Vin1=1.25,Vin2=1.25/psf/artistLogFile"
+)
+"Vin1=1.25"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=1.25,Vin2=1.25"
+ "Vin2" 1.250000e+00
+)
+
+"Vin1=1.25,Vin2=2.5/psf" "runObject" (
+(
+"../Vin1=1.25,Vin2=2.5/psf/logFile"
+"../Vin1=1.25,Vin2=2.5/psf/artistLogFile"
+)
+"Vin1=1.25"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=1.25,Vin2=2.5"
+ "Vin2" 2.500000e+00
+)
+
+"Vin1=1.25,Vin2=3.75/psf" "runObject" (
+(
+"../Vin1=1.25,Vin2=3.75/psf/logFile"
+"../Vin1=1.25,Vin2=3.75/psf/artistLogFile"
+)
+"Vin1=1.25"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=1.25,Vin2=3.75"
+ "Vin2" 3.750000e+00
+)
+
+"Vin1=1.25,Vin2=5/psf" "runObject" (
+(
+"../Vin1=1.25,Vin2=5/psf/logFile"
+"../Vin1=1.25,Vin2=5/psf/artistLogFile"
+)
+"Vin1=1.25"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=1.25,Vin2=5"
+ "Vin2" 5.000000e+00
+)
+
+"Vin1=2.5" "runObject" (
+("")
+"Root"
+("Vin2")
+) PROP(
+ "Vin1" 2.500000e+00
+)
+
+"Vin1=2.5,Vin2=0/psf" "runObject" (
+(
+"../Vin1=2.5,Vin2=0/psf/logFile"
+"../Vin1=2.5,Vin2=0/psf/artistLogFile"
+)
+"Vin1=2.5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=2.5,Vin2=0"
+ "Vin2" 0.000000e+00
+)
+
+"Vin1=2.5,Vin2=1.25/psf" "runObject" (
+(
+"../Vin1=2.5,Vin2=1.25/psf/logFile"
+"../Vin1=2.5,Vin2=1.25/psf/artistLogFile"
+)
+"Vin1=2.5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=2.5,Vin2=1.25"
+ "Vin2" 1.250000e+00
+)
+
+"Vin1=2.5,Vin2=2.5/psf" "runObject" (
+(
+"../Vin1=2.5,Vin2=2.5/psf/logFile"
+"../Vin1=2.5,Vin2=2.5/psf/artistLogFile"
+)
+"Vin1=2.5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=2.5,Vin2=2.5"
+ "Vin2" 2.500000e+00
+)
+
+"Vin1=2.5,Vin2=3.75/psf" "runObject" (
+(
+"../Vin1=2.5,Vin2=3.75/psf/logFile"
+"../Vin1=2.5,Vin2=3.75/psf/artistLogFile"
+)
+"Vin1=2.5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=2.5,Vin2=3.75"
+ "Vin2" 3.750000e+00
+)
+
+"Vin1=2.5,Vin2=5/psf" "runObject" (
+(
+"../Vin1=2.5,Vin2=5/psf/logFile"
+"../Vin1=2.5,Vin2=5/psf/artistLogFile"
+)
+"Vin1=2.5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=2.5,Vin2=5"
+ "Vin2" 5.000000e+00
+)
+
+"Vin1=3.75" "runObject" (
+("")
+"Root"
+("Vin2")
+) PROP(
+ "Vin1" 3.750000e+00
+)
+
+"Vin1=3.75,Vin2=0/psf" "runObject" (
+(
+"../Vin1=3.75,Vin2=0/psf/logFile"
+"../Vin1=3.75,Vin2=0/psf/artistLogFile"
+)
+"Vin1=3.75"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=3.75,Vin2=0"
+ "Vin2" 0.000000e+00
+)
+
+"Vin1=3.75,Vin2=1.25/psf" "runObject" (
+(
+"../Vin1=3.75,Vin2=1.25/psf/logFile"
+"../Vin1=3.75,Vin2=1.25/psf/artistLogFile"
+)
+"Vin1=3.75"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=3.75,Vin2=1.25"
+ "Vin2" 1.250000e+00
+)
+
+"Vin1=3.75,Vin2=2.5/psf" "runObject" (
+(
+"../Vin1=3.75,Vin2=2.5/psf/logFile"
+"../Vin1=3.75,Vin2=2.5/psf/artistLogFile"
+)
+"Vin1=3.75"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=3.75,Vin2=2.5"
+ "Vin2" 2.500000e+00
+)
+
+"Vin1=3.75,Vin2=3.75/psf" "runObject" (
+(
+"../Vin1=3.75,Vin2=3.75/psf/logFile"
+"../Vin1=3.75,Vin2=3.75/psf/artistLogFile"
+)
+"Vin1=3.75"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=3.75,Vin2=3.75"
+ "Vin2" 3.750000e+00
+)
+
+"Vin1=3.75,Vin2=5/psf" "runObject" (
+(
+"../Vin1=3.75,Vin2=5/psf/logFile"
+"../Vin1=3.75,Vin2=5/psf/artistLogFile"
+)
+"Vin1=3.75"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=3.75,Vin2=5"
+ "Vin2" 5.000000e+00
+)
+
+"Vin1=5" "runObject" (
+("")
+"Root"
+("Vin2")
+) PROP(
+ "Vin1" 5.000000e+00
+)
+
+"Vin1=5,Vin2=0/psf" "runObject" (
+(
+"../Vin1=5,Vin2=0/psf/logFile"
+"../Vin1=5,Vin2=0/psf/artistLogFile"
+)
+"Vin1=5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=5,Vin2=0"
+ "Vin2" 0.000000e+00
+)
+
+"Vin1=5,Vin2=1.25/psf" "runObject" (
+(
+"../Vin1=5,Vin2=1.25/psf/logFile"
+"../Vin1=5,Vin2=1.25/psf/artistLogFile"
+)
+"Vin1=5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=5,Vin2=1.25"
+ "Vin2" 1.250000e+00
+)
+
+"Vin1=5,Vin2=2.5/psf" "runObject" (
+(
+"../Vin1=5,Vin2=2.5/psf/logFile"
+"../Vin1=5,Vin2=2.5/psf/artistLogFile"
+)
+"Vin1=5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=5,Vin2=2.5"
+ "Vin2" 2.500000e+00
+)
+
+"Vin1=5,Vin2=3.75/psf" "runObject" (
+(
+"../Vin1=5,Vin2=3.75/psf/logFile"
+"../Vin1=5,Vin2=3.75/psf/artistLogFile"
+)
+"Vin1=5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=5,Vin2=3.75"
+ "Vin2" 3.750000e+00
+)
+
+"Vin1=5,Vin2=5/psf" "runObject" (
+(
+"../Vin1=5,Vin2=5/psf/logFile"
+"../Vin1=5,Vin2=5/psf/artistLogFile"
+)
+"Vin1=5"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../Vin1=5,Vin2=5"
+ "Vin2" 5.000000e+00
+)
+
+END

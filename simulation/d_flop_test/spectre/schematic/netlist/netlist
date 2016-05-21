@@ -1,0 +1,43 @@
+
+// Library name: 563_final
+// Cell name: d_flop
+// View name: schematic
+subckt d_flop D Q Q_bar clk clk_bar
+    N10 (net15 clk_bar net16 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N4 (D clk net7 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N11 (Q clk net16 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N5 (net15 clk_bar net7 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N9 (Q Q_bar 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N8 (Q_bar net16 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N1 (net15 net10 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    N0 (net10 net7 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    P5 (Q Q_bar vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    P4 (Q_bar net16 vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    P1 (net15 net10 vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+    P0 (net10 net7 vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+ends d_flop
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: d_flop_test
+// View name: schematic
+I6 (net2 net5 net6 net3 net4) d_flop
+V3 (net4 0) vsource type=pulse val0=0 val1=5 period=2u delay=1.25u \
+        width=500.0n
+V2 (net3 0) vsource type=pulse val0=0 val1=5 period=2u width=1u
+V0 (net2 0) vsource type=pulse val0=0 val1=5 period=8u
+V1 (vdd! 0) vsource type=dc dc=5
+C1 (net5 0) capacitor c=100f m=1
+C0 (net6 0) capacitor c=100f m=1

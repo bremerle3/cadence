@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "poly_final_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/poly_final_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/poly_final_test/schematic" "poly_final_test" )
+( "cse562/squarer/schematic" "squarer" )
+ )
+( term
+ )
+( param
+ )
+( "poly_final_test" "ihnl/cds1/map" )
+( "squarer" "ihnl/cds0/map" )
+ )

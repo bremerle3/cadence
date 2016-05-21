@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 24 12:11:31 2016
+// Design library name: 563_final
+// Design cell name: 2_1_mux_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

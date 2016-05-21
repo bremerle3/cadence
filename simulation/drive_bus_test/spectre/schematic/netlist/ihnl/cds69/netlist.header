@@ -1,0 +1,7 @@
+
+// Library name: cse463_project
+// Cell name: 8_bit_bus_inverter
+// View name: schematic
+subckt cse463_project_8_bit_bus_inverter_schematic F1 F2 In\<0\> In\<1\> \
+        In\<2\> In\<3\> In\<4\> In\<5\> In\<6\> In\<7\> Out0 Out1 Out2 \
+        Out3 Out4 Out5 Out6 Out7 inh_inh_bn

@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"V14n V15n V16n V4n V2n V1n V17n V18n V20n V19n" "NCSU_Analog_Parts_vpulse_spectre"
+"C0n" "NCSU_Analog_Parts_cap_spectre"
+"V3n" "NCSU_Analog_Parts_vdc_spectre"
+"I0n" "cse463_project_7_1_mux_tgate_schematic"
+"I7n I6n I8n" "min_inv"

@@ -1,0 +1,6 @@
+    N0 (in_bar in 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    P0 (in_bar in vdd! vdd!) ami06P w=1.2u l=600n as=1.8e-12 ad=1.8e-12 \
+        ps=5.4u pd=5.4u m=1 region=sat
+ends ff_inv
+// End of subcircuit definition.

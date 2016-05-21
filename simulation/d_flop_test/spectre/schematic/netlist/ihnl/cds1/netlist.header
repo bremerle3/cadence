@@ -1,0 +1,5 @@
+
+// Library name: 563_final
+// Cell name: d_flop
+// View name: schematic
+subckt d_flop D Q Q_bar clk clk_bar

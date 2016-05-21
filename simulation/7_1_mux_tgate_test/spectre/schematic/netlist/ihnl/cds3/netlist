@@ -1,0 +1,21 @@
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_tgate_test
+// View name: schematic
+V14 (IN0 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V15 (IN1 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V16 (IN2 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V4 (S0 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V2 (S1 0) vsource type=pulse val0=5 val1=0 period=400n width=200n
+V1 (S2 0) vsource type=pulse val0=5 val1=0 period=800n width=400n
+V17 (IN3 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V18 (IN4 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V20 (IN6 0) vsource type=pulse val0=5 val1=5 period=400n width=200n
+V19 (IN5 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+C0 (OUT 0) capacitor c=1f m=1
+V3 (vdd! 0) vsource type=dc dc=5
+I0 (IN0 IN1 IN2 IN3 IN4 IN5 IN6 OUT S0 net14 S1 net022 S2 net027 0) \
+        cse463_project_7_1_mux_tgate_schematic
+I7 (S1 net022) min_inv
+I6 (S0 net14) min_inv
+I8 (S2 net027) min_inv

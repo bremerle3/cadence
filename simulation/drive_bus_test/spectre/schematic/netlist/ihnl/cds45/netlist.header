@@ -1,0 +1,6 @@
+
+// Library name: cse463_project
+// Cell name: 5_1_mux
+// View name: schematic
+subckt cse463_project_5_1_mux_schematic Hold Load Out S0 S0B S1 S1B S2 S2B \
+        ShiftL ShiftR inh_inh_bn

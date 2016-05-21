@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Dec 10 18:25:20 2015
+// Design library name: cse562
+// Design cell name: input_stage
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

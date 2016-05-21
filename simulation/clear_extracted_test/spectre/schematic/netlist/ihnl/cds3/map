@@ -1,0 +1,19 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+ )
+( net
+ )
+( inst
+ )
+( model
+( "3_1_mux_alt" "cse463_project_3_1_mux_alt_extracted" )
+ )
+( term
+ )
+( param
+ )
+ )

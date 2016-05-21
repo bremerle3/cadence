@@ -1,0 +1,10 @@
+    I9 (A0 B0 0 net024 out0 inh_inh_bn) Adder_2
+    I10 (A1 B1 net024 net11 out1 inh_inh_bn) Adder_2
+    I11 (A2 B2 net11 net10 out2 inh_inh_bn) Adder_2
+    I22 (A7 B7 net6 E out7 inh_inh_bn) Adder_2
+    I20 (A6 B6 net7 net6 out6 inh_inh_bn) Adder_2
+    I19 (A5 B5 net8 net7 out5 inh_inh_bn) Adder_2
+    I18 (A4 B4 net9 net8 out4 inh_inh_bn) Adder_2
+    I17 (A3 B3 net10 net9 out3 inh_inh_bn) Adder_2
+ends Adder_2_8bits
+// End of subcircuit definition.

@@ -1,0 +1,14 @@
+
+// Library name: cse562
+// Cell name: poly
+// View name: schematic
+I0 (vdd! net06 net1) i_squared
+P1 (0 net06 vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+P0 (net3 net3 vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+N0 (net1 net1 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+V2 (vdd! 0) vsource type=dc dc=3
+I5 (net3 0) isource type=dc m=1
+I4 (vdd! net1) isource type=dc dc=1n m=1

@@ -1,0 +1,27 @@
+
+// Library name: cse562
+// Cell name: cube
+// View name: schematic
+subckt cube In Out
+    I1 (net1 0) isource type=dc dc=50n m=1
+    N5 (Out net1 0 net12) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N4 (vdd! In net3 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N3 (net3 net3 net1 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N2 (net17 net17 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N1 (net9 net9 net17 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N0 (In In net9 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+ends cube
+// End of subcircuit definition.
+
+// Library name: cse562
+// Cell name: cube_test
+// View name: schematic
+I0 (net1 net5) cube
+I5 (net1 0) isource type=dc dc=5m m=1
+V0 (vdd! 0) vsource type=dc

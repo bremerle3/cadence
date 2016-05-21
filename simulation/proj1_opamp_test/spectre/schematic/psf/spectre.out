@@ -1,0 +1,236 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab011.seas.wustl.edu   HostID: 10AC6F03   PID: 24060
+Memory  available: 123.1437 GB  physical: 134.9321 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1500.0     2.4
+              1         0        1     2295.5     9.1
+              2         0        2     2972.2    10.8
+              3         0        3     1655.7     8.3
+              4         0        4     1996.1     4.6
+              5         0        5     1593.6     3.4
+              6         0        6     1795.4     2.9
+              7         0        7     1400.0     2.7
+              8         1        0     1200.0     2.5
+              9         1        1     1596.8    11.0
+             10         1        2     1490.7     4.6
+             11         1        3     1494.8     9.6
+             12         1        4     1287.1     5.3
+             13         1        5     1494.8     4.7
+             14         1        6     1297.4     3.8
+             15         1        7     2784.2     2.9
+
+
+Simulating `input.scs' on linuxlab011.seas.wustl.edu at 12:01:49 AM, Thur Oct 8, 2015 (process id: 24060).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/proj1_opamp_test/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre2_23732_69 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 24060
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/proj1_opamp_test/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 92.778 ms, elapsed = 175.47 ms.
+Time accumulated: CPU = 124.151 ms, elapsed = 175.482 ms.
+Peak resident memory used = 29.6 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 22.846 ms, elapsed = 26.8559 ms.
+Time accumulated: CPU = 147.327 ms, elapsed = 202.509 ms.
+Peak resident memory used = 32.5 Mbytes.
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 437.021 us.
+Time accumulated: CPU = 148.183 ms, elapsed = 203.114 ms.
+Peak resident memory used = 32.9 Mbytes.
+
+
+Notice from spectre during topology check.
+    No DC path from node `I0.net7' to ground, Gmin installed to provide path.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 9
+             iprobe 1     
+            bsim3v3 8     
+          capacitor 1     
+            isource 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 2.052 ms, elapsed = 5.74398 ms.
+Time accumulated: CPU = 150.235 ms, elapsed = 208.998 ms.
+Peak resident memory used = 33.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre2_23732_69, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+Convergence achieved in 14 iterations.
+Total time required for dc analysis `dcOp': CPU = 2.712 ms, elapsed = 8.52394 ms.
+Time accumulated: CPU = 155.469 ms, elapsed = 318.67 ms.
+Peak resident memory used = 34.7 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+********************************************
+DC Analysis `dc': V2:dc = (1.45 V -> 1.55 V)
+********************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 1.45 V during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = 1.452 V during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = 1.454 V during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+    dc: dc = 1.454 V        (4 %), step = 2 mV            (2 %)
+
+Notice from spectre at dc = 1.456 V during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+    dc: dc = 1.456 V        (6 %), step = 2 mV            (2 %)
+
+Notice from spectre at dc = 1.458 V during DC analysis `dc'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 1.458 V        (8 %), step = 2 mV            (2 %)
+    dc: dc = 1.46 V        (10 %), step = 2 mV            (2 %)
+    dc: dc = 1.462 V       (12 %), step = 2 mV            (2 %)
+    dc: dc = 1.464 V       (14 %), step = 2 mV            (2 %)
+    dc: dc = 1.466 V       (16 %), step = 2 mV            (2 %)
+    dc: dc = 1.468 V       (18 %), step = 2 mV            (2 %)
+    dc: dc = 1.47 V        (20 %), step = 2 mV            (2 %)
+    dc: dc = 1.472 V       (22 %), step = 2 mV            (2 %)
+    dc: dc = 1.474 V       (24 %), step = 2 mV            (2 %)
+    dc: dc = 1.476 V       (26 %), step = 2 mV            (2 %)
+    dc: dc = 1.478 V       (28 %), step = 2 mV            (2 %)
+    dc: dc = 1.48 V        (30 %), step = 2 mV            (2 %)
+    dc: dc = 1.482 V       (32 %), step = 2 mV            (2 %)
+    dc: dc = 1.484 V       (34 %), step = 2 mV            (2 %)
+    dc: dc = 1.486 V       (36 %), step = 2 mV            (2 %)
+    dc: dc = 1.488 V       (38 %), step = 2 mV            (2 %)
+    dc: dc = 1.49 V        (40 %), step = 2 mV            (2 %)
+    dc: dc = 1.492 V       (42 %), step = 2 mV            (2 %)
+    dc: dc = 1.494 V       (44 %), step = 2 mV            (2 %)
+    dc: dc = 1.496 V       (46 %), step = 2 mV            (2 %)
+    dc: dc = 1.498 V       (48 %), step = 2 mV            (2 %)
+    dc: dc = 1.5 V         (50 %), step = 2 mV            (2 %)
+    dc: dc = 1.502 V       (52 %), step = 2 mV            (2 %)
+    dc: dc = 1.504 V       (54 %), step = 2 mV            (2 %)
+    dc: dc = 1.506 V       (56 %), step = 2 mV            (2 %)
+    dc: dc = 1.508 V       (58 %), step = 2 mV            (2 %)
+    dc: dc = 1.51 V        (60 %), step = 2 mV            (2 %)
+    dc: dc = 1.512 V       (62 %), step = 2 mV            (2 %)
+    dc: dc = 1.514 V       (64 %), step = 2 mV            (2 %)
+    dc: dc = 1.516 V       (66 %), step = 2 mV            (2 %)
+    dc: dc = 1.518 V       (68 %), step = 2 mV            (2 %)
+    dc: dc = 1.52 V        (70 %), step = 2 mV            (2 %)
+    dc: dc = 1.522 V       (72 %), step = 2 mV            (2 %)
+    dc: dc = 1.524 V       (74 %), step = 2 mV            (2 %)
+    dc: dc = 1.526 V       (76 %), step = 2 mV            (2 %)
+    dc: dc = 1.528 V       (78 %), step = 2 mV            (2 %)
+    dc: dc = 1.53 V        (80 %), step = 2 mV            (2 %)
+    dc: dc = 1.532 V       (82 %), step = 2 mV            (2 %)
+    dc: dc = 1.534 V       (84 %), step = 2 mV            (2 %)
+    dc: dc = 1.536 V       (86 %), step = 2 mV            (2 %)
+    dc: dc = 1.538 V       (88 %), step = 2 mV            (2 %)
+    dc: dc = 1.54 V        (90 %), step = 2 mV            (2 %)
+    dc: dc = 1.542 V       (92 %), step = 2 mV            (2 %)
+    dc: dc = 1.544 V       (94 %), step = 2 mV            (2 %)
+    dc: dc = 1.546 V       (96 %), step = 2 mV            (2 %)
+    dc: dc = 1.548 V       (98 %), step = 2 mV            (2 %)
+    dc: dc = 1.55 V       (100 %), step = 2 mV            (2 %)
+Total time required for dc analysis `dc': CPU = 9.598 ms, elapsed = 13.0808 ms.
+Time accumulated: CPU = 167.41 ms, elapsed = 341.229 ms.
+Peak resident memory used = 35.1 Mbytes.
+
+
+Notice from spectre.
+    46 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.

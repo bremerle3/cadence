@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  9 15:30:27 2015
+// Design library name: cse562
+// Design cell name: poly_final_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

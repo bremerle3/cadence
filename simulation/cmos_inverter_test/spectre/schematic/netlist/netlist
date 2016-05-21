@@ -1,0 +1,21 @@
+
+// Library name: cse563
+// Cell name: cmos_inverter
+// View name: schematic
+subckt cmos_inverter Vin Vout
+    N0 (Vout Vin 0 0) ami06N w=nW l=nL as=nW * 2.5 * (600n) ad=nW * 2.5 * (600n) \
+         ps=(2 * nW) + (5 * (600n)) pd=(2 * nW) + (5 * (600n)) m=1 \
+        region=sat
+    P0 (Vout Vin vdd! vdd!) ami06P w=pW l=pL as=pW * 2.5 * (600n) ad=pW * 2.5 * (600n) \
+         ps=(2 * pW) + (5 * (600n)) pd=(2 * pW) + (5 * (600n)) m=1 \
+        region=sat
+ends cmos_inverter
+// End of subcircuit definition.
+
+// Library name: cse563
+// Cell name: cmos_inverter_test
+// View name: schematic
+I0 (net4 net3) cmos_inverter
+V1 (net4 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (net3 0) capacitor c=1p m=1

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      lbremer
+HostName                       linuxlab003.seas.wustl.edu
+ProcessIdentifier              8168
+ProcessCreationTime_UTC        1455824452
+ProcessCreationTime_Readable   Thu Feb 18 13:40:52 2016 CST
+AppIdentifier                  /project/linuxlab/cadence/ic/tools/dfII/bin/32bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/warehouse/lbremer/cadence/563_final/hw4_inv_test/constraint/prop.cfg
+TimeEditLocked                 Thu Feb 18 14:02:52 2016 CST

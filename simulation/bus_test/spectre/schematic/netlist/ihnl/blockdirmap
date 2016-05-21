@@ -1,0 +1,9 @@
+CADENCE IHNL01077
+
+cse463_project min_inv schematic cds0
+cse463_project IR_trigate schematic cds1
+cse463_project d_flip_flop schematic cds2
+cse463_project 3_1_mux_alt schematic cds3
+cse463_project single_muxed_ff schematic cds4
+cse463_project IR_reg schematic cds5
+cse463_project bus_test schematic cds6

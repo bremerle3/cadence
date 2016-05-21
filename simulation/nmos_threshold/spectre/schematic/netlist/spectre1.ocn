@@ -1,0 +1,37 @@
+simulator( 'spectre )
+design(	 "/home/warehouse/lbremer/cadence/simulation/nmos_threshold/spectre/schematic/netlist/netlist")
+resultsDir( "/home/warehouse/lbremer/cadence/simulation/nmos_threshold/spectre/schematic" )
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+save( 'i "/N0/D" )
+temp( 27 ) 
+run()
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+desVar(	  "nL" 9u	)
+desVar(	  "nW" 900n	)
+run()
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('dc ?saveOppoint t  ?dev "/V1"  ?param "dc"  
+		?start "0"  ?stop "2"  )
+envOption(
+	'analysisOrder  list("dc") 
+)
+run()
+selectResult( 'dc )
+plot(getData("/N0/D") )
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('dc ?stop "1"  )
+run()
+selectResult( 'dc )
+plot(getData("/N0/D") )

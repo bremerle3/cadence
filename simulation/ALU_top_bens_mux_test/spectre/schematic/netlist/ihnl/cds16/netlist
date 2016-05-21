@@ -1,0 +1,43 @@
+
+// Library name: cse463_project
+// Cell name: ALU_top_bens_mux_test
+// View name: schematic
+I0 (F1 F2 OUT\<0\> OUT\<1\> OUT\<2\> OUT\<3\> OUT\<4\> OUT\<5\> OUT\<6\> \
+        OUT\<7\> AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> \
+        AC\<7\> S0 S1 0) cse463_project_8_bit_reg_v1_schematic
+I1 (AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> AC\<7\> \
+        IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> \
+        INPR\<0\> INPR\<1\> INPR\<2\> INPR\<3\> INPR\<4\> INPR\<5\> \
+        INPR\<6\> INPR\<7\> OUT\<0\> OUT\<1\> OUT\<2\> OUT\<3\> OUT\<4\> \
+        OUT\<5\> OUT\<6\> OUT\<7\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> \
+        S\<5\> 0) ALU_top_bens_mux
+V16 (IN\<1\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V15 (IN\<0\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V14 (IN\<3\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V13 (IN\<2\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V12 (IN\<5\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V11 (IN\<4\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V10 (IN\<7\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V9 (IN\<6\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V23 (INPR\<0\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V24 (INPR\<1\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V21 (INPR\<2\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V22 (INPR\<3\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V19 (INPR\<4\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V20 (INPR\<5\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V17 (INPR\<6\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V18 (INPR\<7\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V27 (S1 0) vsource type=pulse val0=5 val1=0 period=1.8u delay=50n \
+        width=1.75u
+V30 (F1 0) vsource type=pulse val0=0 val1=5 period=100n width=50n
+V31 (F2 0) vsource type=pulse val0=0 val1=5 period=100n delay=62.5n \
+        width=25n
+V29 (S0 0) vsource type=pulse val0=0 val1=5 period=1.8u delay=50n \
+        width=1.75u
+V26 (S\<2\> 0) vsource type=dc dc=0
+V25 (S\<0\> 0) vsource type=dc dc=5
+V28 (S\<4\> 0) vsource type=dc dc=0
+V0 (vdd! 0) vsource type=dc dc=5
+I55 (S\<2\> S\<3\>) min_inv
+I54 (S\<0\> S\<1\>) min_inv
+I56 (S\<4\> S\<5\>) min_inv

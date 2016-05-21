@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 21 17:29:56 2016
+// Design library name: cse463_project
+// Design cell name: 8_bit_xor_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,5 @@
+    I0 (net13 F1 F2 Out) d_flip_flop
+    I6 (Out Load net13 S0 S0B S1 S1B inh_inh_bn) \
+        cse463_project_3_1_mux_alt_schematic
+ends single_muxed_ff
+// End of subcircuit definition.

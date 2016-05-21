@@ -1,0 +1,60 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "ALU_test_with_ff"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/ALU_test_with_ff/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse463_project/min_inv/schematic" "min_inv" )
+( "cse463_project/3_1_mux/schematic" "cse463_project_3_1_mux_schematic" )
+( "cse463_project/Adder_2/schematic" "Adder_2" )
+( "cse463_project/d_flip_flop/schematic" "d_flip_flop" )
+( "cse463_project/min_xor/schematic" "min_xor" )
+( "cse463_project/min_and/schematic" "min_and" )
+( "cse463_project/7_1_mux_tgate/schematic" "cse463_project_7_1_mux_tgate_schematic" )
+( "cse463_project/min_or/schematic" "min_or" )
+( "cse463_project/ALU_test_with_ff/schematic" "ALU_test_with_ff" )
+( "cse463_project/Adder_2_8bits/schematic" "Adder_2_8bits" )
+( "cse463_project/8_bit_xor/schematic" "cse463_project_8_bit_xor_schematic" )
+( "cse463_project/8_bit_or/schematic" "cse463_project_8_bit_or_schematic" )
+( "cse463_project/ALU_top/schematic" "ALU_top" )
+( "cse463_project/8_bit_and/schematic" "cse463_project_8_bit_and_schematic" )
+( "cse463_project/8_bit_reg_v1/schematic" "cse463_project_8_bit_reg_v1_schematic" )
+( "cse463_project/single_muxed_ff/schematic" "single_muxed_ff" )
+( "cse463_project/8_bit_com/schematic" "cse463_project_8_bit_com_schematic" )
+( "cse463_project/min_tgate/schematic" "min_tgate" )
+ )
+( term
+ )
+( param
+ )
+( "cse463_project_8_bit_and_schematic" "ihnl/cds4/map" )
+( "ALU_top" "ihnl/cds11/map" )
+( "cse463_project_3_1_mux_schematic" "ihnl/cds13/map" )
+( "single_muxed_ff" "ihnl/cds14/map" )
+( "min_and" "ihnl/cds3/map" )
+( "ALU_test_with_ff" "ihnl/cds16/map" )
+( "Adder_2_8bits" "ihnl/cds2/map" )
+( "cse463_project_8_bit_com_schematic" "ihnl/cds9/map" )
+( "cse463_project_8_bit_or_schematic" "ihnl/cds8/map" )
+( "min_xor" "ihnl/cds5/map" )
+( "cse463_project_7_1_mux_tgate_schematic" "ihnl/cds18/map" )
+( "min_or" "ihnl/cds7/map" )
+( "cse463_project_8_bit_reg_v1_schematic" "ihnl/cds15/map" )
+( "min_tgate" "ihnl/cds17/map" )
+( "min_inv" "ihnl/cds0/map" )
+( "Adder_2" "ihnl/cds1/map" )
+( "d_flip_flop" "ihnl/cds12/map" )
+( "cse463_project_8_bit_xor_schematic" "ihnl/cds6/map" )
+ )

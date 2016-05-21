@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "poly_exper"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/poly_exper/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/squarer/schematic" "squarer" )
+( "cse562/poly_exper/schematic" "poly_exper" )
+ )
+( term
+ )
+( param
+ )
+( "poly_exper" "ihnl/cds1/map" )
+( "squarer" "ihnl/cds0/map" )
+ )

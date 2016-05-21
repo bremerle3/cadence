@@ -1,0 +1,7 @@
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_tgate
+// View name: schematic
+subckt cse463_project_7_1_mux_tgate_schematic Adder DM_AC_AND DM_AC_OR \
+        DR_AC_XOR DR_COM DR_direct INPR_direct Out S0 S0B S1 S1B S2 S2B \
+        inh_inh_bn

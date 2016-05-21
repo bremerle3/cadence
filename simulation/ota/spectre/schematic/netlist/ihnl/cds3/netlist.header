@@ -1,0 +1,5 @@
+
+// Library name: cse562
+// Cell name: true_ff
+// View name: schematic
+subckt true_ff CLK D Q

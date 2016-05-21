@@ -1,0 +1,13 @@
+CADENCE IHNL01070
+$model
+563_final/cmos_nor_test/schematic cmos_nor_test
+563_final/cmos_nor/schematic cmos_nor
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+Vin1 Vin1
+Vin2 Vin2
+$endparam

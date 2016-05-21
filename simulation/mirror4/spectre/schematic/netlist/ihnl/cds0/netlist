@@ -1,0 +1,9 @@
+
+// Library name: cse562
+// Cell name: mirror4
+// View name: schematic
+V1 (net6 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=3
+N5 (vdd! net6 0 0) ami06N w=tW l=tL as=tW * 2.5 * (600n) ad=tW * 2.5 * (600n) \
+         ps=(2 * tW) + (5 * (600n)) pd=(2 * tW) + (5 * (600n)) m=1 \
+        region=sat

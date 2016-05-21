@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"cse562\" \"d_ff_test\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Dec 10 20:23:06 2015"
+"title" ""
+"analysisList" "()"
+END

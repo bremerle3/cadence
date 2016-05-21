@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "poly_unshifted"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/poly_unshifted/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/squarer/schematic" "squarer" )
+( "cse562/poly_unshifted/schematic" "poly_unshifted" )
+ )
+( term
+ )
+( param
+ )
+( "poly_unshifted" "ihnl/cds1/map" )
+( "squarer" "ihnl/cds0/map" )
+ )

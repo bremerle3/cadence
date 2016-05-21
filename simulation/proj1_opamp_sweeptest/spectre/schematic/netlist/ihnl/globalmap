@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+cse562/proj1_opamp_sweeptest/schematic proj1_opamp_sweeptest
+cse562/proj1_opamp/schematic proj1_opamp
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

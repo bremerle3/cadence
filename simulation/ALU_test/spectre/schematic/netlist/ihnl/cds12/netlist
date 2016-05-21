@@ -1,0 +1,49 @@
+
+// Library name: cse463_project
+// Cell name: ALU_test
+// View name: schematic
+I59 (AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> AC\<7\> \
+        IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> \
+        INPR\<0\> INPR\<1\> INPR\<2\> INPR\<3\> INPR\<4\> INPR\<5\> \
+        INPR\<6\> INPR\<7\> OUT\<0\> OUT\<1\> OUT\<2\> OUT\<3\> OUT\<4\> \
+        OUT\<5\> OUT\<6\> OUT\<7\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> \
+        S\<5\> 0) ALU_top
+V24 (INPR\<1\> 0) vsource type=pulse val0=5 val1=5 period=200n width=0
+V23 (INPR\<0\> 0) vsource type=pulse val0=0 val1=0 period=200n width=0
+V22 (INPR\<3\> 0) vsource type=pulse val0=5 val1=5 period=200n width=0
+V21 (INPR\<2\> 0) vsource type=pulse val0=0 val1=0 period=200n width=0
+V20 (INPR\<5\> 0) vsource type=pulse val0=5 val1=5 period=200n width=0
+V19 (INPR\<4\> 0) vsource type=pulse val0=0 val1=0 period=200n width=0
+V18 (INPR\<7\> 0) vsource type=pulse val0=5 val1=5 period=200n width=0
+V17 (INPR\<6\> 0) vsource type=pulse val0=0 val1=0 period=200n width=0
+V16 (IN\<1\> 0) vsource type=pulse val0=0 val1=5 period=600n width=300n
+V15 (IN\<0\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V14 (IN\<3\> 0) vsource type=pulse val0=0 val1=5 period=600n width=300n
+V13 (IN\<2\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V12 (IN\<5\> 0) vsource type=pulse val0=0 val1=5 period=600n width=300n
+V11 (IN\<4\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V10 (IN\<7\> 0) vsource type=pulse val0=0 val1=5 period=600n width=300n
+V8 (AC\<1\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+V7 (AC\<0\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+V5 (AC\<3\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+V4 (AC\<2\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+V3 (AC\<5\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+V2 (AC\<4\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+V1 (AC\<7\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+V9 (IN\<6\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V6 (AC\<6\> 0) vsource type=pulse val0=5 val1=5 period=600n width=300n
+C10 (OUT\<7\> 0) capacitor c=100f m=1
+C9 (OUT\<6\> 0) capacitor c=100f m=1
+C8 (OUT\<5\> 0) capacitor c=100f m=1
+C7 (OUT\<4\> 0) capacitor c=100f m=1
+C6 (OUT\<3\> 0) capacitor c=100f m=1
+C5 (OUT\<2\> 0) capacitor c=100f m=1
+C4 (OUT\<1\> 0) capacitor c=100f m=1
+C3 (OUT\<0\> 0) capacitor c=100f m=1
+I55 (S\<2\> S\<3\>) min_inv
+I54 (S\<0\> S\<1\>) min_inv
+I56 (S\<4\> S\<5\>) min_inv
+V28 (S\<4\> 0) vsource type=dc dc=0
+V25 (S\<0\> 0) vsource type=dc dc=5
+V26 (S\<2\> 0) vsource type=dc dc=5
+V0 (vdd! 0) vsource type=dc dc=5

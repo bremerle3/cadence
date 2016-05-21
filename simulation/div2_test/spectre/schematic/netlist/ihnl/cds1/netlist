@@ -1,0 +1,7 @@
+
+// Library name: cse562
+// Cell name: div2_test
+// View name: schematic
+I6 (net1 net05) div2
+V0 (vdd! 0) vsource type=dc dc=3
+I4 (net1 0) isource type=dc dc=500.0u m=1

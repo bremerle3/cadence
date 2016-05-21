@@ -1,0 +1,7 @@
+HEADER
+"PSFversion" "1.00"
+"V23n V22n V21n V3n" "NCSU_Analog_Parts_vdc_spectre"
+"I0n" "cse463_project_7_1_mux_alt_schematic"
+"V20n V19n V18n V17n V16n V15n V14n" "NCSU_Analog_Parts_vpulse_spectre"
+"I8n I7n I6n" "min_inv"
+"C0n" "NCSU_Analog_Parts_cap_spectre"

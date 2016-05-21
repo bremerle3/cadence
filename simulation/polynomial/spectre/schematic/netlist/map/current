@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "polynomial"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/polynomial/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/polynomial/schematic" "polynomial" )
+( "cse562/squarer/schematic" "squarer" )
+ )
+( term
+ )
+( param
+ )
+( "polynomial" "ihnl/cds1/map" )
+( "squarer" "ihnl/cds0/map" )
+ )

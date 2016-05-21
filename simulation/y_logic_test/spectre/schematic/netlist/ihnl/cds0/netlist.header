@@ -1,0 +1,5 @@
+
+// Library name: 563_final
+// Cell name: y_logic
+// View name: schematic
+subckt y_logic A_bar B C_bar E_bar F G Y

@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "myLatch_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/myLatch_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/myLatch_test/schematic" "myLatch_test" )
+( "cse562/simple_latch/schematic" "simple_latch" )
+ )
+( term
+ )
+( param
+ )
+( "myLatch_test" "ihnl/cds1/map" )
+( "simple_latch" "ihnl/cds0/map" )
+ )

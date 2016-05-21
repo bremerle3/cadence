@@ -1,0 +1,10 @@
+    N3 (Vout Vin2 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    N2 (Vout Vin1 0 0) ami06N w=1.2u l=600n as=1.8e-12 ad=1.8e-12 ps=5.4u \
+        pd=5.4u m=1 region=sat
+    P3 (Vout Vin2 net14 vdd!) ami06P w=14.4u l=600n as=2.16e-11 \
+        ad=2.16e-11 ps=31.8u pd=31.8u m=1 region=sat
+    P2q (net14 Vin1 vdd! vdd!) ami06P w=14.4u l=600n as=2.16e-11 \
+        ad=2.16e-11 ps=31.8u pd=31.8u m=1 region=sat
+ends cmos_nand
+// End of subcircuit definition.

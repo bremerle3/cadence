@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "inv_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/cse562/inv_test/adexl/results/data/Interactive.0/1/cse562:inv_test:1/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/inv_test/schematic" "inv_test" )
+( "cse562/inv/schematic" "inv" )
+ )
+( term
+ )
+( param
+ )
+( "inv_test" "ihnl/cds1/map" )
+( "inv" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,10 @@
+    I11 (AC7 OUT7 In7 inh_inh_bn) min_xor
+    I10 (AC6 OUT6 IN6 inh_inh_bn) min_xor
+    I9 (AC5 OUT5 IN5 inh_inh_bn) min_xor
+    I8 (AC4 OUT4 IN4 inh_inh_bn) min_xor
+    I7 (AC3 OUT3 In3 inh_inh_bn) min_xor
+    I6 (AC2 OUT2 In2 inh_inh_bn) min_xor
+    I5 (AC1 OUT1 In1 inh_inh_bn) min_xor
+    I4 (AC0 OUT0 IN0 inh_inh_bn) min_xor
+ends cse463_project_8_bit_xor_schematic
+// End of subcircuit definition.

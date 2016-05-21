@@ -1,0 +1,115 @@
+@(#)$CDS: LVS version 6.1.6 03/19/2015 16:21 (sjfnl171) $
+
+Command line: /project/linuxlab/cadence/IC616/tools.lnx86/dfII/bin/32bit/LVS -dir /home/warehouse/lbremer/cadence/LVS -l -s -t /home/warehouse/lbremer/cadence/LVS/layout /home/warehouse/lbremer/cadence/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+
+    Net-list summary for /home/warehouse/lbremer/cadence/LVS/layout/netlist
+       count
+        132             nets
+        31              terminals
+        64              pmos
+        144             nmos
+
+    Net-list summary for /home/warehouse/lbremer/cadence/LVS/schematic/netlist
+       count
+        132             nets
+        33              terminals
+        64              pmos
+        144             nmos
+
+
+    Terminal correspondence points
+    N117      N33       Control_Out0
+    N115      N32       Control_Out1
+    N114      N29       Control_Out5
+    N113      N10       Control_Out6
+    N112      N17       Control_Out7
+    N119      N2        F1
+    N118      N13       F2
+    N123      N12       In<0>
+    N116      N6        In<1>
+    N111      N28       In<2>
+    N109      N9        In<3>
+    N106      N24       In<4>
+    N103      N20       In<5>
+    N130      N27       In<6>
+    N128      N35       In<7>
+    N122      N34       N0
+    N108      N22       N0B
+    N121      N14       N1
+    N105      N21       N1B
+    N110      N15       Out<0>
+    N107      N19       Out<1>
+    N104      N18       Out<2>
+    N131      N16       Out<3>
+    N129      N36       Out<4>
+    N126      N11       Out<5>
+    N124      N5        Out<6>
+    N120      N7        Out<7>
+    N102      N23       S0
+    N127      N4        S0B
+    N101      N26       S1
+    N125      N37       S1B
+
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  208     208    
+        total                   208     208    
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  132     132    
+        total                   132     132    
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   31      33     
+
+
+Probe files from /home/warehouse/lbremer/cadence/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/warehouse/lbremer/cadence/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

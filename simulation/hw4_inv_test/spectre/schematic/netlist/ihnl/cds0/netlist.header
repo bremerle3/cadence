@@ -1,0 +1,5 @@
+
+// Library name: 563_final
+// Cell name: hw4_inv
+// View name: schematic
+subckt hw4_inv Vin Vout

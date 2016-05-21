@@ -1,0 +1,4 @@
+\e *Error* Error during netlisting of design for the point ID (0 1).
+\e ("ls" 0 t nil ("*Error* ls: a nlambda must be defined or declared before its use" ls(path)))
+\e 
+\e 

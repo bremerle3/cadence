@@ -1,0 +1,14 @@
+CADENCE IHNL01070
+$model
+cse562/cmos_d_flip_flop/schematic cmos_d_flip_flop
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

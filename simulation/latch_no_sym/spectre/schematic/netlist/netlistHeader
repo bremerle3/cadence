@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Dec 10 21:34:31 2015
+// Design library name: cse562
+// Design cell name: latch_no_sym
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

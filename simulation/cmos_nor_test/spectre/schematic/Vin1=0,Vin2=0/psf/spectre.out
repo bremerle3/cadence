@@ -1,0 +1,2639 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lbremer   Host: linuxlab004.seas.wustl.edu   HostID: 10AC6803   PID: 12780
+Memory  available: 120.9352 GB  physical: 134.9316 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1200.0     7.2
+              1         0        1     1289.2     4.8
+              2         0        2     1200.0     7.6
+              3         0        3     1384.4     8.0
+              4         0        4     1200.0     3.8
+              5         0        5     1200.0     4.0
+              6         0        6     1200.0     4.4
+              7         0        7     1200.0     3.9
+              8         1        0     1200.0     3.5
+              9         1        1     1200.0     5.8
+             10         1        2     1200.0     8.4
+             11         1        3     1200.0     7.3
+             12         1        4     1255.2     7.7
+             13         1        5     1200.0     4.3
+             14         1        6     1203.8     3.7
+             15         1        7     1200.0     7.0
+
+
+Simulating `input.scs' on linuxlab004.seas.wustl.edu at 2:58:13 PM, Tue Mar 8, 2016 (process id: 12780).
+Current working directory: /home/warehouse/lbremer/cadence/simulation/cmos_nor_test/spectre/schematic/netlist
+Command line:
+    /project/linuxlab/cadence/mmsim/tools/bin/spectre input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_26240_12 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 12780
+
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /project/linuxlab/cadence/mmsim/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/warehouse/lbremer/cadence/simulation/cmos_nor_test/spectre/schematic/netlist/input.scs
+Reading link:  /project/linuxlab/cadence/mmsim
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading link:  /project/linuxlab/cadence/CDK/ncsu
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06N.m
+Reading file:  /project/linuxlab/cadence/CDK/ncsu-cdk-1.6.0.beta/models/spectre/nom/ami06P.m
+Time for NDB Parsing: CPU = 116.867 ms, elapsed = 597.557 ms.
+Time accumulated: CPU = 156.816 ms, elapsed = 597.575 ms.
+Peak resident memory used = 29.6 Mbytes.
+
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /project/linuxlab/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /project/linuxlab/cadence/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 35.586 ms, elapsed = 39.0129 ms.
+Time accumulated: CPU = 192.679 ms, elapsed = 636.864 ms.
+Peak resident memory used = 32.5 Mbytes.
+
+Time for EDB Visiting: CPU = 932 us, elapsed = 589.848 us.
+Time accumulated: CPU = 193.824 ms, elapsed = 637.667 ms.
+Peak resident memory used = 32.9 Mbytes.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 5
+            bsim3v3 4     
+          capacitor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.455 ms, elapsed = 4.84514 ms.
+Time accumulated: CPU = 196.279 ms, elapsed = 642.719 ms.
+Peak resident memory used = 33.7 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_26240_12, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Convergence achieved in 22 iterations.
+Total time required for dc analysis `dcOp': CPU = 3.388 ms, elapsed = 8.03399 ms.
+Time accumulated: CPU = 202.456 ms, elapsed = 1.12494 s.
+Peak resident memory used = 34.6 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 100 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 200 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 300 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 400 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I8.net8) = 15.6217 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 10.053 ms, elapsed = 13.1731 ms.
+Time accumulated: CPU = 215.722 ms, elapsed = 1.14683 s.
+Peak resident memory used = 35.1 Mbytes.
+
+
+Notice from spectre.
+    45 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 20 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.602 ms, elapsed = 6.52695 ms.
+Time accumulated: CPU = 232.198 ms, elapsed = 1.68536 s.
+Peak resident memory used = 35.3 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.43 ms, elapsed = 12.6939 ms.
+Time accumulated: CPU = 244.306 ms, elapsed = 1.70631 s.
+Peak resident memory used = 35.3 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 20 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.772 ms, elapsed = 6.58894 ms.
+Time accumulated: CPU = 260.424 ms, elapsed = 2.27182 s.
+Peak resident memory used = 35.3 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.12 ms, elapsed = 12.368 ms.
+Time accumulated: CPU = 272.15 ms, elapsed = 2.29235 s.
+Peak resident memory used = 35.3 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 20 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.763 ms, elapsed = 6.61016 ms.
+Time accumulated: CPU = 288.7 ms, elapsed = 2.82826 s.
+Peak resident memory used = 35.3 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.55 ms, elapsed = 12.8431 ms.
+Time accumulated: CPU = 301.116 ms, elapsed = 2.84933 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 20 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.902 ms, elapsed = 5.99504 ms.
+Time accumulated: CPU = 317.147 ms, elapsed = 3.51987 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.104 ms, elapsed = 12.418 ms.
+Time accumulated: CPU = 329.05 ms, elapsed = 3.54024 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Convergence achieved in 23 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.988 ms, elapsed = 6.57892 ms.
+Time accumulated: CPU = 346.496 ms, elapsed = 4.08821 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 100 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 200 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 300 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 400 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I8.net8) = 15.6217 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.674 ms, elapsed = 12.7869 ms.
+Time accumulated: CPU = 359.143 ms, elapsed = 4.10921 s.
+Peak resident memory used = 35.4 Mbytes.
+
+
+Notice from spectre.
+    45 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 22 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.743 ms, elapsed = 6.62303 ms.
+Time accumulated: CPU = 375.465 ms, elapsed = 4.62864 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.949 ms, elapsed = 12.9759 ms.
+Time accumulated: CPU = 388.789 ms, elapsed = 4.64962 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 20 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.922 ms, elapsed = 6.67 ms.
+Time accumulated: CPU = 405.576 ms, elapsed = 5.22257 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.418 ms, elapsed = 12.6359 ms.
+Time accumulated: CPU = 417.153 ms, elapsed = 5.24361 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 19 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.824 ms, elapsed = 6.56199 ms.
+Time accumulated: CPU = 433.061 ms, elapsed = 5.79062 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.517 ms, elapsed = 12.542 ms.
+Time accumulated: CPU = 445.313 ms, elapsed = 5.81113 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 19 iterations.
+Total time required for dc analysis `dcOp': CPU = 2.033 ms, elapsed = 6.56319 ms.
+Time accumulated: CPU = 462.086 ms, elapsed = 7.08545 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.573 ms, elapsed = 12.3751 ms.
+Time accumulated: CPU = 473.799 ms, elapsed = 7.10609 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Convergence achieved in 23 iterations.
+Total time required for dc analysis `dcOp': CPU = 2.216 ms, elapsed = 6.675 ms.
+Time accumulated: CPU = 490.301 ms, elapsed = 7.65643 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 100 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 200 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 300 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 400 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I8.net8) = 15.6217 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 10.231 ms, elapsed = 13.4299 ms.
+Time accumulated: CPU = 503.498 ms, elapsed = 7.67848 s.
+Peak resident memory used = 35.4 Mbytes.
+
+
+Notice from spectre.
+    45 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 21 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.695 ms, elapsed = 18.7471 ms.
+Time accumulated: CPU = 519.687 ms, elapsed = 8.62099 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.084 ms, elapsed = 26.7649 ms.
+Time accumulated: CPU = 531.468 ms, elapsed = 8.74888 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 16 iterations.
+Total time required for dc analysis `dcOp': CPU = 2.283 ms, elapsed = 12.141 ms.
+Time accumulated: CPU = 546.06 ms, elapsed = 12.0477 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.903 ms, elapsed = 13.2909 ms.
+Time accumulated: CPU = 559.375 ms, elapsed = 12.0701 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 5 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.582 ms, elapsed = 595.289 ms.
+Time accumulated: CPU = 575.7 ms, elapsed = 14.746 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 8.975 ms, elapsed = 14.1342 ms.
+Time accumulated: CPU = 587.497 ms, elapsed = 15.0979 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 5 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.584 ms, elapsed = 91.198 ms.
+Time accumulated: CPU = 604.516 ms, elapsed = 16.5115 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 10.039 ms, elapsed = 74.038 ms.
+Time accumulated: CPU = 617.295 ms, elapsed = 16.7174 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = -27.0244 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Convergence achieved in 22 iterations.
+Total time required for dc analysis `dcOp': CPU = 2.35 ms, elapsed = 7.07316 ms.
+Time accumulated: CPU = 636.614 ms, elapsed = 17.3488 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 100 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 200 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 300 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 400 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I8.net8) = 15.6217 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 10.16 ms, elapsed = 13.2651 ms.
+Time accumulated: CPU = 649.328 ms, elapsed = 17.3704 s.
+Peak resident memory used = 35.4 Mbytes.
+
+
+Notice from spectre.
+    45 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 21 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.831 ms, elapsed = 171.893 ms.
+Time accumulated: CPU = 666.368 ms, elapsed = 18.2125 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 8.492 ms, elapsed = 12.6569 ms.
+Time accumulated: CPU = 677.193 ms, elapsed = 18.3044 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 5 iterations.
+Total time required for dc analysis `dcOp': CPU = 2.043 ms, elapsed = 384.801 ms.
+Time accumulated: CPU = 695.153 ms, elapsed = 20.5007 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.727 ms, elapsed = 19.2552 ms.
+Time accumulated: CPU = 709.34 ms, elapsed = 20.7305 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 3 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.656 ms, elapsed = 10.2911 ms.
+Time accumulated: CPU = 726.388 ms, elapsed = 23.8077 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.722 ms, elapsed = 15.7561 ms.
+Time accumulated: CPU = 738.851 ms, elapsed = 23.8356 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 3 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.527 ms, elapsed = 12.5299 ms.
+Time accumulated: CPU = 754.865 ms, elapsed = 24.8112 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.498 ms, elapsed = 13.165 ms.
+Time accumulated: CPU = 767.203 ms, elapsed = 24.8411 s.
+Peak resident memory used = 35.4 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = -29.113 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+Convergence achieved in 21 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.89 ms, elapsed = 8.87203 ms.
+Time accumulated: CPU = 784.74 ms, elapsed = 25.7549 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 100 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at dc = 200 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 300 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I8.net8) = 15.6217 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+
+Notice from spectre at dc = 400 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I8.net8) = 15.6217 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 10.322 ms, elapsed = 16.412 ms.
+Time accumulated: CPU = 798.565 ms, elapsed = 25.7855 s.
+Peak resident memory used = 35.4 Mbytes.
+
+
+Notice from spectre.
+    45 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 20 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.841 ms, elapsed = 6.79398 ms.
+Time accumulated: CPU = 814.868 ms, elapsed = 27.0386 s.
+Peak resident memory used = 35.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.472 ms, elapsed = 12.517 ms.
+Time accumulated: CPU = 827.338 ms, elapsed = 27.0602 s.
+Peak resident memory used = 35.5 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 4 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.673 ms, elapsed = 6.17099 ms.
+Time accumulated: CPU = 843.513 ms, elapsed = 27.6201 s.
+Peak resident memory used = 35.5 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.599 ms, elapsed = 12.9921 ms.
+Time accumulated: CPU = 856.511 ms, elapsed = 27.6416 s.
+Peak resident memory used = 35.5 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 3 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.647 ms, elapsed = 6.2499 ms.
+Time accumulated: CPU = 872.779 ms, elapsed = 28.2545 s.
+Peak resident memory used = 35.5 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 9.182 ms, elapsed = 11.8551 ms.
+Time accumulated: CPU = 884.225 ms, elapsed = 28.2741 s.
+Peak resident memory used = 35.5 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 2 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.688 ms, elapsed = 5.6169 ms.
+Time accumulated: CPU = 900.157 ms, elapsed = 28.813 s.
+Peak resident memory used = 35.5 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V1:dc = (0 V -> 5 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 200 mV         (4 %), step = 100 mV          (2 %)
+    dc: dc = 300 mV         (6 %), step = 100 mV          (2 %)
+    dc: dc = 400 mV         (8 %), step = 100 mV          (2 %)
+    dc: dc = 500 mV        (10 %), step = 100 mV          (2 %)
+    dc: dc = 600 mV        (12 %), step = 100 mV          (2 %)
+    dc: dc = 700 mV        (14 %), step = 100 mV          (2 %)
+    dc: dc = 800 mV        (16 %), step = 100 mV          (2 %)
+    dc: dc = 900 mV        (18 %), step = 100 mV          (2 %)
+    dc: dc = 1 V           (20 %), step = 100 mV          (2 %)
+    dc: dc = 1.1 V         (22 %), step = 100 mV          (2 %)
+    dc: dc = 1.2 V         (24 %), step = 100 mV          (2 %)
+    dc: dc = 1.3 V         (26 %), step = 100 mV          (2 %)
+    dc: dc = 1.4 V         (28 %), step = 100 mV          (2 %)
+    dc: dc = 1.5 V         (30 %), step = 100 mV          (2 %)
+    dc: dc = 1.6 V         (32 %), step = 100 mV          (2 %)
+    dc: dc = 1.7 V         (34 %), step = 100 mV          (2 %)
+    dc: dc = 1.8 V         (36 %), step = 100 mV          (2 %)
+    dc: dc = 1.9 V         (38 %), step = 100 mV          (2 %)
+    dc: dc = 2 V           (40 %), step = 100 mV          (2 %)
+    dc: dc = 2.1 V         (42 %), step = 100 mV          (2 %)
+    dc: dc = 2.2 V         (44 %), step = 100 mV          (2 %)
+    dc: dc = 2.3 V         (46 %), step = 100 mV          (2 %)
+    dc: dc = 2.4 V         (48 %), step = 100 mV          (2 %)
+    dc: dc = 2.5 V         (50 %), step = 100 mV          (2 %)
+    dc: dc = 2.6 V         (52 %), step = 100 mV          (2 %)
+    dc: dc = 2.7 V         (54 %), step = 100 mV          (2 %)
+    dc: dc = 2.8 V         (56 %), step = 100 mV          (2 %)
+    dc: dc = 2.9 V         (58 %), step = 100 mV          (2 %)
+    dc: dc = 3 V           (60 %), step = 100 mV          (2 %)
+    dc: dc = 3.1 V         (62 %), step = 100 mV          (2 %)
+    dc: dc = 3.2 V         (64 %), step = 100 mV          (2 %)
+    dc: dc = 3.3 V         (66 %), step = 100 mV          (2 %)
+    dc: dc = 3.4 V         (68 %), step = 100 mV          (2 %)
+    dc: dc = 3.5 V         (70 %), step = 100 mV          (2 %)
+    dc: dc = 3.6 V         (72 %), step = 100 mV          (2 %)
+    dc: dc = 3.7 V         (74 %), step = 100 mV          (2 %)
+    dc: dc = 3.8 V         (76 %), step = 100 mV          (2 %)
+    dc: dc = 3.9 V         (78 %), step = 100 mV          (2 %)
+    dc: dc = 4 V           (80 %), step = 100 mV          (2 %)
+    dc: dc = 4.1 V         (82 %), step = 100 mV          (2 %)
+    dc: dc = 4.2 V         (84 %), step = 100 mV          (2 %)
+    dc: dc = 4.3 V         (86 %), step = 100 mV          (2 %)
+    dc: dc = 4.4 V         (88 %), step = 100 mV          (2 %)
+    dc: dc = 4.5 V         (90 %), step = 100 mV          (2 %)
+    dc: dc = 4.6 V         (92 %), step = 100 mV          (2 %)
+    dc: dc = 4.7 V         (94 %), step = 100 mV          (2 %)
+    dc: dc = 4.8 V         (96 %), step = 100 mV          (2 %)
+    dc: dc = 4.9 V         (98 %), step = 100 mV          (2 %)
+    dc: dc = 5 V          (100 %), step = 100 mV          (2 %)
+Total time required for dc analysis `dc': CPU = 8.77 ms, elapsed = 12.238 ms.
+Time accumulated: CPU = 912.524 ms, elapsed = 28.8335 s.
+Peak resident memory used = 35.5 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (2:58:46 PM, Tue Mar 8, 2016):
+Time used: CPU = 941 ms, elapsed = 32.6 s, util. = 2.88%.
+Time spent in licensing: elapsed = 472 ms.
+Peak memory used = 35.6 Mbytes.
+Simulation started at: 2:58:13 PM, Tue Mar 8, 2016, ended at: 2:58:46 PM, Tue Mar 8, 2016, with elapsed time (wall clock): 32.6 s.
+spectre completes with 0 errors, 25 warnings, and 35 notices.

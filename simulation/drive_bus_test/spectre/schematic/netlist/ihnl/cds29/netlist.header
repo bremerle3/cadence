@@ -1,0 +1,7 @@
+
+// Library name: cse463_project
+// Cell name: PC_5_bit_with_trigate
+// View name: schematic
+subckt PC_5_bit_with_trigate F1 F2 In\<0\> In\<1\> In\<2\> In\<3\> In\<4\> \
+        N0 N0B N1 N1B Out\<0\> Out\<1\> Out\<2\> Out\<3\> Out\<4\> S0 S0B \
+        S1 S1B inh_inh_bn

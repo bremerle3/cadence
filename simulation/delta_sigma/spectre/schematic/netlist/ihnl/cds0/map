@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+ )
+( net
+ )
+( inst
+ )
+( model
+( "new_op_amp" "new_op_amp" )
+( "true_ff" "true_ff" )
+( "comparator" "comparator" )
+( "delta_sigma" "delta_sigma" )
+ )
+( term
+ )
+( param
+ )
+ )

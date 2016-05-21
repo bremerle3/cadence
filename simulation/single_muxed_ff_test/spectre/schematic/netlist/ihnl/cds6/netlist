@@ -1,0 +1,12 @@
+    M6 (Out N0B net12 gnd!) ami06N w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    M5 (net12 N1B inv_out gnd!) ami06N w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    I2 (inv_in net07) min_inv
+    I1 (net07 inv_out) min_inv
+    M1 (Out N0 net12 vdd!) ami06P w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    M0 (net12 N1 inv_out vdd!) ami06P w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+ends IR_trigate
+// End of subcircuit definition.

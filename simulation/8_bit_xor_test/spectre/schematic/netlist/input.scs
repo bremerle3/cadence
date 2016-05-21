@@ -1,0 +1,93 @@
+// Generated for: spectre
+// Generated on: Apr 21 17:29:56 2016
+// Design library name: cse463_project
+// Design cell name: 8_bit_xor_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse463_project
+// Cell name: min_inv
+// View name: schematic
+subckt min_inv In out
+    N0 (out In 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (out In vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_inv
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: min_xor
+// View name: schematic
+subckt min_xor Other Out Reg inh_inh_bn
+    M3 (Out RegBar net11 vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net11 Other vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out Reg net10 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net10 OtherBar vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    I6 (Other OtherBar) min_inv
+    I5 (Reg RegBar) min_inv
+    M7 (net19 RegBar 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M6 (Out OtherBar net19 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net24 Reg 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (Out Other net24 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_xor
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_xor
+// View name: schematic
+subckt cse463_project_8_bit_xor_schematic AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 \
+        IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 \
+        OUT7 inh_inh_bn
+    I11 (AC7 OUT7 In7 inh_inh_bn) min_xor
+    I10 (AC6 OUT6 IN6 inh_inh_bn) min_xor
+    I9 (AC5 OUT5 IN5 inh_inh_bn) min_xor
+    I8 (AC4 OUT4 IN4 inh_inh_bn) min_xor
+    I7 (AC3 OUT3 In3 inh_inh_bn) min_xor
+    I6 (AC2 OUT2 In2 inh_inh_bn) min_xor
+    I5 (AC1 OUT1 In1 inh_inh_bn) min_xor
+    I4 (AC0 OUT0 IN0 inh_inh_bn) min_xor
+ends cse463_project_8_bit_xor_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_xor_test
+// View name: schematic
+C12 (Out3 0) capacitor c=100f m=1
+C13 (Out2 0) capacitor c=100f m=1
+C14 (Out1 0) capacitor c=100f m=1
+C15 (Out0 0) capacitor c=100f m=1
+C7 (Out4 0) capacitor c=100f m=1
+C5 (Out5 0) capacitor c=100f m=1
+C3 (Out6 0) capacitor c=100f m=1
+C1 (Out7 0) capacitor c=100f m=1
+V6 (AC 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V7 (MEM 0) vsource type=pulse val0=5 val1=0 period=100n width=50n
+V1 (vdd! 0) vsource type=dc dc=5
+I0 (AC AC AC AC AC AC AC AC MEM MEM MEM MEM MEM MEM MEM MEM Out0 Out1 Out2 \
+        Out3 Out4 Out5 Out6 Out7 0) cse463_project_8_bit_xor_schematic
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=400n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

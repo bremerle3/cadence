@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "poly"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/poly/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/i_squared/schematic" "i_squared" )
+( "cse562/poly/schematic" "poly" )
+ )
+( term
+ )
+( param
+ )
+( "poly" "ihnl/cds1/map" )
+( "i_squared" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,5 @@
+
+// Library name: cse563
+// Cell name: cmos_inverter
+// View name: schematic
+subckt cmos_inverter Vin Vout

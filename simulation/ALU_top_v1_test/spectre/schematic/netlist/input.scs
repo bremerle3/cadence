@@ -1,0 +1,433 @@
+// Generated for: spectre
+// Generated on: Apr 26 07:31:33 2016
+// Design library name: cse463_project
+// Design cell name: ALU_top_v1_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse463_project
+// Cell name: min_inv
+// View name: schematic
+subckt min_inv In out
+    N0 (out In 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (out In vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_inv
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: d_flip_flop
+// View name: schematic
+subckt d_flip_flop D F1 F2 Q
+    N3 (net2 F2 net5 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N2 (net1 F1 D 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N1 (net2 F1 net6 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N0 (net1 F2 net4 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    I10 (Q net6) min_inv
+    I9 (net5 net4) min_inv
+    I8 (net2 Q) min_inv
+    I7 (net1 net5) min_inv
+ends d_flip_flop
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 3_1_mux
+// View name: schematic
+subckt cse463_project_3_1_mux_schematic Hold Load Out S0 S1 inh_inh_bn
+    M3 (net19 S1 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (Out S0 net17 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out S0 net18 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net18 S1 Hold gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net19 S0 Out vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (Load S1 net17 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends cse463_project_3_1_mux_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: single_muxed_ff
+// View name: schematic
+subckt single_muxed_ff F1 F2 Load Out S0 S1 inh_inh_bn
+    I0 (net13 F1 F2 Out) d_flip_flop
+    I1 (Out Load net13 S0 S1 inh_inh_bn) cse463_project_3_1_mux_schematic
+ends single_muxed_ff
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_reg_v1
+// View name: schematic
+subckt cse463_project_8_bit_reg_v1_schematic F1 F2 In0 In1 In2 In3 In4 In5 \
+        In6 In7 Out0 Out1 Out2 Out3 Out4 Out5 Out6 Out7 S0 S1 inh_inh_bn
+    I51 (F1 F2 In3 Out3 S0 S1 inh_inh_bn) single_muxed_ff
+    I52 (F1 F2 In2 Out2 S0 S1 inh_inh_bn) single_muxed_ff
+    I54 (F1 F2 In6 Out6 S0 S1 inh_inh_bn) single_muxed_ff
+    I53 (F1 F2 In7 Out7 S0 S1 inh_inh_bn) single_muxed_ff
+    I44 (F1 F2 In1 Out1 S0 S1 inh_inh_bn) single_muxed_ff
+    I43 (F1 F2 In0 Out0 S0 S1 inh_inh_bn) single_muxed_ff
+    I56 (F1 F2 In4 Out4 S0 S1 inh_inh_bn) single_muxed_ff
+    I55 (F1 F2 In5 Out5 S0 S1 inh_inh_bn) single_muxed_ff
+ends cse463_project_8_bit_reg_v1_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_alt
+// View name: schematic
+subckt cse463_project_7_1_mux_alt_schematic Adder DM_AC_AND DM_AC_OR \
+        DR_AC_XOR DR_COM DR_direct INPR_direct Out S0 S0B S1 S1B S2 S2B \
+        inh_inh_bn
+    M26 (net021 S1B net011 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M25 (net011 S2B INPR_direct gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M32 (Out S0B net19 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M24 (net032 S2B Adder gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M13 (Out S0 net019 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M12 (Out S0 net018 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M28 (net019 S1B net032 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M10 (net018 S1 net013 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M27 (Out S0B net021 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M19 (net014 S2 DM_AC_OR gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M30 (net012 S1B net014 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M31 (net013 S2B DM_AC_AND gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M29 (Out S0B net012 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M3 (net19 S1 net015 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (Out S0 net17 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out S0 net18 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net18 S1 net017 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M18 (net015 S2 DR_AC_XOR gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M17 (net016 S2 DR_COM gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M16 (net017 S2 DR_direct gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M4 (net016 S1 net17 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends cse463_project_7_1_mux_alt_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: Adder_2
+// View name: schematic
+subckt Adder_2 A B C CarryOut Set inh_inh_bn
+    M16 (net019 net06 net17 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M10 (net17 C 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M9 (net17 B 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M8 (net17 A 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M7 (0 C net25 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M6 (net25 B net26 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net26 A net019 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (0 B net27 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M3 (net27 A net06 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net8 B 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (net8 A 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net06 C net8 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M31 (net019 0 net020 vdd!) ami06P w=900n l=1.05u as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M32 (net020 0 vdd! vdd!) ami06P w=900n l=1.05u as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M30 (net019 net06 net020 vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M25 (net06 0 vdd! vdd!) ami06P w=900n l=1.95u as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    I18 (net06 CarryOut) min_inv
+    I19 (net019 Set) min_inv
+ends Adder_2
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: Adder_2_8bits
+// View name: schematic
+subckt Adder_2_8bits A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 E \
+        out0 out1 out2 out3 out4 out5 out6 out7 inh_inh_bn
+    I9 (A0 B0 0 net024 out0 inh_inh_bn) Adder_2
+    I10 (A1 B1 net024 net11 out1 inh_inh_bn) Adder_2
+    I11 (A2 B2 net11 net10 out2 inh_inh_bn) Adder_2
+    I22 (A7 B7 net6 E out7 inh_inh_bn) Adder_2
+    I20 (A6 B6 net7 net6 out6 inh_inh_bn) Adder_2
+    I19 (A5 B5 net8 net7 out5 inh_inh_bn) Adder_2
+    I18 (A4 B4 net9 net8 out4 inh_inh_bn) Adder_2
+    I17 (A3 B3 net10 net9 out3 inh_inh_bn) Adder_2
+ends Adder_2_8bits
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: min_xor
+// View name: schematic
+subckt min_xor Other Out Reg inh_inh_bn
+    M3 (Out RegBar net11 vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net11 Other vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out Reg net10 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net10 OtherBar vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    I5 (Reg RegBar) min_inv
+    I6 (Other OtherBar) min_inv
+    M7 (net19 RegBar 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M6 (Out OtherBar net19 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net24 Reg 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (Out Other net24 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_xor
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_xor
+// View name: schematic
+subckt cse463_project_8_bit_xor_schematic AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 \
+        IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 \
+        OUT7 inh_inh_bn
+    I11 (AC7 OUT7 In7 inh_inh_bn) min_xor
+    I10 (AC6 OUT6 IN6 inh_inh_bn) min_xor
+    I9 (AC5 OUT5 IN5 inh_inh_bn) min_xor
+    I8 (AC4 OUT4 IN4 inh_inh_bn) min_xor
+    I7 (AC3 OUT3 In3 inh_inh_bn) min_xor
+    I6 (AC2 OUT2 In2 inh_inh_bn) min_xor
+    I5 (AC1 OUT1 In1 inh_inh_bn) min_xor
+    I4 (AC0 OUT0 IN0 inh_inh_bn) min_xor
+ends cse463_project_8_bit_xor_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: min_and
+// View name: schematic
+subckt min_and A B Out inh_inh_bn
+    M6 (Out net8 vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (net8 B vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net8 A vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M5 (Out net8 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net8 B net15 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (net15 A 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_and
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_and
+// View name: schematic
+subckt cse463_project_8_bit_and_schematic AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 \
+        IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 \
+        OUT7 inh_inh_bn
+    I8 (AC0 IN0 OUT0 inh_inh_bn) min_and
+    I12 (AC4 IN4 OUT4 inh_inh_bn) min_and
+    I10 (AC2 In2 OUT2 inh_inh_bn) min_and
+    I9 (AC1 In1 OUT1 inh_inh_bn) min_and
+    I11 (AC3 In3 OUT3 inh_inh_bn) min_and
+    I14 (AC6 IN6 OUT6 inh_inh_bn) min_and
+    I13 (AC5 IN5 OUT5 inh_inh_bn) min_and
+    I15 (AC7 In7 OUT7 inh_inh_bn) min_and
+ends cse463_project_8_bit_and_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: min_or
+// View name: schematic
+subckt min_or A B Out inh_inh_bn
+    M1 (net14 A vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net8 B net14 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M6 (Out net8 vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net8 A 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (net8 B 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M5 (Out net8 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_or
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_or
+// View name: schematic
+subckt cse463_project_8_bit_or_schematic AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 \
+        IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 \
+        OUT7 inh_inh_bn
+    I0 (AC0 IN0 OUT0 inh_inh_bn) min_or
+    I2 (AC2 In2 OUT2 inh_inh_bn) min_or
+    I1 (AC1 In1 OUT1 inh_inh_bn) min_or
+    I4 (AC4 IN4 OUT4 inh_inh_bn) min_or
+    I6 (AC6 IN6 OUT6 inh_inh_bn) min_or
+    I5 (AC5 IN5 OUT5 inh_inh_bn) min_or
+    I3 (AC3 In3 OUT3 inh_inh_bn) min_or
+    I7 (AC7 In7 OUT7 inh_inh_bn) min_or
+ends cse463_project_8_bit_or_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_com
+// View name: schematic
+subckt cse463_project_8_bit_com_schematic IN0 IN1 IN2 IN3 IN4 IN5 IN6 IN7 \
+        OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7
+    I0 (IN0 OUT0) min_inv
+    I1 (IN1 OUT1) min_inv
+    I2 (IN2 OUT2) min_inv
+    I3 (IN3 OUT3) min_inv
+    I4 (IN4 OUT4) min_inv
+    I5 (IN5 OUT5) min_inv
+    I6 (IN6 OUT6) min_inv
+    I7 (IN7 OUT7) min_inv
+ends cse463_project_8_bit_com_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: ALU_top_bens_mux
+// View name: schematic
+subckt ALU_top_bens_mux AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> \
+        AC\<6\> AC\<7\> IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> \
+        IN\<6\> IN\<7\> INPR\<0\> INPR\<1\> INPR\<2\> INPR\<3\> INPR\<4\> \
+        INPR\<5\> INPR\<6\> INPR\<7\> OUT\<0\> OUT\<1\> OUT\<2\> OUT\<3\> \
+        OUT\<4\> OUT\<5\> OUT\<6\> OUT\<7\> S\<0\> S\<1\> S\<2\> S\<3\> \
+        S\<4\> S\<5\> inh_inh_bn
+    I4 (MUX0\<4\> MUX0\<2\> MUX0\<1\> MUX0\<3\> MUX0\<0\> IN\<0\> \
+        INPR\<0\> OUT\<0\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I5 (MUX1\<4\> MUX1\<2\> MUX1\<1\> MUX1\<3\> MUX1\<0\> IN\<1\> \
+        INPR\<1\> OUT\<1\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I6 (MUX2\<4\> MUX2\<2\> MUX2\<1\> MUX2\<3\> MUX2\<0\> IN\<2\> \
+        INPR\<2\> OUT\<2\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I7 (MUX3\<4\> MUX3\<2\> MUX3\<1\> MUX3\<3\> MUX3\<0\> IN\<3\> \
+        INPR\<3\> OUT\<3\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I8 (MUX4\<4\> MUX4\<2\> MUX4\<1\> MUX4\<3\> MUX4\<0\> IN\<4\> \
+        INPR\<4\> OUT\<4\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I9 (MUX5\<4\> MUX5\<2\> MUX5\<1\> MUX5\<3\> MUX5\<0\> IN\<5\> \
+        INPR\<5\> OUT\<5\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I10 (MUX6\<4\> MUX6\<2\> MUX6\<1\> MUX6\<3\> MUX6\<0\> IN\<6\> \
+        INPR\<6\> OUT\<6\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I12 (MUX7\<4\> MUX7\<2\> MUX7\<1\> MUX7\<3\> MUX7\<0\> IN\<7\> \
+        INPR\<7\> OUT\<7\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> S\<5\> \
+        inh_inh_bn) cse463_project_7_1_mux_alt_schematic
+    I0 (AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> AC\<7\> \
+        IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> 0 \
+        MUX0\<4\> MUX1\<4\> MUX2\<4\> MUX3\<4\> MUX4\<4\> MUX5\<4\> \
+        MUX6\<4\> MUX7\<4\> inh_inh_bn) Adder_2_8bits
+    I2 (AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> AC\<7\> \
+        IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> \
+        MUX0\<3\> MUX1\<3\> MUX2\<3\> MUX3\<3\> MUX4\<3\> MUX5\<3\> \
+        MUX6\<3\> MUX7\<3\> inh_inh_bn) cse463_project_8_bit_xor_schematic
+    I1 (AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> AC\<7\> \
+        IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> \
+        MUX0\<2\> MUX1\<2\> MUX2\<2\> MUX3\<2\> MUX4\<2\> MUX5\<2\> \
+        MUX6\<2\> MUX7\<2\> inh_inh_bn) cse463_project_8_bit_and_schematic
+    I3 (AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> AC\<7\> \
+        IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> \
+        MUX0\<1\> MUX1\<1\> MUX2\<1\> MUX3\<1\> MUX4\<1\> MUX5\<1\> \
+        MUX6\<1\> MUX7\<1\> inh_inh_bn) cse463_project_8_bit_or_schematic
+    I15 (IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> \
+        MUX0\<0\> MUX1\<0\> MUX2\<0\> MUX3\<0\> MUX4\<0\> MUX5\<0\> \
+        MUX6\<0\> MUX7\<0\>) cse463_project_8_bit_com_schematic
+ends ALU_top_bens_mux
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: ALU_top_v1_test
+// View name: schematic
+I0 (F1 F2 OUT\<0\> OUT\<1\> OUT\<2\> OUT\<3\> OUT\<4\> OUT\<5\> OUT\<6\> \
+        OUT\<7\> AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> \
+        AC\<7\> S0 S1 0) cse463_project_8_bit_reg_v1_schematic
+I1 (AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> AC\<6\> AC\<7\> \
+        IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> IN\<6\> IN\<7\> \
+        INPR\<0\> INPR\<1\> INPR\<2\> INPR\<3\> INPR\<4\> INPR\<5\> \
+        INPR\<6\> INPR\<7\> OUT\<0\> OUT\<1\> OUT\<2\> OUT\<3\> OUT\<4\> \
+        OUT\<5\> OUT\<6\> OUT\<7\> S\<0\> S\<1\> S\<2\> S\<3\> S\<4\> \
+        S\<5\> 0) ALU_top_bens_mux
+V29 (S0 0) vsource type=pulse val0=0 val1=5 period=1.8u delay=50n \
+        width=1.75u
+V31 (F2 0) vsource type=pulse val0=0 val1=5 period=100n delay=62.5n \
+        width=25n
+V30 (F1 0) vsource type=pulse val0=0 val1=5 period=100n width=50n
+V27 (S1 0) vsource type=pulse val0=5 val1=0 period=1.8u delay=50n \
+        width=1.75u
+V18 (INPR\<7\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V17 (INPR\<6\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V20 (INPR\<5\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V19 (INPR\<4\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V22 (INPR\<3\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V21 (INPR\<2\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V24 (INPR\<1\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V23 (INPR\<0\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V9 (IN\<6\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V10 (IN\<7\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V11 (IN\<4\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V12 (IN\<5\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V13 (IN\<2\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V14 (IN\<3\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V15 (IN\<0\> 0) vsource type=pulse val0=5 val1=0 period=600n width=300n
+V16 (IN\<1\> 0) vsource type=pulse val0=0 val1=0 period=600n width=300n
+V0 (vdd! 0) vsource type=dc dc=5
+V28 (S\<4\> 0) vsource type=dc dc=0
+V25 (S\<0\> 0) vsource type=dc dc=0
+V26 (S\<2\> 0) vsource type=dc dc=5
+I56 (S\<4\> S\<5\>) min_inv
+I54 (S\<0\> S\<1\>) min_inv
+I55 (S\<2\> S\<3\>) min_inv
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=1.8u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

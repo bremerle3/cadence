@@ -1,0 +1,5 @@
+
+// Library name: cse562
+// Cell name: i_squared
+// View name: schematic
+subckt i_squared I_In I_Out Ib_In

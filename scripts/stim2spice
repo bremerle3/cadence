@@ -1,0 +1,213 @@
+#!/usr/bin/perl
+#
+# Script to translate Verilog stimulus files into proper SPICE voltage
+#   sources
+#
+# Recognizes: (e.g.)  d[7:0] = 8'b00000000;
+#                     anotl=1'b1;
+#                     #50 d[7:0] = 8'b00101100;
+#                     #55 anotl=1'b0;
+#                     forever #10 clk=~clk; (assumes forever refers to a clk)
+#
+# ignores: initial, begin, // ..., end, $finish
+#
+# writes VPWL: 
+#     V3 test 0 0.0 pwl 1e-9 0.0 1.01e-9 5.0 2e-9 5.0 2.01e-9 0.0
+# and VPULSE:
+#     V2 test 0 0.0 pulse 
+#
+# Known bugs
+#     busses only work starting from high to low number (e.g. d[7:0],
+#       not d[0:7])
+#     specifying hex numbers for busses is currently not supported.
+#
+#     currently it is a STICKLER for proper semicolon usage.  Things
+#       will go wrong if you don't end your verilog stim lines with semicolons
+#     
+# Matt Clapp
+#
+# Revision History
+# ----------------
+#   11-18-98	Initial version
+#   3-28-2000	Long lines now get split up and '&' at the end of segments
+
+
+# user definable configuration variables follow ****************
+
+$power = "vdd!";	# name of power node
+$ground = "gnd!";	# name of ground node
+
+$logiclow = 0;		# in volts
+$logichigh = 5.0;	# in volts
+
+$timeunit = "ps";	# "e-12" for picoseconds, etc.
+$risefalltime = 10;	# in units of timeunit
+
+$lineContChar = " \n+ ";# what string to insert to split a too-long line
+
+# END user definable variables *********************************
+
+# read in from possible stim2spicerc file
+
+if (-e "stim2spicerc") {
+  if (-r "stim2spicerc") {
+    open(RCFILE, "<stim2spicerc");
+    while(<RCFILE>) {
+      eval $_;
+    }
+    close(RCFILE);
+  } else {
+    warn "\nI can't read your stim2spicerc file.  I'll continue anyway...\n\n";
+  }
+}
+
+# start main program
+
+$simtime = 0;		# Master simulation absolute time
+
+# first pass: make a database entry for each signal with logic levels and
+#   absolute times
+while(<>) {
+
+  # bail on this line if you see one of the following expressions
+  if(/^initial/ || /^begin/ || /^\/\// || /^end/ || /\$finish/ || !/\w/) {
+    next;
+  }
+
+  s/^\s*(.*);.*$/\1/;  # remove beginning whitespace and semicolon
+	#  print;
+
+  # value of a signal with no time attached
+  if (/^([\w\[\]\:]+)\s*=.*'b(\d+)/) {
+    $time = $simtime;
+    $signal = $1;
+    $value = $2;
+	#    print"  At time = $time, $signal = $value \n\n";
+  }
+
+  # value of a signal at some time
+  if (/^#(\d+)\s*([\w\[\]\:]+)\s*=.*'b(\d+)/) {
+    $simtime = $simtime + $1;
+    $time = $simtime;
+    $signal = $2;
+    $value = $3;
+	#    print"  At time = $time, $signal = $value \n\n";
+  }
+
+  # periodic signal with 'forever'
+  if (/^forever\s*#(\d+)\s*([\w\[\]\:]+)\s*=.*/) {
+    $time = $1;
+    $signal = $2;
+    $pulseperiod = $1 * 2;
+    $value = "periodic";
+	#    print"  $signal has a period of $pulseperiod\n";
+  }
+
+  # Array Expansion
+  # note that now it only works for d[7:0] but not d[0:7]
+  if ($signal =~ /(\w+)\[(\d+):(\d+)\]/) {
+    $basesignal = $1;
+    $firstindex = $2;
+    $lastindex = $3;
+
+    for ($index=$firstindex ; $index >= $lastindex ; $index--) {
+      	#print "**$value**\n";
+      $value =~ s/([01])([01]*)$/\2/ || die"bad binary value! \"$value\"\n";
+      	#print $1." and ".$2." and value is".$value."\n";
+      $thisvalue = $1;
+      $signals{$basesignal."_".$index} = 
+      $signals{$basesignal."_".$index}."t".$time."v".$thisvalue;
+	#      print "  ".$basesignal."_".$index." = ".$signals{$basesignal."_".$index}."\n";
+    }
+  } else {
+    $signals{$signal} = $signals{$signal}."t".$time."v".$value;
+	#    print "  ".$signal." = ".$signals{$signal}."\n";
+  }
+}
+
+# second pass: use the assoc. array, and print out valid SPICE stimulus
+# '$spice' is the current line of SPICE to be printed
+
+print "simulator lang=spice\n";
+
+foreach $key (keys %signals) {
+  # name the voltage source, write output node, write '0' for gnd
+  $spice = "V".$key." ".$key." 0 ";
+
+  # do the following for repeating clock signals, then skip to next signal
+  if ($signals{$key} =~ /periodic/) {
+    @timevalue = split /[tv]/, $signals{$key};
+    $spice=$spice."pulse ";
+    $spice=$spice.$logiclow." ".$logichigh." ".$timevalue[3].$timeunit." ";
+    $spice=$spice.$risefalltime.$timeunit." ";
+    $spice=$spice.$risefalltime.$timeunit." ".$timevalue[3].$timeunit." ";
+    $spice=$spice.($timevalue[3]*2).$timeunit;
+    print $spice."\n";
+    next;
+  }
+
+  # assume we're now working with arbitrary pwl
+
+  # put series of time,voltage,time,... into 'timevalue' array
+  @timevalue = split /[tv]/, $signals{$key}; # split every time a 't' or 'v'
+
+	#  print "\n".$signals{$key};
+	#  print "\n",@timevalue,"\n\n";
+	#  print "\n\n".$timevalue[1]."\n\n";
+
+  # set DC value based on first voltage in series
+  if ($timevalue[2]==0) { 
+    $spice=$spice.$logiclow." "; 
+    $voltage = $logiclow;
+  } else { 
+    $spice=$spice.$logichigh." "; 
+    $voltage = $logichigh;
+  }
+  $spice=$spice."pwl ";
+
+  # each new voltage level takes 2 passes through the following foreach loop
+  # timenow=1 means we are about to write: "time oldvoltage time+rise/falltime"
+  # timenow=0 means we need to write "newvoltage"
+  $timenow=1;
+	#  print " ",@timevalue,"\n";
+
+  # shift out first value (throw it away?)
+  $nextval = shift(@timevalue);
+
+  foreach $nextval (@timevalue) {
+	#    print "heidi ho!".$nextval."\n";
+    if ($timenow) { 
+      $spice=$spice.$nextval.$timeunit." ";	#print time
+      $spice=$spice.$voltage." ";		#print old voltage
+      $nextval = $nextval + $risefalltime;
+      $spice=$spice.$nextval.$timeunit." "; 	#print time+rise/fall  
+      $timenow=0;			#next time we just write new voltage
+    } else {
+      if ($nextval == 0) {
+        $spice=$spice.$logiclow." ";
+        $voltage = $logiclow;		#remember this voltage for next iterat
+      } else {
+        $spice=$spice.$logichigh." ";
+        $voltage = $logichigh;		#remember this voltage for next iterat
+      }
+      $timenow=1;			#next time we write all except new volt
+    }
+  }
+
+	#  $sourcename = "V".$signal;
+	#  print $sourcename."\n";
+
+  # check if line is too long (>70 characters) and insert ampersands
+  if (length($spice) > 70) {
+    	# print"* the following is long!\n";
+
+    # the following says, search for a space after at least 65 non-& 
+    #   characters, then replace the space with "$lineContChar"
+    # the 'g' means it keeps going over the string until it's done
+    $spice =~ s/([^&]{65,}?)\s/$1$lineContChar/g;
+  }
+
+  print $spice."\n";
+}
+#print "V".$power." ".$power." 0 ".$logichigh."\n";
+#print "V".$ground." ".$ground." 0 ".$logiclow."\n";

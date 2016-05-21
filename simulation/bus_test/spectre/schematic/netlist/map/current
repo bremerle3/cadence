@@ -1,0 +1,38 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "bus_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/bus_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse463_project/min_inv/schematic" "min_inv" )
+( "cse463_project/d_flip_flop/schematic" "d_flip_flop" )
+( "cse463_project/IR_reg/schematic" "IR_reg" )
+( "cse463_project/IR_trigate/schematic" "IR_trigate" )
+( "cse463_project/single_muxed_ff/schematic" "single_muxed_ff" )
+( "cse463_project/3_1_mux_alt/schematic" "cse463_project_3_1_mux_alt_schematic" )
+( "cse463_project/bus_test/schematic" "bus_test" )
+ )
+( term
+ )
+( param
+ )
+( "single_muxed_ff" "ihnl/cds4/map" )
+( "IR_trigate" "ihnl/cds1/map" )
+( "IR_reg" "ihnl/cds5/map" )
+( "bus_test" "ihnl/cds6/map" )
+( "cse463_project_3_1_mux_alt_schematic" "ihnl/cds3/map" )
+( "min_inv" "ihnl/cds0/map" )
+( "d_flip_flop" "ihnl/cds2/map" )
+ )

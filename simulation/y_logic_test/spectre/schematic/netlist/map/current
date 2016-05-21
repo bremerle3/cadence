@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "y_logic_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/y_logic_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "563_final/y_logic/schematic" "y_logic" )
+( "563_final/y_logic_test/schematic" "y_logic_test" )
+ )
+( term
+ )
+( param
+ )
+( "y_logic" "ihnl/cds0/map" )
+( "y_logic_test" "ihnl/cds1/map" )
+ )

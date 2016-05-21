@@ -1,0 +1,8 @@
+CADENCE IHNL01076
+
+cse463_project min_inv schematic cds0
+cse463_project d_flip_flop schematic cds1
+cse463_project 3_1_mux schematic cds2
+cse463_project single_muxed_ff schematic cds3
+cse463_project 8_bit_reg_v1 schematic cds4
+cse463_project 8_bit_reg_v1_test schematic cds5

@@ -1,0 +1,27 @@
+CADENCE IHNL01070
+$model
+cse463_project/3_1_mux/schematic cse463_project_3_1_mux_schematic
+cse463_project/min_and/schematic min_and
+cse463_project/min_xor/schematic min_xor
+cse463_project/8_bit_or/schematic cse463_project_8_bit_or_schematic
+cse463_project/7_1_mux_tgate/schematic cse463_project_7_1_mux_tgate_schematic
+cse463_project/min_tgate/schematic min_tgate
+cse463_project/min_inv/schematic min_inv
+cse463_project/d_flip_flop/schematic d_flip_flop
+cse463_project/8_bit_reg_v1/schematic cse463_project_8_bit_reg_v1_schematic
+cse463_project/Adder_2/schematic Adder_2
+cse463_project/8_bit_and/schematic cse463_project_8_bit_and_schematic
+cse463_project/8_bit_xor/schematic cse463_project_8_bit_xor_schematic
+cse463_project/single_muxed_ff/schematic single_muxed_ff
+cse463_project/closed_loop_add/schematic closed_loop_add
+cse463_project/ALU_top/schematic ALU_top
+cse463_project/8_bit_com/schematic cse463_project_8_bit_com_schematic
+cse463_project/Adder_2_8bits/schematic Adder_2_8bits
+cse463_project/min_or/schematic min_or
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

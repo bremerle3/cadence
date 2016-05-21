@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+cse562/mirror5/schematic mirror5
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+pL pL
+pW pW
+$endparam

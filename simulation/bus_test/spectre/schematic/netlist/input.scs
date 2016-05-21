@@ -1,0 +1,158 @@
+// Generated for: spectre
+// Generated on: May 10 00:21:49 2016
+// Design library name: cse463_project
+// Design cell name: bus_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse463_project
+// Cell name: min_inv
+// View name: schematic
+subckt min_inv In out
+    N0 (out In 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (out In vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_inv
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: IR_trigate
+// View name: schematic
+subckt IR_trigate inv_in N0 N0B N1 N1B Out inh_inh_bn
+    M6 (Out N0B net12 gnd!) ami06N w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    M5 (net12 N1B inv_out gnd!) ami06N w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    I2 (inv_in net07) min_inv
+    I1 (net07 inv_out) min_inv
+    M1 (Out N0 net12 vdd!) ami06P w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    M0 (net12 N1 inv_out vdd!) ami06P w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+ends IR_trigate
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: d_flip_flop
+// View name: schematic
+subckt d_flip_flop D F1 F2 Q
+    N3 (net2 F2 net5 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N2 (net1 F1 D 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N1 (net2 F1 net6 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N0 (net1 F2 net4 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    I10 (Q net6) min_inv
+    I9 (net5 net4) min_inv
+    I8 (net2 Q) min_inv
+    I7 (net1 net5) min_inv
+ends d_flip_flop
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 3_1_mux_alt
+// View name: schematic
+subckt cse463_project_3_1_mux_alt_schematic Hold Load Out S0 S0B S1 S1B \
+        inh_inh_bn
+    M5 (Out S0 net1 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (net1 S1B 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M3 (Out S0B net2 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net2 S1 Load gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out S0 net3 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net3 S1 Hold gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends cse463_project_3_1_mux_alt_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: single_muxed_ff
+// View name: schematic
+subckt single_muxed_ff F1 F2 Load Out S0 S0B S1 S1B inh_inh_bn
+    I0 (net13 F1 F2 Out) d_flip_flop
+    I6 (Out Load net13 S0 S0B S1 S1B inh_inh_bn) \
+        cse463_project_3_1_mux_alt_schematic
+ends single_muxed_ff
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: IR_reg
+// View name: schematic
+subckt IR_reg F1 F2 In0 In1 In2 In3 In4 In5 In6 In7 N0 N0B N1 N1B Out0 \
+        Out1 Out2 Out3 Out4 Out5 Out6 Out7 S0 S0B S1 S1B inh_inh_bn
+    I94 (net78 N0 N0B N1 N1B Out7 inh_inh_bn) IR_trigate
+    I93 (net80 N0 N0B N1 N1B Out6 inh_inh_bn) IR_trigate
+    I92 (net79 N0 N0B N1 N1B Out5 inh_inh_bn) IR_trigate
+    I91 (net75 N0 N0B N1 N1B Out4 inh_inh_bn) IR_trigate
+    I90 (net81 N0 N0B N1 N1B Out3 inh_inh_bn) IR_trigate
+    I89 (net77 N0 N0B N1 N1B Out2 inh_inh_bn) IR_trigate
+    I88 (net76 N0 N0B N1 N1B Out1 inh_inh_bn) IR_trigate
+    I87 (net74 N0 N0B N1 N1B Out0 inh_inh_bn) IR_trigate
+    I60 (F1 F2 In0 net74 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I64 (F1 F2 In4 net75 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I61 (F1 F2 In1 net76 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I62 (F1 F2 In2 net77 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I67 (F1 F2 In7 net78 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I65 (F1 F2 In5 net79 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I66 (F1 F2 In6 net80 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I63 (F1 F2 In3 net81 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+ends IR_reg
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: bus_test
+// View name: schematic
+I14 (F1 F2 Input\<0\> Input\<1\> Input\<2\> Input\<3\> Input\<4\> \
+        Input\<5\> Input\<6\> Input\<7\> net07 net5 net07 net5 Bus\<0\> \
+        Bus\<1\> Bus\<2\> Bus\<3\> Bus\<4\> Bus\<5\> Bus\<6\> Bus\<7\> \
+        net02 net017 net01 net015 0) IR_reg
+V31 (F2 0) vsource type=pulse val0=0 val1=5 period=100n delay=62.5n \
+        width=25n
+V30 (F1 0) vsource type=pulse val0=0 val1=5 period=100n width=50n
+V7 (Input\<7\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V6 (Input\<6\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V5 (Input\<5\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V4 (Input\<4\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V3 (Input\<3\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V2 (Input\<2\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V1 (Input\<1\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V0 (Input\<0\> 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V11 (net07 0) vsource type=dc dc=0
+V9 (net5 0) vsource type=dc dc=5
+V25 (net01 0) vsource type=dc dc=5
+V26 (net02 0) vsource type=dc dc=0
+V8 (vdd! 0) vsource type=dc dc=5
+I55 (net02 net017) min_inv
+I54 (net01 net015) min_inv
+C10 (Bus\<7\> 0) capacitor c=100f m=1
+C9 (Bus\<6\> 0) capacitor c=100f m=1
+C8 (Bus\<5\> 0) capacitor c=100f m=1
+C7 (Bus\<4\> 0) capacitor c=100f m=1
+C6 (Bus\<3\> 0) capacitor c=100f m=1
+C5 (Bus\<2\> 0) capacitor c=100f m=1
+C4 (Bus\<1\> 0) capacitor c=100f m=1
+C3 (Bus\<0\> 0) capacitor c=100f m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=800n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

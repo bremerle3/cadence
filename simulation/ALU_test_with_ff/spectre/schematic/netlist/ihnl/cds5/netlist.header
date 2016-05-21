@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: min_xor
+// View name: schematic
+subckt min_xor Other Out Reg inh_inh_bn

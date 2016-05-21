@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"N1n N0n N7n" "NCSU_Analog_Parts_nmos4_spectre"
+"P1n P0n P8n" "NCSU_Analog_Parts_pmos4_spectre"
+"I46n" "comparator"
+"V4n V0n" "NCSU_Analog_Parts_vdc_spectre"
+"R1n R0n" "NCSU_Analog_Parts_res_spectre"
+"C0n" "NCSU_Analog_Parts_cap_spectre"
+"I47n" "true_ff"
+"V2n" "NCSU_Analog_Parts_vpulse_spectre"
+"V1n" "NCSU_Analog_Parts_vpwl_spectre"

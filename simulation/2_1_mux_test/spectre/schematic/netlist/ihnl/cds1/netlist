@@ -1,0 +1,10 @@
+
+// Library name: 563_final
+// Cell name: 2_1_mux_test
+// View name: schematic
+I0 (net2 net3 net4 net5) _sub0
+C1 (net5 0) capacitor c=1p m=1
+V5 (net4 0) vsource type=pulse val0=0 val1=5 period=5u
+V6 (net3 0) vsource type=pulse val0=0 val1=5 period=10u
+V4 (net2 0) vsource type=pulse val0=0 val1=5 period=20u
+V0 (vdd! 0) vsource type=dc dc=5

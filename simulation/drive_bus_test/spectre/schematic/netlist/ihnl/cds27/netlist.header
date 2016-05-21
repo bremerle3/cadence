@@ -1,0 +1,6 @@
+
+// Library name: cse463_project
+// Cell name: PC_5_bit
+// View name: schematic
+subckt PC_5_bit F1 F2 In0 In1 In2 In3 In4 Out0 Out1 Out2 Out3 Out4 S0 S0B \
+        S1 S1B inh_inh_bn

@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+cse562/poly_sources/schematic poly_sources
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

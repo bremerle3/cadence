@@ -1,0 +1,17 @@
+Begin Incremental Netlisting Dec 10 20:02:13 2015
+End netlisting Dec 10 20:02:13 2015
+Begin Incremental Netlisting Dec 10 20:02:30 2015
+End netlisting Dec 10 20:02:30 2015
+Begin Incremental Netlisting Dec 10 20:04:12 2015
+ERROR (OSSHNL-109): The cellview 'cse562/simple_latch/schematic' has been
+modified since the last extraction. Validate
+that the schematic is correct and
+run Check and Save to correct this error.
+
+End netlisting Dec 10 20:04:12 2015
+Begin Incremental Netlisting Dec 10 20:04:21 2015
+End netlisting Dec 10 20:04:22 2015
+Begin Incremental Netlisting Dec 10 20:04:53 2015
+End netlisting Dec 10 20:04:53 2015
+Begin Incremental Netlisting Dec 10 20:05:52 2015
+End netlisting Dec 10 20:05:53 2015

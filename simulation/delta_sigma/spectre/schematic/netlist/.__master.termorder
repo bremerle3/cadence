@@ -1,0 +1,5 @@
+"cse562.true_ff.schematic.termorder" (("CLK" "D" "Q") ("CLK" "D" "Q"))
+"cse562.comparator.schematic.termorder" (("V+" "V-" "Vout") ("V+" "V-" "Vout"))
+"cse562.new_op_amp.schematic.termorder" (("Vin+" "Vin-" "Vout") ("Vin+" "Vin-" "Vout"))
+"cse562.simple_latch.schematic.termorder" (("CLK" "D" "Q") ("CLK" "D" "Q"))
+"cse562.proj1_opamp.schematic.termorder" (("Vin+" "Vin-" "Vout") ("Vin+" "Vin-" "Vout"))

@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: Adder_2
+// View name: schematic
+subckt Adder_2 A B C CarryOut Set inh_inh_bn

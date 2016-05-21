@@ -1,0 +1,42 @@
+CADENCE IHNL01070
+$model
+cse463_project/8_bit_bus_inverter/schematic cse463_project_8_bit_bus_inverter_schematic
+cse463_project/PC_trigate/schematic PC_trigate
+cse463_project/min_and/schematic min_and
+cse463_project/min_inv/schematic min_inv
+cse463_project/d_flip_flop/schematic d_flip_flop
+cse463_project/8_bit_reg_v1/schematic cse463_project_8_bit_reg_v1_schematic
+cse463_project/8bit_reg_AC_1/schematic cse463_project_8bit_reg_AC_1_schematic
+cse463_project/8_bit_ALU/schematic cse463_project_8_bit_ALU_schematic
+cse463_project/IR_reg/extracted IR_reg
+cse463_project/Adder_2/schematic Adder_2
+cse463_project/bus_inverter/schematic bus_inverter
+cse463_project/1_bit_ALU/schematic cse463_project_1_bit_ALU_schematic
+cse463_project/PC_5_bit/schematic PC_5_bit
+cse463_project/half_adder/schematic half_adder
+cse463_project/AC_trigate/schematic AC_trigate
+cse463_project/AR_reg/schematic AR_reg
+cse463_project/5_1_mux/schematic cse463_project_5_1_mux_schematic
+cse463_project/ALU_to_AC/schematic ALU_to_AC
+cse463_project/7_1_mux_alt/schematic cse463_project_7_1_mux_alt_schematic
+cse463_project/bus_top/extracted bus_top
+cse463_project/PC_1_bit/schematic PC_1_bit
+cse463_project/single_muxed_ff/schematic single_muxed_ff
+cse463_project/PC_5_bit_with_trigate/schematic PC_5_bit_with_trigate
+cse463_project/3_1_mux_alt/schematic cse463_project_3_1_mux_alt_schematic
+cse463_project/bus_top/schematic bus_top_schematic
+cse463_project/PC_last_bit/schematic PC_last_bit
+cse463_project/4_1_mux/schematic cse463_project_4_1_mux_schematic
+cse463_project/IR_trigate/schematic IR_trigate
+cse463_project/min_xor2/schematic min_xor2
+cse463_project/IR_reg/schematic IR_reg_schematic
+cse463_project/drive_bus_test/schematic drive_bus_test
+cse463_project/min_or/schematic min_or
+cse463_project/8bit_AC/schematic cse463_project_8bit_AC_schematic
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

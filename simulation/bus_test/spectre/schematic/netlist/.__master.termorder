@@ -1,0 +1,6 @@
+"cse463_project.min_inv.schematic.termorder" (("In" "out") ("In" "out"))
+"cse463_project.IR_trigate.schematic.termorder" (("inv_in" "N0" "N0B" "N1" "N1B" "Out" "[@inh_bn:%:gnd!]") ("inv_in" "N0" "N0B" "N1" "N1B" "Out" "[@inh_bn:%:gnd!]"))
+"cse463_project.3_1_mux_alt.schematic.termorder" (("Hold" "Load" "Out" "S0" "S0B" "S1" "S1B" "[@inh_bn:%:gnd!]") ("Hold" "Load" "Out" "S0" "S0B" "S1" "S1B" "[@inh_bn:%:gnd!]"))
+"cse463_project.d_flip_flop.schematic.termorder" (("D" "F1" "F2" "Q") ("D" "F1" "F2" "Q"))
+"cse463_project.IR_reg.schematic.termorder" (("F1" "F2" "In0" "In1" "In2" "In3" "In4" "In5" "In6" "In7" "N0" "N0B" "N1" "N1B" "Out0" "Out1" "Out2" "Out3" "Out4" "Out5" "Out6" "Out7" "S0" "S0B" "S1" "S1B" "[@inh_bn:%:gnd!]") ("F1" "F2" "In0" "In1" "In2" "In3" "In4" "In5" "In6" "In7" "N0" "N0B" "N1" "N1B" "Out0" "Out1" "Out2" "Out3" "Out4" "Out5" "Out6" "Out7" "S0" "S0B" "S1" "S1B" "[@inh_bn:%:gnd!]"))
+"cse463_project.single_muxed_ff.schematic.termorder" (("F1" "F2" "Load" "Out" "S0" "S0B" "S1" "S1B" "[@inh_bn:%:gnd!]") ("F1" "F2" "Load" "Out" "S0" "S0B" "S1" "S1B" "[@inh_bn:%:gnd!]"))

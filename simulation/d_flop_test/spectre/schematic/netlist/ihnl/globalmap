@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+563_final/ff_inv/schematic ff_inv
+563_final/d_flop/schematic d_flop
+563_final/d_flop_test/schematic d_flop_test
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

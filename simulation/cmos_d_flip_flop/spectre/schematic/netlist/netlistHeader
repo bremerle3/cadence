@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Dec 10 19:37:36 2015
+// Design library name: cse562
+// Design cell name: cmos_d_flip_flop
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,28 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "14.1.0.576.isr7"
+"date" "4:01:28 AM, Wed May 11, 2016"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"cse463_project_3_1_mux_alt_extracted" "subckt" (
+""
+"Hold Load Out S0 S0B S1 S1B 0"
+)
+"d_flip_flop" "subckt" (
+""
+"D F1 F2 Q vdd! 0"
+)
+END

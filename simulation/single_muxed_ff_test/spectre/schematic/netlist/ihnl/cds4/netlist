@@ -1,0 +1,16 @@
+
+// Library name: cse463_project
+// Cell name: single_muxed_ff_test
+// View name: schematic
+I7 (F1 F2 Load net018 S0 net8 S1 net6 0) single_muxed_ff
+V3 (F2 0) vsource type=pulse val0=0 val1=5 period=100n delay=62.5n \
+        width=25n
+V2 (F1 0) vsource type=pulse val0=0 val1=5 period=100n width=50n
+V0 (Load 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V6 (S0 0) vsource type=dc dc=0
+V5 (S1 0) vsource type=dc dc=5
+V1 (vdd! 0) vsource type=dc dc=5
+C0 (Out 0) capacitor c=100f m=1
+I54 (S1 net6) min_inv
+I55 (S0 net8) min_inv
+I8 (net018 S0 S1 S0 S1 Out 0) IR_trigate

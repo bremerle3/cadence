@@ -1,0 +1,5 @@
+"cse463_project.3_1_mux.schematic.termorder" nil
+"cse463_project.min_inv.schematic.termorder" (("In" "out") ("In" "out"))
+"cse463_project.8_bit_reg_v1.schematic.termorder" (("F1" "F2" "In0" "In1" "In2" "In3" "In4" "In5" "In6" "In7" "Out0" "Out1" "Out2" "Out3" "Out4" "Out5" "Out6" "Out7" "S0" "S1" "[@inh_bn:%:gnd!]") ("F1" "F2" "In0" "In1" "In2" "In3" "In4" "In5" "In6" "In7" "Out0" "Out1" "Out2" "Out3" "Out4" "Out5" "Out6" "Out7" "S0" "S1" "[@inh_bn:%:gnd!]"))
+"cse463_project.d_flip_flop.schematic.termorder" (("D" "F1" "F2" "Q") ("D" "F1" "F2" "Q"))
+"cse463_project.single_muxed_ff.schematic.termorder" (("F1" "F2" "Load" "Out" "S0" "S1" "[@inh_bn:%:gnd!]") ("F1" "F2" "Load" "Out" "S0" "S1" "[@inh_bn:%:gnd!]"))

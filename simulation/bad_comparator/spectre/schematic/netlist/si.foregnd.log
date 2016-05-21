@@ -1,0 +1,33 @@
+Begin Incremental Netlisting Dec 11 01:40:51 2015
+End netlisting Dec 11 01:40:52 2015
+Begin Incremental Netlisting Dec 11 01:41:08 2015
+End netlisting Dec 11 01:41:08 2015
+Begin Incremental Netlisting Dec 11 01:42:49 2015
+ERROR (OSSHNL-109): The cellview 'cse562/bad_comparator/schematic' has been
+modified since the last extraction. Validate
+that the schematic is correct and
+run Check and Save to correct this error.
+
+End netlisting Dec 11 01:42:49 2015
+Begin Incremental Netlisting Dec 11 01:42:58 2015
+WARNING (OSSHNL-160): The primitive, 'NCSU_Analog_Parts/vpulse/spectre', was not
+used in the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Dec 11 01:42:58 2015
+Begin Incremental Netlisting Dec 11 01:45:05 2015
+End netlisting Dec 11 01:45:05 2015
+Begin Incremental Netlisting Dec 11 01:47:29 2015
+End netlisting Dec 11 01:47:29 2015
+Begin Incremental Netlisting Dec 11 01:47:38 2015
+End netlisting Dec 11 01:47:38 2015
+Begin Incremental Netlisting Dec 11 01:48:05 2015
+End netlisting Dec 11 01:48:05 2015
+Begin Incremental Netlisting Dec 11 01:48:15 2015
+End netlisting Dec 11 01:48:15 2015
+Begin Incremental Netlisting Dec 11 01:49:16 2015
+End netlisting Dec 11 01:49:16 2015
+Begin Incremental Netlisting Dec 11 01:49:35 2015
+End netlisting Dec 11 01:49:35 2015

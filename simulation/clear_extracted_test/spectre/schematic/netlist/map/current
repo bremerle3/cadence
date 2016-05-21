@@ -1,0 +1,32 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "clear_extracted_test"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/clear_extracted_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse463_project/clear_extracted_test/schematic" "clear_extracted_test" )
+( "cse463_project/min_inv/extracted" "min_inv" )
+( "cse463_project/d_flip_flop/extracted" "d_flip_flop" )
+( "cse463_project/3_1_mux_alt/extracted" "cse463_project_3_1_mux_alt_extracted" )
+ )
+( term
+ )
+( param
+ )
+( "cse463_project_3_1_mux_alt_extracted" "ihnl/cds0/map" )
+( "clear_extracted_test" "ihnl/cds3/map" )
+( "min_inv" "ihnl/cds2/map" )
+( "d_flip_flop" "ihnl/cds1/map" )
+ )

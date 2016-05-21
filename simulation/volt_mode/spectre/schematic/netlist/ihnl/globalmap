@@ -1,0 +1,18 @@
+CADENCE IHNL01070
+$model
+cse562/proj1_opamp/schematic proj1_opamp
+cse562/comparator/schematic comparator
+cse562/true_ff/schematic true_ff
+cse562/volt_mode/schematic volt_mode
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+ms ms
+pL pL
+pW pW
+nL nL
+$endparam

@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+cse463_project/xor_operation/schematic xor_operation
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

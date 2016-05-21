@@ -1,0 +1,13 @@
+CADENCE IHNL01070
+$model
+cse463_project/7_1_mux_tgate_test/schematic cse463_project_7_1_mux_tgate_test_schematic
+cse463_project/7_1_mux_tgate/schematic cse463_project_7_1_mux_tgate_schematic
+cse463_project/min_tgate/schematic min_tgate
+cse463_project/min_inv/schematic min_inv
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

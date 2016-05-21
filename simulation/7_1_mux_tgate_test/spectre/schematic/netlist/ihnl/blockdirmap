@@ -1,0 +1,6 @@
+CADENCE IHNL01074
+
+cse463_project min_tgate schematic cds0
+cse463_project 7_1_mux_tgate schematic cds1
+cse463_project min_inv schematic cds2
+cse463_project 7_1_mux_tgate_test schematic cds3

@@ -1,0 +1,14 @@
+Begin Incremental Netlisting Dec 11 02:37:51 2015
+WARNING (OSSHNL-225): The design variable 'nW', used in the last netlisting
+session in the current
+run directory is not used in this netlisting session. The
+netlist(s) generated
+in the last netlisting session cannot be reused for
+incremental netlisting.
+Therefore re-netlisting the design.
+
+End netlisting Dec 11 02:37:52 2015
+Begin Incremental Netlisting Dec 11 02:38:08 2015
+End netlisting Dec 11 02:38:08 2015
+Begin Incremental Netlisting Dec 11 02:38:35 2015
+End netlisting Dec 11 02:38:35 2015

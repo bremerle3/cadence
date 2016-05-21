@@ -1,0 +1,119 @@
+// Generated for: spectre
+// Generated on: Apr 14 03:55:56 2016
+// Design library name: cse463_project
+// Design cell name: 8_bit_reg_v1_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse463_project
+// Cell name: min_inv
+// View name: schematic
+subckt min_inv In out
+    N0 (out In 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (out In vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_inv
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: d_flip_flop
+// View name: schematic
+subckt d_flip_flop D F1 F2 Q
+    N3 (net2 F2 net5 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N2 (net1 F1 D 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    N1 (net2 F1 net6 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    N0 (net1 F2 net4 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    I10 (Q net6) min_inv
+    I9 (net5 net4) min_inv
+    I8 (net2 Q) min_inv
+    I7 (net1 net5) min_inv
+ends d_flip_flop
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 3_1_mux
+// View name: schematic
+subckt cse463_project_3_1_mux_schematic Hold Load Out S0 S1 inh_inh_bn
+    M3 (net19 S1 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (Out S0 net17 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out S0 net18 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net18 S1 Hold gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net19 S0 Out vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (Load S1 net17 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends cse463_project_3_1_mux_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: single_muxed_ff
+// View name: schematic
+subckt single_muxed_ff F1 F2 Load Out S0 S1 inh_inh_bn
+    I0 (net13 F1 F2 Out) d_flip_flop
+    I1 (Out Load net13 S0 S1 inh_inh_bn) cse463_project_3_1_mux_schematic
+ends single_muxed_ff
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_reg_v1
+// View name: schematic
+subckt cse463_project_8_bit_reg_v1_schematic F1 F2 In0 In1 In2 In3 In4 In5 \
+        In6 In7 Out0 Out1 Out2 Out3 Out4 Out5 Out6 Out7 S0 S1 inh_inh_bn
+    I56 (F1 F2 In4 Out4 S0 S1 inh_inh_bn) single_muxed_ff
+    I55 (F1 F2 In5 Out5 S0 S1 inh_inh_bn) single_muxed_ff
+    I54 (F1 F2 In6 Out6 S0 S1 inh_inh_bn) single_muxed_ff
+    I53 (F1 F2 In7 Out7 S0 S1 inh_inh_bn) single_muxed_ff
+    I52 (F1 F2 In2 Out2 S0 S1 inh_inh_bn) single_muxed_ff
+    I51 (F1 F2 In3 Out3 S0 S1 inh_inh_bn) single_muxed_ff
+    I44 (F1 F2 In1 Out1 S0 S1 inh_inh_bn) single_muxed_ff
+    I43 (F1 F2 In0 Out0 S0 S1 inh_inh_bn) single_muxed_ff
+ends cse463_project_8_bit_reg_v1_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_reg_v1_test
+// View name: schematic
+I0 (F1 F2 Load Load Load Load Load Load Load Load Out0 Out1 Out2 Out3 Out4 \
+        Out5 Out6 Out7 S0 S1 0) cse463_project_8_bit_reg_v1_schematic
+V0 (Load 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V3 (F2 0) vsource type=pulse val0=0 val1=5 period=100n delay=62.5n \
+        width=25n
+V2 (F1 0) vsource type=pulse val0=0 val1=5 period=100n width=50n
+V5 (S0 0) vsource type=pulse val0=0 val1=5 period=600n delay=100n \
+        width=300n
+V4 (S1 0) vsource type=pulse val0=0 val1=5 period=400n width=200n
+C11 (Out0 0) capacitor c=100f m=1
+C10 (Out1 0) capacitor c=100f m=1
+C9 (Out2 0) capacitor c=100f m=1
+C8 (Out3 0) capacitor c=100f m=1
+C6 (Out4 0) capacitor c=100f m=1
+C4 (Out5 0) capacitor c=100f m=1
+C2 (Out6 0) capacitor c=100f m=1
+C0 (Out7 0) capacitor c=100f m=1
+V1 (vdd! 0) vsource type=dc dc=5
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=2u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

@@ -1,0 +1,6 @@
+
+// Library name: cse463_project
+// Cell name: AR_reg
+// View name: schematic
+subckt AR_reg F1 F2 In\<0\> In\<1\> In\<2\> In\<3\> In\<4\> Out\<0\> \
+        Out\<1\> Out\<2\> Out\<3\> Out\<4\> S0 S0B S1 S1B inh_inh_bn

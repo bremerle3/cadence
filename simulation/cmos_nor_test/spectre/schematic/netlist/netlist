@@ -1,0 +1,24 @@
+
+// Library name: 563_final
+// Cell name: cmos_nor
+// View name: schematic
+subckt cmos_nor Vin1 Vin2 Vout
+    N1 (Vout Vin1 net8 0) ami06N w=1.8u l=600n as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    N0 (net8 Vin2 0 0) ami06N w=1.8u l=600n as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    P1 (Vout Vin1 vdd! vdd!) ami06P w=1.35u l=600n as=2.025e-12 \
+        ad=2.025e-12 ps=5.7u pd=5.7u m=1 region=sat
+    P0 (Vout Vin2 vdd! vdd!) ami06P w=1.35u l=600n as=2.025e-12 \
+        ad=2.025e-12 ps=5.7u pd=5.7u m=1 region=sat
+ends cmos_nor
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: cmos_nor_test
+// View name: schematic
+I8 (net03 net02 net2) cmos_nor
+V3 (net02 0) vsource type=dc dc=Vin2
+V1 (net03 0) vsource type=dc dc=Vin1
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (net2 0) capacitor c=1f m=1

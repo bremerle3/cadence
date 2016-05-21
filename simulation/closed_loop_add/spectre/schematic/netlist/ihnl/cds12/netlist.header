@@ -1,0 +1,7 @@
+
+// Library name: cse463_project
+// Cell name: 8_bit_or
+// View name: schematic
+subckt cse463_project_8_bit_or_schematic AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 \
+        IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 \
+        OUT7 inh_inh_bn

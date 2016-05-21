@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "cube_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/cube_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/cube/schematic" "cube" )
+( "cse562/cube_test/schematic" "cube_test" )
+ )
+( term
+ )
+( param
+ )
+( "cube" "ihnl/cds0/map" )
+( "cube_test" "ihnl/cds1/map" )
+ )

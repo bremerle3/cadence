@@ -1,0 +1,72 @@
+#!/usr/bin/perl
+#
+# cadfilterlpr
+#
+# use instead of lpr in cadence to beautify and correct cadence's postscript
+
+# Matt Clapp
+# Dec. 6 2001-2003
+
+
+# Polygon begins with 'dpb'
+# Polygon ends with 'dps'
+# (number of dpv's inbetween) + 1 = number of verticies
+
+while(<STDIN>) {
+  push(@lines,$_);
+}
+
+# what follows is old fixplot
+
+$page =1;
+$linenum = 0;
+while($_ = $lines[$linenum]) {
+
+  # make lines more visible
+  s/\d setlinewidth/2 setlinewidth/;
+
+  # remember this line number if it has a 'dpb'
+  if (/dpb$/) {$dpb = $linenum;}
+
+  # fix page number problems with cadence ps
+  if (/^%%Page: (\d+)/) {
+    s/(%%Page: \d+)/$1 $page/;
+    $page = $page + 1;
+  }
+
+  # kill all dbs (squares on mosfet pins)
+  if (/dbs$/) { $_="%".$_; }
+
+  # bad squares can be recognized by preceding 1 dpb and 3 dpv's
+  # More dpv's indicate a pin instead of a bad square
+  if (/^dps$/ && $linenum-4==$dpb) {
+    $_="%".$_;
+    commentout($linenum-4,$linenum-1);
+  }
+
+  $lines[$linenum]=$_;
+  $linenum++;
+}
+
+# look for an available filename in current dir
+$filenum = 1;
+while(-e "plot$filenum.ps") {
+  $filenum = $filenum +1;
+}
+
+open (PLOTOUT,">plot$filenum.ps");
+while($_ = shift(@lines)) {
+  print PLOTOUT;
+}
+close(PLOTOUT);
+
+
+sub commentout {
+  my $firstline = $_[0];
+  my $lastline  = $_[1];
+  my $nowline;
+
+  for ($nowline=$firstline; $nowline<=$lastline; $nowline++) {
+    $lines[$nowline]="%".$lines[$nowline];
+  }
+}

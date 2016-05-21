@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 26 07:34:08 2016
+// Design library name: cse463_project
+// Design cell name: closed_loop_add
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

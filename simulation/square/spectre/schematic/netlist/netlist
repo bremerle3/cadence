@@ -1,0 +1,15 @@
+
+// Library name: cse562
+// Cell name: square
+// View name: schematic
+N7 (vdd! net3 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+N6 (vdd! net1 net3 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+N5 (net2 net2 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+N4 (net1 net1 net2 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+I21 (net3 0) isource type=dc dc=2n m=1
+I17 (vdd! net1) isource type=dc dc=10n m=1
+V2 (vdd! 0) vsource type=dc dc=3

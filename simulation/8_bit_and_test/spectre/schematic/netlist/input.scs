@@ -1,0 +1,76 @@
+// Generated for: spectre
+// Generated on: Apr 21 17:20:08 2016
+// Design library name: cse463_project
+// Design cell name: 8_bit_and_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse463_project
+// Cell name: min_and
+// View name: schematic
+subckt min_and A B Out inh_inh_bn
+    M5 (Out net8 vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (net8 B vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net8 A vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M3 (Out net8 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (net8 B net15 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (net15 A 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_and
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_and
+// View name: schematic
+subckt cse463_project_8_bit_and_schematic AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 \
+        IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 \
+        OUT7 inh_inh_bn
+    I15 (AC7 In7 OUT7 inh_inh_bn) min_and
+    I14 (AC6 IN6 OUT6 inh_inh_bn) min_and
+    I13 (AC5 IN5 OUT5 inh_inh_bn) min_and
+    I12 (AC4 IN4 OUT4 inh_inh_bn) min_and
+    I11 (AC3 In3 OUT3 inh_inh_bn) min_and
+    I10 (AC2 In2 OUT2 inh_inh_bn) min_and
+    I9 (AC1 In1 OUT1 inh_inh_bn) min_and
+    I8 (AC0 IN0 OUT0 inh_inh_bn) min_and
+ends cse463_project_8_bit_and_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 8_bit_and_test
+// View name: schematic
+V7 (MEM 0) vsource type=pulse val0=5 val1=0 period=100n width=50n
+V6 (AC 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V1 (vdd! 0) vsource type=dc dc=5
+C15 (Out0 0) capacitor c=100f m=1
+C14 (Out1 0) capacitor c=100f m=1
+C13 (Out2 0) capacitor c=100f m=1
+C12 (Out3 0) capacitor c=100f m=1
+C7 (Out4 0) capacitor c=100f m=1
+C5 (Out5 0) capacitor c=100f m=1
+C3 (Out6 0) capacitor c=100f m=1
+C1 (Out7 0) capacitor c=100f m=1
+I1 (AC AC AC AC AC AC AC AC MEM MEM MEM MEM MEM MEM MEM MEM Out0 Out1 Out2 \
+        Out3 Out4 Out5 Out6 Out7 0) cse463_project_8_bit_and_schematic
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=400n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

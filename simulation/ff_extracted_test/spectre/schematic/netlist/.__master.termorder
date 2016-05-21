@@ -1,0 +1,2 @@
+"cse463_project.3_1_mux_alt.extracted.termorder" (("Hold" "Load" "Out" "S0" "S0B" "S1" "S1B") ("Hold" "Load" "Out" "S0" "S0B" "S1" "S1B"))
+"cse463_project.d_flip_flop.extracted.termorder" (("D" "F1" "F2" "Q") ("D" "F1" "F2" "Q"))

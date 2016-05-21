@@ -1,0 +1,8 @@
+
+// Library name: cse463_project
+// Cell name: 8bit_AC
+// View name: schematic
+subckt cse463_project_8bit_AC_schematic ALU_Out0 ALU_Out1 ALU_Out2 \
+        ALU_Out3 ALU_Out4 ALU_Out5 ALU_Out6 ALU_Out7 F1 F2 In0 In1 In2 In3 \
+        In4 In5 In6 In7 N0 N0B N1 N1B Out0 Out1 Out2 Out3 Out4 Out5 Out6 \
+        Out7 S0 S0B S1 S1B S2 S2B inh_inh_bn

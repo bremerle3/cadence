@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: single_muxed_ff
+// View name: schematic
+subckt single_muxed_ff F1 F2 Load Out S0 S0B S1 S1B inh_inh_bn

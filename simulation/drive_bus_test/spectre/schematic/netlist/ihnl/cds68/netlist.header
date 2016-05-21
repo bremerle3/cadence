@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: bus_inverter
+// View name: schematic
+subckt bus_inverter F1 F2 inv_in Out inh_inh_bn

@@ -1,0 +1,8 @@
+
+// Library name: 563_final
+// Cell name: bb_inv_test
+// View name: schematic
+I12 (net2 net03) ff_inv
+V1 (net2 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (net03 0) capacitor c=100f m=1

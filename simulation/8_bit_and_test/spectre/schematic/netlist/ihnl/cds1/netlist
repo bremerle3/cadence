@@ -1,0 +1,10 @@
+    I15 (AC7 In7 OUT7 inh_inh_bn) min_and
+    I14 (AC6 IN6 OUT6 inh_inh_bn) min_and
+    I13 (AC5 IN5 OUT5 inh_inh_bn) min_and
+    I12 (AC4 IN4 OUT4 inh_inh_bn) min_and
+    I11 (AC3 In3 OUT3 inh_inh_bn) min_and
+    I10 (AC2 In2 OUT2 inh_inh_bn) min_and
+    I9 (AC1 In1 OUT1 inh_inh_bn) min_and
+    I8 (AC0 IN0 OUT0 inh_inh_bn) min_and
+ends cse463_project_8_bit_and_schematic
+// End of subcircuit definition.

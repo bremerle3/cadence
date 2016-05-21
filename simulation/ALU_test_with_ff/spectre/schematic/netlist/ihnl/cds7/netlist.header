@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: min_or
+// View name: schematic
+subckt min_or A B Out inh_inh_bn

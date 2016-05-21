@@ -1,0 +1,10 @@
+
+// Library name: cse463_project
+// Cell name: ALU_top_bens_mux
+// View name: schematic
+subckt ALU_top_bens_mux AC\<0\> AC\<1\> AC\<2\> AC\<3\> AC\<4\> AC\<5\> \
+        AC\<6\> AC\<7\> IN\<0\> IN\<1\> IN\<2\> IN\<3\> IN\<4\> IN\<5\> \
+        IN\<6\> IN\<7\> INPR\<0\> INPR\<1\> INPR\<2\> INPR\<3\> INPR\<4\> \
+        INPR\<5\> INPR\<6\> INPR\<7\> OUT\<0\> OUT\<1\> OUT\<2\> OUT\<3\> \
+        OUT\<4\> OUT\<5\> OUT\<6\> OUT\<7\> S\<0\> S\<1\> S\<2\> S\<3\> \
+        S\<4\> S\<5\> inh_inh_bn

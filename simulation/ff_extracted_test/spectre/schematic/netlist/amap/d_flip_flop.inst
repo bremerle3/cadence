@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"+11n +10n +9n +8n" "NCSU_Analog_Parts_pmos4_spectre"
+"+7n +6n +5n +4n +3n +2n +1n +0n" "NCSU_Analog_Parts_nmos4_spectre"
+"Dv" ":1v"
+"F1v" ":2v"
+"F2v" ":3v"
+"Qv" ":4v"

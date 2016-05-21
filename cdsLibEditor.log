@@ -1,0 +1,17 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.6 - CAT33 03/04/2015 15:05 (sjfqos807) $
+\o Sub version:		sub-version  s016 
+\o Arguments:		-display :16.0 -mpssession virtuoso6175 -mpshost linuxlab009.seas.wustl.edu -namespace CDBA -cdslib /home/warehouse/lbremer/cadence/cds.lib 
+\o Working Directory:	linuxlab009.seas.wustl.edu:/home/warehouse/lbremer/cadence
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.7.2
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "basic"
+\a nrResizeWindow(cdsLibEditor list(1 65 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(1 65 807 520))
+\a nrListItemAction(cdsLibEditor->mainTable 17 0)
+\o Active cell: 17 0 "cse463_project"
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

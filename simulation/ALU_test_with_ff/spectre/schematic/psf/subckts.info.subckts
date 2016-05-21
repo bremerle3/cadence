@@ -1,0 +1,88 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "14.1.0.576.isr7"
+"date" "5:24:04 AM, Tue Apr 26, 2016"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"min_inv" "subckt" (
+""
+"In out 0 vdd!"
+)
+"min_xor" "subckt" (
+""
+"Other Out Reg inh_inh_bn vdd! 0"
+)
+"cse463_project_8_bit_xor_schematic" "subckt" (
+""
+"AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 inh_inh_bn vdd! 0"
+)
+"min_tgate" "subckt" (
+""
+"IN OUT S SB inh_inh_bn vdd!"
+)
+"cse463_project_3_1_mux_schematic" "subckt" (
+""
+"Hold Load Out S0 S1 inh_inh_bn 0 vdd!"
+)
+"cse463_project_8_bit_reg_v1_schematic" "subckt" (
+""
+"F1 F2 In0 In1 In2 In3 In4 In5 In6 In7 Out0 Out1 Out2 Out3 Out4 Out5 Out6 Out7 S0 S1 inh_inh_bn 0 vdd!"
+)
+"cse463_project_8_bit_and_schematic" "subckt" (
+""
+"AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 inh_inh_bn vdd! 0"
+)
+"d_flip_flop" "subckt" (
+""
+"D F1 F2 Q 0 vdd!"
+)
+"ALU_top" "subckt" (
+""
+"AC<0> AC<1> AC<2> AC<3> AC<4> AC<5> AC<6> AC<7> IN<0> IN<1> IN<2> IN<3> IN<4> IN<5> IN<6> IN<7> INPR<0> INPR<1> INPR<2> INPR<3> INPR<4> INPR<5> INPR<6> INPR<7> OUT<0> OUT<1> OUT<2> OUT<3> OUT<4> OUT<5> OUT<6> OUT<7> S<0> S<1> S<2> S<3> S<4> S<5> inh_inh_bn 0 vdd!"
+)
+"cse463_project_7_1_mux_tgate_schematic" "subckt" (
+""
+"Adder DM_AC_AND DM_AC_OR DR_AC_XOR DR_COM DR_direct INPR_direct Out S0 S0B S1 S1B S2 S2B inh_inh_bn vdd!"
+)
+"min_and" "subckt" (
+""
+"A B Out inh_inh_bn vdd! 0"
+)
+"single_muxed_ff" "subckt" (
+""
+"F1 F2 Load Out S0 S1 inh_inh_bn 0 vdd!"
+)
+"Adder_2" "subckt" (
+""
+"A B C CarryOut Set inh_inh_bn 0 vdd!"
+)
+"cse463_project_8_bit_com_schematic" "subckt" (
+""
+"IN0 IN1 IN2 IN3 IN4 IN5 IN6 IN7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 0 vdd!"
+)
+"Adder_2_8bits" "subckt" (
+""
+"A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 E out0 out1 out2 out3 out4 out5 out6 out7 inh_inh_bn 0 vdd!"
+)
+"min_or" "subckt" (
+""
+"A B Out inh_inh_bn vdd! 0"
+)
+"cse463_project_8_bit_or_schematic" "subckt" (
+""
+"AC0 AC1 AC2 AC3 AC4 AC5 AC6 AC7 IN0 IN4 IN5 IN6 In1 In2 In3 In7 OUT0 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 inh_inh_bn vdd! 0"
+)
+END

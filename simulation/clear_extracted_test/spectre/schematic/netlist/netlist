@@ -1,0 +1,92 @@
+
+// Library name: cse463_project
+// Cell name: 3_1_mux_alt
+// View name: extracted
+subckt cse463_project_3_1_mux_alt_extracted Hold Load Out S0 S0B S1 S1B
+    \+21 (0 S1) capacitor c=7.8678e-16 m=1
+    \+20 (0 S0) capacitor c=4.5198e-16 m=1
+    \+19 (S1B 0) capacitor c=2.1762e-16 m=1
+    \+18 (S0B 0) capacitor c=3.8502e-16 m=1
+    \+17 (Load 0) capacitor c=2.1072e-16 m=1
+    \+16 (Out 0) capacitor c=3.81948e-15 m=1
+    \+15 (Hold 0) capacitor c=2.1072e-16 m=1
+    \+14 (0 S1) capacitor c=1.48944e-15 m=1
+    \+13 (0 S0) capacitor c=1.10175e-15 m=1
+    \+12 (Load S1) capacitor c=3.1776e-16 m=1
+    \+11 (S1B S1) capacitor c=9.168e-16 m=1
+    \+10 (S1B 0) capacitor c=9.3321e-16 m=1
+    \+9 (S0B S0) capacitor c=4.4232e-16 m=1
+    \+8 (S0B 0) capacitor c=1.38558e-15 m=1
+    \+7 (S0B Out) capacitor c=9.5022e-16 m=1
+    \+6 (Hold S1) capacitor c=3.1776e-16 m=1
+    \+5 (Out S0 9 0) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+4 (Out S0B 10 0) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+3 (Out S0 11 0) ami06N w=9e-07 l=6e-07 as=9.9e-13 ad=1.71e-12 \
+        ps=2.1e-06 pd=4.5e-06 m=1 region=sat
+    \+2 (9 S1 Hold 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+1 (10 S1 Load 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+    \+0 (11 S1B 0 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=9.9e-13 \
+        ps=4.5e-06 pd=2.1e-06 m=1 region=sat
+ends cse463_project_3_1_mux_alt_extracted
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: d_flip_flop
+// View name: extracted
+subckt d_flip_flop D F1 F2 Q
+    \+11 (Q 10 vdd! vdd!) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+10 (vdd! Q 11 vdd!) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+9 (9 8 vdd! vdd!) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+8 (vdd! 9 7 vdd!) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+7 (Q 10 0 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+6 (0 Q 11 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+5 (11 F1 10 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+4 (10 F2 9 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+3 (9 8 0 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+2 (0 9 7 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+1 (8 F2 7 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+0 (D F1 8 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends d_flip_flop
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: min_inv
+// View name: extracted
+subckt min_inv In out
+    \+1 (out In vdd! vdd!) ami06P w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+0 (out In 0 0) ami06N w=9e-07 l=6e-07 as=1.71e-12 ad=1.71e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends min_inv
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: clear_extracted_test
+// View name: schematic
+V5 (Input 0) vsource type=pulse val0=0 val1=5 period=300n delay=112n \
+        width=100n
+V30 (F1 0) vsource type=pulse val0=0 val1=5 period=100n width=50n
+V31 (F2 0) vsource type=pulse val0=0 val1=5 period=100n delay=62.5n \
+        width=25n
+V7 (S0 0) vsource type=pulse val0=5 val1=0 period=2u delay=70n width=1u
+C1 (FF_Out 0) capacitor c=100f m=1
+I0 (FF_Out Input FF_in S0 S0B S0B S0) cse463_project_3_1_mux_alt_extracted
+V0 (vdd! 0) vsource type=dc dc=5
+I5 (FF_in F1 F2 FF_Out) d_flip_flop
+I4 (S0 S0B) min_inv

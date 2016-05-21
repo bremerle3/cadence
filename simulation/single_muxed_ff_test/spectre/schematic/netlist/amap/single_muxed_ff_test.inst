@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I7n" "single_muxed_ff"
+"V3n V2n V0n" "NCSU_Analog_Parts_vpulse_spectre"
+"V6n V5n V1n" "NCSU_Analog_Parts_vdc_spectre"
+"C0n" "NCSU_Analog_Parts_cap_spectre"
+"I54n I55n" "min_inv"
+"I8n" "IR_trigate"

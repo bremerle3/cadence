@@ -1,0 +1,16 @@
+CADENCE IHNL01070
+$model
+cse463_project/min_inv/schematic min_inv
+cse463_project/d_flip_flop/schematic d_flip_flop
+cse463_project/bus_test/schematic bus_test
+cse463_project/single_muxed_ff/schematic single_muxed_ff
+cse463_project/3_1_mux_alt/schematic cse463_project_3_1_mux_alt_schematic
+cse463_project/IR_trigate/schematic IR_trigate
+cse463_project/IR_reg/schematic IR_reg
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

@@ -1,0 +1,5 @@
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.576.isr7 32bit -- 28 Apr 2015
+Simulating `input.scs' on linuxlab007.seas.wustl.edu at 4:01:28 AM, Wed May 11, 2016 (process id: 5022).
+H = mpsImport( "spectre" "ipi" "v0.0" ?session "spectre1_6958_5" )
+H->sclSetResultDir( "../psf" )

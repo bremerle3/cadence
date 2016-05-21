@@ -1,0 +1,20 @@
+CADENCE IHNL01070
+$model
+cse562/delta_sigma/schematic delta_sigma
+cse562/proj1_opamp/schematic proj1_opamp
+cse562/comparator/schematic comparator
+cse562/true_ff/schematic true_ff
+cse562/simple_latch/schematic simple_latch
+cse562/new_op_amp/schematic new_op_amp
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+I_0 I_0
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

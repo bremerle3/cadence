@@ -1,0 +1,18 @@
+    I94 (net78 N0 N0B N1 N1B Out7 inh_inh_bn) IR_trigate
+    I93 (net80 N0 N0B N1 N1B Out6 inh_inh_bn) IR_trigate
+    I92 (net79 N0 N0B N1 N1B Out5 inh_inh_bn) IR_trigate
+    I91 (net75 N0 N0B N1 N1B Out4 inh_inh_bn) IR_trigate
+    I90 (net81 N0 N0B N1 N1B Out3 inh_inh_bn) IR_trigate
+    I89 (net77 N0 N0B N1 N1B Out2 inh_inh_bn) IR_trigate
+    I88 (net76 N0 N0B N1 N1B Out1 inh_inh_bn) IR_trigate
+    I87 (net74 N0 N0B N1 N1B Out0 inh_inh_bn) IR_trigate
+    I60 (F1 F2 In0 net74 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I64 (F1 F2 In4 net75 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I61 (F1 F2 In1 net76 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I62 (F1 F2 In2 net77 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I67 (F1 F2 In7 net78 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I65 (F1 F2 In5 net79 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I66 (F1 F2 In6 net80 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+    I63 (F1 F2 In3 net81 S0 S0B S1 S1B inh_inh_bn) single_muxed_ff
+ends IR_reg
+// End of subcircuit definition.

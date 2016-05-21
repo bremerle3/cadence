@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May 10 00:14:32 2016
+// Design library name: cse463_project
+// Design cell name: single_muxed_ff_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,47 @@
+
+// Library name: 563_final
+// Cell name: y_logic
+// View name: schematic
+subckt y_logic A_bar B C_bar E_bar F G Y
+    N8 (Y A_bar net22 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    N12 (net26 E_bar 0 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    N11 (Y G net26 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N9 (Y B net22 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N13 (net26 F 0 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N10 (net22 C_bar net26 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P13 (net35 A_bar vdd! vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P18 (net34 E_bar vdd! vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P17 (Y G net21 vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P15 (net21 C_bar vdd! vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P19 (Y F net34 vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P14 (net21 B net35 vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+ends y_logic
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: y_logic_test
+// View name: schematic
+V13 (net02 0) vsource type=dc dc=2.0958
+V0 (vdd! 0) vsource type=dc dc=5
+V6 (net5 0) vsource type=pulse val0=0 val1=5 period=12.5u
+V5 (net6 0) vsource type=pulse val0=0 val1=5 period=6.25u
+V4 (net4 0) vsource type=pulse val0=0 val1=5 period=25u
+V3 (net3 0) vsource type=pulse val0=0 val1=5 period=50u
+V2 (net2 0) vsource type=pulse val0=0 val1=5 period=100u
+V1 (net1 0) vsource type=pulse val0=0 val1=5 period=200u
+I9 (net02 net02 net02 net02 net02 net02 net08) y_logic
+I0 (net1 net2 net3 net4 net5 net6 net13) y_logic
+C1 (net08 0) capacitor c=1p m=1
+C0 (net13 0) capacitor c=1p m=1

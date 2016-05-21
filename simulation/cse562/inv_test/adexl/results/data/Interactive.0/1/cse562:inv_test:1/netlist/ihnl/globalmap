@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+cse562/inv_test/schematic inv_test
+cse562/inv/schematic inv
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

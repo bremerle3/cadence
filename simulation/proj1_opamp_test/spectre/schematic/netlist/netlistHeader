@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct  8 00:01:46 2015
+// Design library name: cse562
+// Design cell name: proj1_opamp_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,26 @@
+simulator( 'spectre )
+design(	 "/home/warehouse/lbremer/cadence/simulation/input_stage/spectre/schematic/netlist/netlist")
+resultsDir( "/home/warehouse/lbremer/cadence/simulation/input_stage/spectre/schematic" )
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('dc ?saveOppoint t  ?dev "/I6"  ?param "dc"  
+		?start "0"  ?stop "100n"  )
+envOption(
+	'analysisOrder  list("dc") 
+)
+save( 'i "/I6/PLUS" "/R1/PLUS" )
+temp( 27 ) 
+run()
+selectResult( 'dc )
+plot(getData("/I6/PLUS") getData("/R1/PLUS") )
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('dc ?dev "/I0"  )
+save( 'i "/N0/D" "/N2/D" )
+run()
+selectResult( 'dc )
+plot(getData("/N0/D") getData("/N2/D") )

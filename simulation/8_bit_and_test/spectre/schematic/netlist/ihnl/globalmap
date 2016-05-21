@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+cse463_project/min_and/schematic min_and
+cse463_project/8_bit_and/schematic cse463_project_8_bit_and_schematic
+cse463_project/8_bit_and_test/schematic cse463_project_8_bit_and_test_schematic
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

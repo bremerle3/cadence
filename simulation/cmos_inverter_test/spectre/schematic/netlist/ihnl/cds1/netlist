@@ -1,0 +1,8 @@
+
+// Library name: cse563
+// Cell name: cmos_inverter_test
+// View name: schematic
+I0 (net4 net3) cmos_inverter
+V1 (net4 0) vsource type=dc
+V0 (vdd! 0) vsource type=dc dc=5
+C0 (net3 0) capacitor c=1p m=1

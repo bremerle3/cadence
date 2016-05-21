@@ -1,0 +1,15 @@
+CADENCE IHNL01070
+$model
+cse562/squarer/schematic squarer
+cse562/test_cube/schematic test_cube
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

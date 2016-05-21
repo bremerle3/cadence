@@ -1,0 +1,36 @@
+simulator( 'spectre )
+design(	 "/home/warehouse/lbremer/cadence/simulation/proj1_opamp_sweeptest/spectre/schematic/netlist/netlist")
+resultsDir( "/home/warehouse/lbremer/cadence/simulation/proj1_opamp_sweeptest/spectre/schematic" )
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('pz ?p "/net1"  ?iprobe "/V1"  ?freq ""  
+		?param "freq"  ?values list("100")  )
+envOption(
+	'analysisOrder  list("pz") 
+)
+temp( 27 ) 
+run()
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('pz ?values list("(0,0.1,100)")  )
+run()
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('pz ?values list("0" "0.1" "100")  )
+run()
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+run()
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+run()

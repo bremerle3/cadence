@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "volt_mode"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/volt_mode/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/volt_mode/schematic" "volt_mode" )
+( "cse562/true_ff/schematic" "true_ff" )
+( "cse562/comparator/schematic" "comparator" )
+ )
+( term
+ )
+( param
+ )
+( "volt_mode" "ihnl/cds2/map" )
+( "true_ff" "ihnl/cds0/map" )
+( "comparator" "ihnl/cds1/map" )
+ )

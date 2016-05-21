@@ -1,0 +1,5 @@
+
+// Library name: cse463_project
+// Cell name: AC_trigate
+// View name: schematic
+subckt AC_trigate inv_in N0 N0B N1 N1B Out inh_inh_bn

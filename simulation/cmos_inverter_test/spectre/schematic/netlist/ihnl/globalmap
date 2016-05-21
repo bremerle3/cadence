@@ -1,0 +1,15 @@
+CADENCE IHNL01070
+$model
+cse563/cmos_inverter_test/schematic cmos_inverter_test
+cse563/cmos_inverter/schematic cmos_inverter
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+nW nW
+pL pL
+pW pW
+nL nL
+$endparam

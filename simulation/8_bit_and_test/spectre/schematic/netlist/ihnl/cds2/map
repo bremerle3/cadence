@@ -1,0 +1,21 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+ )
+( net
+( "[@inh_bn:%:gnd!]" "inh_inh_bn" )
+ )
+( inst
+ )
+( model
+( "8_bit_and" "cse463_project_8_bit_and_schematic" )
+( "8_bit_and_test" "cse463_project_8_bit_and_test_schematic" )
+ )
+( term
+ )
+( param
+ )
+ )

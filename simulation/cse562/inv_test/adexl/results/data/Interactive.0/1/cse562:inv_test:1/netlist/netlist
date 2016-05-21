@@ -1,0 +1,18 @@
+
+// Library name: cse562
+// Cell name: inv
+// View name: schematic
+subckt inv IN OUT
+    N0 (OUT IN 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (OUT IN vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends inv
+// End of subcircuit definition.
+
+// Library name: cse562
+// Cell name: inv_test
+// View name: schematic
+I0 (net3 out_test) inv
+V0 (net3 0) vsource type=pulse val0=0 val1=5 period=1n
+V1 (vdd! 0) vsource type=dc

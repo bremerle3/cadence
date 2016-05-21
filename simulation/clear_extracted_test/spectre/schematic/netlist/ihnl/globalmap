@@ -1,0 +1,13 @@
+CADENCE IHNL01070
+$model
+cse463_project/d_flip_flop/extracted d_flip_flop
+cse463_project/3_1_mux_alt/extracted cse463_project_3_1_mux_alt_extracted
+cse463_project/clear_extracted_test/schematic clear_extracted_test
+cse463_project/min_inv/extracted min_inv
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

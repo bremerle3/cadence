@@ -1,0 +1,44 @@
+Begin Incremental Netlisting Dec 11 04:28:30 2015
+End netlisting Dec 11 04:28:30 2015
+Begin Incremental Netlisting Dec 11 04:29:40 2015
+WARNING (OSSHNL-160): The primitive, 'NCSU_Analog_Parts/ipwl/spectre', was not
+used in the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Dec 11 04:29:40 2015
+Begin Incremental Netlisting Dec 11 04:30:04 2015
+End netlisting Dec 11 04:30:04 2015
+Begin Incremental Netlisting Dec 11 04:31:14 2015
+End netlisting Dec 11 04:31:14 2015
+Begin Incremental Netlisting Dec 11 04:31:46 2015
+End netlisting Dec 11 04:31:46 2015
+Begin Incremental Netlisting Dec 11 04:32:23 2015
+End netlisting Dec 11 04:32:23 2015
+Begin Incremental Netlisting Dec 11 04:33:23 2015
+WARNING (OSSHNL-160): The primitive, 'NCSU_Analog_Parts/res/spectre', was not
+used in the last netlisting session in this
+current run directory. Therefore,
+re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Dec 11 04:33:23 2015
+Begin Incremental Netlisting Dec 11 04:34:58 2015
+End netlisting Dec 11 04:34:58 2015
+Begin Incremental Netlisting Dec 11 04:36:47 2015
+End netlisting Dec 11 04:36:47 2015
+Begin Incremental Netlisting Dec 11 04:38:25 2015
+End netlisting Dec 11 04:38:25 2015
+Begin Incremental Netlisting Dec 11 04:38:59 2015
+End netlisting Dec 11 04:38:59 2015
+Begin Incremental Netlisting Dec 11 04:44:03 2015
+End netlisting Dec 11 04:44:03 2015
+Begin Incremental Netlisting Dec 11 04:44:22 2015
+End netlisting Dec 11 04:44:22 2015
+Begin Incremental Netlisting Dec 11 04:46:16 2015
+End netlisting Dec 11 04:46:16 2015
+Begin Incremental Netlisting Dec 11 05:05:06 2015
+End netlisting Dec 11 05:05:06 2015
+Begin Incremental Netlisting Dec 11 05:06:02 2015
+End netlisting Dec 11 05:06:02 2015

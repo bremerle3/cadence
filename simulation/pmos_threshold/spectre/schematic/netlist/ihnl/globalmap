@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+cse563/pmos_threshold/schematic pmos_threshold
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+pL pL
+pW pW
+$endparam

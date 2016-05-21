@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "2_1_mux_test"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/2_1_mux_test/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "563_final/2_1_mux/schematic" "_sub0" )
+( "563_final/2_1_mux_test/schematic" "_sub1" )
+ )
+( term
+ )
+( param
+ )
+( "_sub0" "ihnl/cds0/map" )
+( "_sub1" "ihnl/cds1/map" )
+ )

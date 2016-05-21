@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "cmos_d_flip_flop"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/warehouse/lbremer/cadence/simulation/cmos_d_flip_flop/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "cse562/cmos_d_flip_flop/schematic" "cmos_d_flip_flop" )
+ )
+( term
+ )
+( param
+ )
+( "cmos_d_flip_flop" "ihnl/cds0/map" )
+ )

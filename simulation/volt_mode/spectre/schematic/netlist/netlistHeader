@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Dec 11 13:43:56 2015
+// Design library name: cse562
+// Design cell name: volt_mode
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

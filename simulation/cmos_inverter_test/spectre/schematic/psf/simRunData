@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"cse563\" \"cmos_inverter_test\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Feb 11 13:41:36 2016"
+"title" ""
+"analysisList" "()"
+END

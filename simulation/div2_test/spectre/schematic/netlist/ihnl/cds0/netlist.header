@@ -1,0 +1,5 @@
+
+// Library name: cse562
+// Cell name: div2
+// View name: schematic
+subckt div2 In Out

@@ -1,0 +1,7 @@
+
+// Library name: cse562
+// Cell name: proj1_opamp_sweeptest
+// View name: schematic
+I0 (net1 net3 net1) proj1_opamp
+V0 (vdd! 0) vsource type=dc dc=3
+V1 (net3 0) vsource type=sine

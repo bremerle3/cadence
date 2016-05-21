@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+
+# combine cadence printouts
+# Matthew Clapp
+# August 2, 2002
+
+# syntax to create file called 'combined.ps' as a multipage ps file of all
+#   ps files in the current directory:
+#
+#  combinecad *.ps
+
+
+# %%EndProlog is last line of beginning of file
+
+$page=0;
+$pagemore=1;
+
+open (OUT,">combined.ps");
+while ($thisfile = shift) {
+  open(IN,"<$thisfile");
+  while (<IN>) {
+    s/%%Page:.*/%%Page: $page $pagemore/;
+    if (/%%EndProlog/ || $page==0) {$killline=0;}
+    if (!$killline && !/%%EOF/ && !/%%Trailer/) {
+      print OUT;
+    }
+  }
+  close(IN);
+  $page++;
+  $pagemore++;
+}
+print OUT "%%Trailer\n%%EOF\n";

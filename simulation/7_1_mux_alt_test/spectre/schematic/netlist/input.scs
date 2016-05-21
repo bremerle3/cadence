@@ -1,0 +1,106 @@
+// Generated for: spectre
+// Generated on: Apr 26 03:33:31 2016
+// Design library name: cse463_project
+// Design cell name: 7_1_mux_alt_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_alt
+// View name: schematic
+subckt cse463_project_7_1_mux_alt_schematic Adder DM_AC_AND DM_AC_OR \
+        DR_AC_XOR DR_COM DR_direct INPR_direct Out S0 S0B S1 S1B S2 S2B \
+        inh_inh_bn
+    M26 (net021 S1B net011 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M25 (net011 S2B INPR_direct gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M32 (Out S0B net19 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M24 (net032 S2B Adder gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M13 (Out S0 net019 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M12 (Out S0 net018 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M28 (net019 S1B net032 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M10 (net018 S1 net013 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M27 (Out S0B net021 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M19 (net014 S2 DM_AC_OR gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M30 (net012 S1B net014 gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M31 (net013 S2B DM_AC_AND gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M29 (Out S0B net012 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M3 (net19 S1 net015 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (Out S0 net17 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out S0 net18 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net18 S1 net017 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M18 (net015 S2 DR_AC_XOR gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M17 (net016 S2 DR_COM gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M16 (net017 S2 DR_direct gnd!) ami06N w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+    M4 (net016 S1B net17 vdd!) ami06P w=900n l=600n as=1.35e-12 \
+        ad=1.35e-12 ps=4.8u pd=4.8u m=1 region=sat
+ends cse463_project_7_1_mux_alt_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: min_inv
+// View name: schematic
+subckt min_inv In out
+    N0 (out In 0 0) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 ps=4.8u \
+        pd=4.8u m=1 region=sat
+    P0 (out In vdd! vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends min_inv
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 7_1_mux_alt_test
+// View name: schematic
+V23 (net5 0) vsource type=dc dc=0
+V22 (net3 0) vsource type=dc dc=0
+V21 (net4 0) vsource type=dc dc=0
+V3 (vdd! 0) vsource type=dc dc=5
+I0 (net012 net06 net07 net08 net09 net010 net011 net11 net5 net7 net3 \
+        net10 net4 net9 0) cse463_project_7_1_mux_alt_schematic
+V20 (net011 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V19 (net010 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V18 (net09 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V17 (net08 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V16 (net07 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V15 (net06 0) vsource type=pulse val0=0 val1=0 period=400n width=200n
+V14 (net012 0) vsource type=pulse val0=5 val1=0 period=400n width=200n
+I8 (net4 net9) min_inv
+I7 (net3 net10) min_inv
+I6 (net5 net7) min_inv
+C0 (net11 0) capacitor c=1f m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=400n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

@@ -1,0 +1,26 @@
+    N8 (Y A_bar net22 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    N12 (net26 E_bar 0 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    N11 (Y G net26 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N9 (Y B net22 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N13 (net26 F 0 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N10 (net22 C_bar net26 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P13 (net35 A_bar vdd! vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P18 (net34 E_bar vdd! vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P17 (Y G net21 vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P15 (net21 C_bar vdd! vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P19 (Y F net34 vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P14 (net21 B net35 vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+ends y_logic
+// End of subcircuit definition.

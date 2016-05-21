@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 14 04:37:20 2016
+// Design library name: cse463_project
+// Design cell name: xor_operation
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

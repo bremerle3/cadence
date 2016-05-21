@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "bus_top"
+"I1n" "IR_reg"
+"V18n V17n V11n V12n V13n V14n V15n V16n V31n V30n" "NCSU_Analog_Parts_vpulse_spectre"
+"V19n V10n V9n V8n V7n V6n V5n V4n V2n" "NCSU_Analog_Parts_vdc_spectre"

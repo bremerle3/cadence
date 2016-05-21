@@ -1,0 +1,36 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "14.1.0.576.isr7"
+"date" "2:21:36 PM, Fri Nov 6, 2015"
+"design" "// Generated for: spectre"
+"analysis type" "info"
+"analysis name" "designParamVals"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"top-level" STRUCT(
+"temp" FLOAT DOUBLE
+"tnom" FLOAT DOUBLE
+"time" FLOAT DOUBLE
+"nW" FLOAT DOUBLE
+"nL" FLOAT DOUBLE
+"pW" FLOAT DOUBLE
+"pL" FLOAT DOUBLE
+"I_o" FLOAT DOUBLE
+) PROP(
+"key" "parameters"
+)
+VALUE
+"top-level" "top-level" (
+2.700000000000000e+01
+2.700000000000000e+01
+0.000000000000000e+00
+1.500000000000000e-05
+5.000000000000000e-07
+1.500000000000000e-06
+6.000000000000000e-06
+3.000000000000000e-08
+)
+END

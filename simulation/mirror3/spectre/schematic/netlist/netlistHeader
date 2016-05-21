@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  6 07:21:36 2015
+// Design library name: cse562
+// Design cell name: mirror3
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

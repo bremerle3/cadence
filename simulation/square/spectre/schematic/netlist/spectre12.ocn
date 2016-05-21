@@ -1,0 +1,14 @@
+simulator( 'spectre )
+design(	 "/home/warehouse/lbremer/cadence/simulation/square/spectre/schematic/netlist/netlist")
+resultsDir( "/home/warehouse/lbremer/cadence/simulation/square/spectre/schematic" )
+modelFile( 
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m" "")
+    '("/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m" "")
+)
+analysis('dc ?saveOppoint t  ?dev "/I17"  ?param "dc"  
+		?start "0"  ?stop "5n"  )
+envOption(
+	'analysisOrder  list("dc") 
+)
+temp( 27 ) 
+run()

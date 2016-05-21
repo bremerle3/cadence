@@ -1,0 +1,10 @@
+    I0 (AC0 IN0 OUT0 inh_inh_bn) min_or
+    I2 (AC2 In2 OUT2 inh_inh_bn) min_or
+    I1 (AC1 In1 OUT1 inh_inh_bn) min_or
+    I4 (AC4 IN4 OUT4 inh_inh_bn) min_or
+    I6 (AC6 IN6 OUT6 inh_inh_bn) min_or
+    I5 (AC5 IN5 OUT5 inh_inh_bn) min_or
+    I3 (AC3 In3 OUT3 inh_inh_bn) min_or
+    I7 (AC7 In7 OUT7 inh_inh_bn) min_or
+ends cse463_project_8_bit_or_schematic
+// End of subcircuit definition.

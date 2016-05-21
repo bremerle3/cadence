@@ -1,0 +1,5 @@
+
+// Library name: 563_final
+// Cell name: 2_1_mux
+// View name: schematic
+subckt _sub0 A B clk out

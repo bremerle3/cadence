@@ -1,0 +1,52 @@
+// Generated for: spectre
+// Generated on: Apr 14 14:02:15 2016
+// Design library name: cse463_project
+// Design cell name: 3_1_mux_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: cse463_project
+// Cell name: 3_1_mux
+// View name: schematic
+subckt cse463_project_3_1_mux_schematic Hold Load Out S0 S1 inh_inh_bn
+    M3 (net19 S1 0 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M2 (Out S0 net17 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M1 (Out S0 net18 gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M0 (net18 S1 Hold gnd!) ami06N w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M5 (net19 S0 Out vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+    M4 (Load S1 net17 vdd!) ami06P w=900n l=600n as=1.35e-12 ad=1.35e-12 \
+        ps=4.8u pd=4.8u m=1 region=sat
+ends cse463_project_3_1_mux_schematic
+// End of subcircuit definition.
+
+// Library name: cse463_project
+// Cell name: 3_1_mux_test
+// View name: schematic
+I0 (net2 Load net2 S0 S1 0) cse463_project_3_1_mux_schematic
+V2 (Load 0) vsource type=pulse val0=5 val1=0 period=200n width=100n
+V1 (S0 0) vsource type=pulse val0=0 val1=5 period=600n delay=100n \
+        width=300n
+V0 (S1 0) vsource type=pulse val0=0 val1=5 period=400n width=200n
+V3 (vdd! 0) vsource type=dc dc=5
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=2u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

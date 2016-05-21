@@ -1,0 +1,52 @@
+// Generated for: spectre
+// Generated on: Mar 24 12:11:31 2016
+// Design library name: 563_final
+// Design cell name: 2_1_mux_test
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06N.m"
+include "/project/linuxlab/cadence/CDK/ncsu/models/spectre/nom/ami06P.m"
+
+// Library name: 563_final
+// Cell name: 2_1_mux
+// View name: schematic
+subckt _sub0 A B clk out
+    P2 (out net10 B vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    P0 (out clk A vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    P17 (net10 clk vdd! vdd!) ami06P w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 \
+        ps=6.6u pd=6.6u m=1 region=sat
+    N2 (B clk out 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N0 (A net10 out 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+    N13 (net10 clk 0 0) ami06N w=1.8u l=1.8u as=2.7e-12 ad=2.7e-12 ps=6.6u \
+        pd=6.6u m=1 region=sat
+ends _sub0
+// End of subcircuit definition.
+
+// Library name: 563_final
+// Cell name: 2_1_mux_test
+// View name: schematic
+I0 (net2 net3 net4 net5) _sub0
+C1 (net5 0) capacitor c=1p m=1
+V5 (net4 0) vsource type=pulse val0=0 val1=5 period=5u
+V6 (net3 0) vsource type=pulse val0=0 val1=5 period=10u
+V4 (net2 0) vsource type=pulse val0=0 val1=5 period=20u
+V0 (vdd! 0) vsource type=dc dc=5
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=20u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
